@@ -1,0 +1,179 @@
+:root {
+    --user-panel-gap: 4px;
+    --user-radius: 6px;
+}
+body {
+    background-color: var(--lwt-accent-color);
+}
+ 
+/* tabs */
+
+#titlebar { visibility: collapse !important;}
+
+#identity-box.extensionPage {
+  display: none;
+}
+
+#urlbar-background {
+  border: none !important; 
+}
+
+/* address bar */
+
+#urlbar-background {
+  border-radius: 6px;
+}
+
+#nav-bar {
+    margin: var(--user-panel-gap);
+    border-radius: var(--user-radius);
+}
+
+html:not([sizemode="fullscreen"]) {
+ #navigator-toolbox {
+    border-bottom: none !important;
+    margin-bottom: calc(var(--user-panel-gap) * -1);
+  } 
+}
+
+#navigator-toolbox {
+    transition: margin-top 150ms ease-out;
+}
+ 
+/* appcontent */
+ 
+#sidebar-splitter, #sidebar-header {
+  display: none !important;
+}
+
+#sidebar-box { margin-right: 0; }
+
+html:not([sizemode="fullscreen"])  {
+  #sidebar-box, #appcontent {
+    margin: var(--user-panel-gap);
+  }
+  #sidebar-box { margin-right: 0; }
+  #sidebar, .browserStack>browser {
+    border-radius: var(--user-radius);
+    outline: 4px solid var(--lwt-accent-color) !important;
+    outline-offset: -0.4px !important;
+    overflow: hidden !important
+  }
+}
+ 
+#tabbrowser-tabpanels {
+    background: transparent !important;
+}
+
+/* dynamic sidebar */
+
+[titlepreface*="."] #sidebar-header {
+  visibility: collapse !important;
+}
+/*
+[titlepreface*="."] #titlebar {
+  visibility: collapse;
+}
+*/
+#sidebar-box{
+  --uc-sidebar-width: 36px !important;
+  --uc-sidebar-hover-width: 200px;
+  --uc-autohide-sidebar-delay: 90ms;
+  position: relative;
+  min-width: var(--uc-sidebar-width) !important;
+  width: var(--uc-sidebar-width) !important;
+  max-width: var(--uc-sidebar-width) !important;
+  z-index:1;
+}
+
+#sidebar-box[positionend]{ direction: rtl }
+#sidebar-box[positionend] > *{ direction: ltr }
+
+#sidebar-box[positionend]:-moz-locale-dir(rtl){ direction: ltr }
+#sidebar-box[positionend]:-moz-locale-dir(rtl) > *{ direction: rtl }
+
+#main-window[sizemode="fullscreen"] #sidebar-box{ --uc-sidebar-width: 1px; }
+
+#sidebar-splitter{ display: none }
+
+#sidebar-header{
+  overflow: hidden;
+  color: var(--chrome-color, inherit) !important;
+  padding-inline: 0 !important;
+}
+
+#sidebar-header::before,
+#sidebar-header::after{
+  content: "";
+  display: -moz-box;
+  padding-left: 8px;
+  padding-right: 8px;
+
+}
+
+#sidebar-switcher-target{
+  -moz-box-pack: start !important;
+}
+
+#sidebar-header,
+#sidebar{
+  transition: min-width 115ms linear var(--uc-autohide-sidebar-delay) !important;
+  min-width: var(--uc-sidebar-width) !important;
+  will-change: min-width;
+}
+#sidebar-box:hover > #sidebar-header,
+#sidebar-box:hover > #sidebar{
+  min-width: var(--uc-sidebar-hover-width) !important;
+  transition-delay: 0ms !important;
+}
+/* navbar animation */
+
+#nav-bar {
+    display: flex;
+    justify-content: center;
+}
+
+#urlbar-container {
+    flex: 1;
+    max-width: 1000px;
+    min-width: 200px;
+    margin: auto !important;
+}
+
+#main-window #urlbar {
+    z-index: 9999 !important;
+    width: 100% !important;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    transition: width 0.3s ease, left 0.3s ease, margin-top 0.3s ease, margin-left 0.3s ease, margin-right 0.3s ease;
+}
+
+#main-window  #urlbar[breakout][breakout-extend] {
+    opacity: 0.97 !important;
+    width: 100% !important;
+    left: 0;
+    right: 0;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 25vh !important;
+    transition: width 0.3s ease, left 0.3s ease, margin-top 0.3s ease, margin-left 0.3s ease, margin-right 0.3s ease;
+}
+
+/* remove sidebar button bg */
+toolbar .toolbarbutton-1 {
+  &:not([disabled], :hover:active) {
+    &:is([open], [checked]) > :is(.toolbarbutton-icon, .toolbarbutton-text, .toolbarbutton-badge-stack) {
+      background-color: transparent !important;
+    }
+  }
+}
+
+/* find bar */
+.browserContainer > findbar {
+  z-index: 5;
+  border-radius: var(--user-radius);
+  margin-top: var(--user-panel-gap);
+}
+
+#navigator-toolbox { background-color: var(--lwt-accent-color) !important }

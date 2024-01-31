@@ -1,0 +1,14 @@
+@import "colors/macchiato.css";
+
+:root {
+  /* background */
+  --dark-theme-background: var(--mantle) !important;
+  /* text */
+  --dark-theme-foreground: var(--text) !important;
+  --in-content-page-background: var(--mantle) !important;
+  --in-content-table-background: var(--base) !important;
+  --in-content-primary-button-background: var(--blue) !important;
+
+  --in-content-box-background: var(--base) !important;
+  --in-content-box-background: var(--base) !important;
+}
