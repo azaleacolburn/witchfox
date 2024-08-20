@@ -45,7 +45,7 @@
 }
 
 /* dynamic sidebar */
-:root[titlepreface=""] {
+:root[titlepreface*="-"] {
     #sidebar-splitter {
         display: none !important;
     }

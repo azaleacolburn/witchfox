@@ -4,11 +4,15 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-:root {
+#main-window {
     --user-panel-gap: 8px;
     --user-sidebar-gap: 4px;
     --user-radius: 6px;
+    
 
+    --user-transition: all 0.2s ease-out;
+ 
+    
     @media (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") {
         --user-panel-gap: 12px;
         --user-sidebar-gap: 6px;
@@ -24,7 +28,7 @@
         }
     }
 
-    &[titlepreface=""] #sidebar-box {
+    &[titlepreface*="-"] {
         --uc-sidebar-hover-width: 200px;
         --uc-autohide-sidebar-delay: 30ms;
     }

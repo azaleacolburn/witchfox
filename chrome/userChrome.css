@@ -8,6 +8,10 @@
 @import url("vars.css");
 
 :root {
+    @media not (-moz-bool-pref: "uc.tweak.no-panel-hint") {
+        --user-panel-hint: color-mix( in srgb, var(--toolbarbutton-icon-fill), transparent 75%);
+    }
+    
     @media (prefers-color-scheme: dark) {
         --user-bg: rgb(27, 26, 32) !important;
         @media (-moz-bool-pref: "uc.tweak.translucency") {
