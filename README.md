@@ -57,15 +57,11 @@ Download and move the chrome folder and user.js into your profiles root director
 
 `uc.tweak.extra-thick` -> make margin around browser 2px thicker
 
-`uc.tweak.regular-extension-menu` -> bring regular extension menu back
-
 `uc.tweak.no-panel-hint` -> hide the small bars showing hidden panels
 
 `uc.tweak.translucency` -> **EXPERIMENTAL** translucency support  
 
 ## Credits
-
-[DatGuyPiko](https://github.com/datguypiko/Firefox-Mod-Blur/tree/master/EXTRA%20MODS/Compact%20extensions%20menu) - compact extensions menu
 
 [KiKaraage](https://github.com/KiKaraage/ArcWTF) - ArcWTF
 
