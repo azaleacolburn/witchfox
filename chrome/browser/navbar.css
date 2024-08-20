@@ -87,15 +87,26 @@
     }
     
     @media not (-moz-bool-pref: "uc.tweak.borderless") {
-    &:not([sizemode="fullscreen"]) #navigator-toolbox::before {
-        content: "";
-        position: absolute;
-        top: calc(var(--uc-content-margin)*0.5 - var(--uc-panel-hint-size)*0.5) !important;
-        width: 100%;
-        height: var(--uc-panel-hint-size) !important;
-        background-color: var(--uc-panel-hint) !important;
-        border-radius: var(--uc-radius) !important;
-        transition: opacity var(--uc-transition) !important; 
+    &:not([sizemode="fullscreen"]) #navigator-toolbox {
+        &::before {
+            content: "";
+            position: absolute;
+            top: calc(var(--uc-content-margin)*0.5 - var(--uc-panel-hint-size)*0.5) !important;
+            width: 100%;
+            height: var(--uc-panel-hint-size) !important;
+            background-color: var(--uc-panel-hint) !important;
+            border-radius: var(--uc-radius) !important;
+            transition: opacity var(--uc-transition) !important; 
+        }
+        &::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            width: 100vw;
+            height: var(--uc-content-margin);
+            left: 0;
+            -moz-window-dragging: drag;
+        }
     }}
     
     #nav-bar {
