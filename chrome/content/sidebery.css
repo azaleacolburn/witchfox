@@ -59,9 +59,13 @@
     
     .top-horizontal-box {
         order: 100 !important;
+        margin-bottom: 0px !important;
     }
     
-    #nav_bar {background-color: transparent !important;}
+    #nav_bar {
+        background-color: transparent !important;
+        padding: var(--tabs-margin) !important;
+    }
     
     /* tab audio indicator */
     .Tab .audio {
