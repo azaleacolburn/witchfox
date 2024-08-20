@@ -7,15 +7,20 @@
 /* dev tools */
 splitter.devtools-horizontal-splitter {
     opacity: 0 !important;
+    min-height: var(--uc-content-margin) !important;
+    margin: 0 !important;
+    border: none !important;
 }
 
 .devtools-side-splitter {
     opacity: 0 !important;
+    min-width: var(--uc-content-margin) !important;
+    margin: 0 !important;
+    border: none !important;
 }
 
 .devtools-toolbox-bottom-iframe {
     border-radius: var(--uc-radius) !important;
-    margin-top: var(--uc-sidebar-margin) !important;
 }
 
 #main-window:has(
@@ -26,14 +31,6 @@ splitter.devtools-horizontal-splitter {
 
 .devtools-toolbox-side-iframe {
     border-radius: var(--uc-radius) !important;
-
-    &:first-child {
-        margin-inline-end: var(--uc-sidebar-margin) !important;
-    }
-
-    &:last-child {
-        margin-inline-start: var(--uc-sidebar-margin) !important;
-    }
 }
 
 .browserContainer.responsive-mode {
