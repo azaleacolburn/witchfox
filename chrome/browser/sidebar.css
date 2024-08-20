@@ -15,6 +15,8 @@
 :root[sizemode="fullscreen"] #sidebar-splitter {
     opacity: 1 !important;
     margin-right: 0 !important;
+    margin-left: calc( -0.5 * var(--user-panel-gap) ) !important;
+    width: calc( 0.5 * var(--user-panel-gap) ) !important;
 }
 
 /* dynamic sidebar */
@@ -142,6 +144,9 @@
     #sidebar-header {
         border-top-left-radius: var(--user-radius);
         border-top-right-radius: var(--user-radius);
+    }
+    :root[sizemode="fullscreen"] #sidebar-header {
+        margin-top: calc(var(--user-panel-gap)*0.5) !important;
     }
 }
 
