@@ -59,6 +59,10 @@
         --nav-height: 34.5px;
     }
     
+    #PersonalToolbar {
+        display: none !important;
+    }
+    
     #urlbar-container { width: unset !important; }
 
     #navigator-toolbox {
