@@ -43,8 +43,13 @@
         &[uidensity=compact] #sidebar-box {
             --uc-sidebar-width: 34px !important;
         }
-        &[uidensity=touch] #sidebar-box {
-            --uc-sidebar-width: 44px !important;
+        @media (-moz-bool-pref: "uc.tweak.wider-sidebar-collapse" {
+            #sidebar-box {
+                --uc-sidebar-width: 80px;
+            }
+            &[uidensity=compact] #sidebar-box {
+                --uc-sidebar-width: 66px !important;
+            }
         }
         #sidebar-box {
             min-width: var(--uc-sidebar-width) !important;
