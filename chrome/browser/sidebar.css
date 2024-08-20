@@ -86,7 +86,10 @@
 
         @media (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") { 
             #sidebar-box:hover {
+                background-color: transparent !important;
                 & #sidebar-header, #sidebar {
+                    margin: var(--user-sidebar-gap) !important;
+                    margin-left: calc(var(--user-sidebar-gap) + var(--user-panel-gap)) !important;
                     padding: 0 var(--user-sidebar-gap) !important;
                     background-color: var(--user-bg) !important;
                     transition: min-width 0s, width 0s, padding 0s !important;
@@ -94,6 +97,12 @@
                 }
                 &::before {
                     background-color: transparent !important;
+                }
+                &::after {
+                    position: absolute;
+                    content: "";
+                    height: 100%;
+                    width: calc(3 * var(--user-panel-gap)) !important;
                 }
             }
             #sidebar-box {
