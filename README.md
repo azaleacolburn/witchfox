@@ -6,16 +6,13 @@
 
 Extension:
 
-* Required -> [Sidebery](https://addons.mozilla.org/en-US/firefox/addon/sidebery)
+* Required -> [Sidebery](https://addons.mozilla.org/en-US/firefox/addon/sidebery), [Userchrome Toggle](https://addons.mozilla.org/en-US/firefox/addon/userchome-toggle/?utm_content=addons-manager-reviews-link&utm_medium=firefox-browser&utm_source=firefox-browser)
 * Recommended 
     - [Firefox Color](https://addons.mozilla.org/en-US/firefox/addon/firefox-color) or [Firefox Theme](https://addons.mozilla.org/en-US/firefox/themes/) 
-    - [Userchrome Toggle](https://addons.mozilla.org/en-US/firefox/addon/userchome-toggle/?utm_content=addons-manager-reviews-link&utm_medium=firefox-browser&utm_source=firefox-browser)
 
 about:config settings:
 - `toolkit.legacyUserProfileCustomizations.stylesheets` -> `true` 
 - `browser.uidensity` -> `1`
-
-Open Sidebery settings, go to help, import addon data, select `Sidebery-Data.json`
 
 ## Post Install
 
