@@ -49,30 +49,30 @@ splitter.devtools-horizontal-splitter {
 /* screenshot tool */
 #screenshotsPagePanel {
     screenshots-buttons {
-        top: var(--user-panel-gap) !important;
-        right: calc(var(--user-panel-gap)*2) !important;
+        top: var(--uc-panel-gap) !important;
+        right: calc(var(--uc-panel-gap)*2) !important;
         
-        padding: var(--user-panel-gap) !important;
-        border-radius: var(--user-radius) !important;
+        padding: var(--uc-panel-gap) !important;
+        border-radius: var(--uc-radius) !important;
     }
     
     & .footer-button {
-        margin-inline-start: var(--user-panel-gap) !important;
+        margin-inline-start: var(--uc-panel-gap) !important;
     }
 }
 
 #preview-image-container {
-    padding: var(--user-panel-gap) !important;
+    padding: var(--uc-panel-gap) !important;
     padding-top: 0px !important;
 }
 
 #preview-image {
-    border-radius: var(--user-radius) !important;
+    border-radius: var(--uc-radius) !important;
 }
 
 .dialogBox[sizeto="available"] {
-    border-radius: var(--user-radius) !important;
-    margin: var(--user-panel-gap) !important;
+    border-radius: var(--uc-radius) !important;
+    margin: var(--uc-panel-gap) !important;
 }
 
 /* findbar thingy */
