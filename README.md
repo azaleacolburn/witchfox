@@ -1,5 +1,7 @@
 # README
 
+![](Media/Screenshot0.png)
+
 My Firefox CSS Config
 
 Most of the CSS in this repo comes from other people,
