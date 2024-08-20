@@ -4,9 +4,13 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
+@import url("overrides.css");
+
 :root {
     --user-panel-gap: 8px;
     --user-sidebar-gap: 4px;
+
+
     --user-radius: 6px;
     
 
@@ -39,6 +43,10 @@
     &[titlepreface*="-"] {
         --uc-sidebar-hover-width: 200px;
         --uc-autohide-sidebar-delay: 30ms;
+    }
+    
+    @media (-moz-bool-pref: "uc.tweak.separate-sidebar") {
+        --user-sidebar-gap: var(--user-panel-gap) !important;
     }
 }
 

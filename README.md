@@ -63,6 +63,8 @@ Download and move the chrome folder and user.js into your profiles root director
 
 `uc.tweak.no-panel-hint` -> hide the small bars showing hidden panels
 
+`uc.tweak.separate-sidebar` -> make the sidebar separate from the browser margins 
+
 `uc.tweak.translucency` -> **EXPERIMENTAL** translucency support  
 
 ## Credits
