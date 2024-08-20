@@ -17,6 +17,10 @@
         --user-panel-gap: 12px;
         --user-sidebar-gap: 6px;
     }
+    
+    @media (-moz-bool-pref: "uc.tweak.extra-thick") {
+        --user-panel-gap: 10px;
+    }
 
     &[uidensity=compact] {
         --user-panel-gap: 6px; 
@@ -25,6 +29,10 @@
         @media (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") {
             --user-panel-gap: 10px; 
             --user-sidebar-gap: 5px;
+        }
+        
+        @media (-moz-bool-pref: "uc.tweak.extra-thick") {
+            --user-panel-gap: 8px !important;
         }
     }
 
