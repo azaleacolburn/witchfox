@@ -32,7 +32,12 @@ html:not([sizemode="fullscreen"]) {
             * same from the browser window shadow on top. */
             box-shadow:
                 var(--uc-tweak-rounded-corners-shadow, 0 0 transparent),
-                0 0 0 16px transparent !important;       
+                0 0 0 16px var(--user-bg) !important;       
+            @media (-moz-bool-pref: "uc.tweak.translucency") {
+                box-shadow:
+                    var(--uc-tweak-rounded-corners-shadow, 0 0 transparent),
+                    0 0 0 16px transparent !important;
+            }
             clip-path: inset(0);
             pointer-events: none;
         }
