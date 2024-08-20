@@ -1,7 +1,4 @@
-
 ![](Media/Screenshot0.png)
-
-## PotatoFox
 
 ### **Not Tested** on MacOS & Windows!!
 
@@ -41,7 +38,7 @@ Open Sidebery settings, go to help, import addon data, select `Sidebery-Data.jso
 
 `uc.tweak.extra-thin-nav-bar` -> make nav-bar extra thin (28px) (requires uidensity=compact)
 
-`uc.tweak.regualar-extension-menu` -> bring regular extension menu back
+`uc.tweak.regular-extension-menu` -> bring regular extension menu back
 
 ## Credits
 

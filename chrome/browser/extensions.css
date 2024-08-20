@@ -1,4 +1,4 @@
-@media not (-moz-bool-pref:"uc.tweak.regualar-extension-menu") {
+@media not (-moz-bool-pref:"uc.tweak..regualar-extension-menu") {
     /*  Clean and tight extensions menu */
     #unified-extensions-panel #unified-extensions-view {
         width: 100% !important;
