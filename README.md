@@ -2,8 +2,6 @@
 
 ![](Media/Screenshot0.png)
 
-My Firefox CSS Config
-
 Most of the CSS in this repo comes from other people,
 credit to [Shina Fox](https://github.com/Shina-SG/Shina-Fox) for the URL bar animation, 
 and credit goes to [u/Tiago2048](https://www.reddit.com/r/FirefoxCSS/comments/19bbdad/bubblecss/) for most of the code 
