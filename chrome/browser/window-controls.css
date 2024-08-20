@@ -15,7 +15,7 @@
 }
 
 @media not (-moz-bool-pref: "uc.tweak.no-window-controls") { 
-:root:not([inDOMFullscreen], [sizemode="fullscreen"], [titlepreface*="="]) {
+:root:not([inDOMFullscreen], [titlepreface*="="]) {
     
     & .titlebar-buttonbox-container {
         height: 40.5px !important;
@@ -27,11 +27,12 @@
         height: 44px !important;
     }
     
+    &:not([sizemode="fullscreen"]) {
     @media (-moz-platform: macos ) {
         #nav-bar {
             margin-left: 68px !important;
         }
-    }   
+    }}
     
     @media (-moz-platform: windows) {
         .titlebar-buttonbox-container {

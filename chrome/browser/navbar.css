@@ -4,8 +4,15 @@
 * file, You can obtain one at https://mozilla.org/MPL/2.0/.
 */
 
-:root:not([titlepreface*="="]) {
+:root:not([titlepreface*="="], [inDOMFullscreen="true"]) {
     --uc-content-margin-top: 0px !important;
+}
+
+@media not (-moz-platform: macos) {
+    :root[sizemode="fullscreen"]:not([inDOMFullscreen="true"]) 
+    #navigator-toolbox {
+        margin-top: 0px !important;
+    }
 }
 
 #nav-bar, #navigator-toolbox {
@@ -13,7 +20,21 @@
     box-shadow: none !important;
 }
 
-#main-window[titlepreface*="="]:not([sizemode="fullscreen"]) {
+#nav-bar {
+    margin-inline: var(--uc-sidebar-margin) !important;
+} 
+
+/* fix margin for buttons on the sides */
+#PanelUI-menu-button {
+    padding: 0 var(--toolbarbutton-outer-padding) !important;
+}
+
+#nav-bar-customization-target > :is(toolbarbutton, toolbaritem):first-child, 
+#nav-bar-customization-target > toolbarpaletteitem:first-child > :is(toolbarbutton, toolbaritem) {
+    padding-inline-start: 0px !important;
+}
+
+#main-window[titlepreface*="="]:not([inDOMFullscreen="true"]) {
     --nav-width: clamp(400px, 75vw, 1000px);
     --nav-height: 38px;
     &[uidensity=compact] {
