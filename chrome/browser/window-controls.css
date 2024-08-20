@@ -13,6 +13,17 @@
         height: 44px !important;
     }
 
+    @media (-moz-platform: macos ) {
+        .titlebar-buttonbox-container {
+            visibility: visible !important;
+            z-index: 100 !important;
+            position: absolute !important;
+        }
+        #nav-bar {
+            margin-left: 68px !important;
+        }
+    }
+
     @media (-moz-platform: linux) {
         #toolbar-menubar > .titlebar-buttonbox-container {
             visibility: collapse !important;
