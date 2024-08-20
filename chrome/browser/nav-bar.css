@@ -91,7 +91,7 @@
             max-height: unset !important;
             height: var(--nav-height) !important;
             
-            border: none !important;            
+            border: none !important;
             border-radius: var(--user-radius) !important;
         }
         
@@ -135,6 +135,7 @@
                     margin-top: calc(2*var(--user-panel-gap)) !important;
                     top: 0 !important;
                     background-color: var(--user-bg) !important;
+                    border: 1px solid var(--toolbarbutton-icon-fill) !important;            
 
                     #nav-bar-customization-target > *:not([disabled="true"]),
                     #nav-bar-overflow-button, #PanelUI-button:not([disabled="true"]) {opacity: 1 !important;}
