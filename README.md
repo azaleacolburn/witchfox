@@ -4,7 +4,7 @@
 
 ## Compatibility
 
-Tested on Linux, MacOS, and Windows. 
+Tested on Linux and MacOS, hasn't been tested on Windows recently. 
 
 ## Features
 
