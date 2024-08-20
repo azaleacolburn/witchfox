@@ -14,16 +14,8 @@
         --nav-btn-height: 28px !important;
         --general-border-radius: var(--user-radius) !important;
          
-        @media (-moz-bool-pref:"uc.tweak.blur") {
-            --frame-bg: color-mix(in srgb, var(--frame-bg), transparent 20%) !important;
-        }
-        @media (-moz-bool-pref: "uc.tweak.extra-compact") {
-            .Tab {
-                padding-bottom: 1.5px !important;
-            }
-            --tabs-margin: 0px !important;
-            --tabs-width: 26px !important;
-            --tabs-inner-gap: 4px !important;
+        @media (-moz-bool-pref:"uc.tweak.translucency") {
+            --frame-bg: transparent !important;
         }
     }
 

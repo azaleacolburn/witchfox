@@ -56,22 +56,11 @@
 @media not (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") {
 #sidebar-box {
     --uc-sidebar-width: 40px;
-    @media not (-moz-bool-pref: "uc.tweak.extra-compact") {
-        :root[uidensity=compact] & {
-            --uc-sidebar-width: 34px !important;
-        }
-    }
     @media (-moz-bool-pref: "uc.tweak.wider-sidebar-collapse") {
         --uc-sidebar-width: 80px;
          
         :root[uidensity=compact] & {
             --uc-sidebar-width: 66px !important;
-        }
-    }
-    @media (-moz-bool-pref: "uc.tweak.extra-compact") {
-        :root[uidensity=compact] & {
-            --user-sidebar-gap: 1px !important; 
-            --uc-sidebar-width: 28px !important;
         }
     }
 }}
