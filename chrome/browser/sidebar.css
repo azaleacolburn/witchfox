@@ -42,7 +42,7 @@
     #sidebar-splitter {
         width: var(--uc-sidebar-margin) !important;
         border: none !important;
-        margin-inline: none !important; 
+        margin-inline: 0 !important; 
     }
     
     #sidebar-header {
