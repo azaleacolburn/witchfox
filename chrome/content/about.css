@@ -6,13 +6,6 @@
 
 /* themes for about:* pages */
 
-button,
-html|select,
-html|input[type="color"], 
-xul|menulist {
-    border-radius: var(--uc-button-radius) !important;
-}
-
 @-moz-document 
 url-prefix("about:newtab"),
 url-prefix("about:privatebrowsing"),
