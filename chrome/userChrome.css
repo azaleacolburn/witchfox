@@ -2,8 +2,17 @@
 @import url("vars.css");
 
 :root {
-    --user-bg: var(--lwt-accent-color);
+    --user-bg: rgb(27, 26, 32) !important;
+    @media (-moz-bool-pref: "uc.tweak.translucency") {
+        --user-bg: color-mix(in srgb, rgb(27, 26, 32), transparent 20%) !important;
+    }
+}
+
+:root[lwtheme="true"] {
+    --user-bg: var(--lwt-accent-color) !important;
     @media (-moz-bool-pref: "uc.tweak.translucency") {
         --user-bg: color-mix(in srgb, var(--lwt-accent-color), transparent 20%) !important;
     }
 }
+
+body { background-color: var(--user-bg) !important; }

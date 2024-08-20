@@ -53,9 +53,8 @@
         /* transition: width 0.3s ease, left 0.3s ease, margin-top 0.3s ease, margin-left 0.3s ease, margin-right 0.3s ease; */
     }
 
-    #urlbar-background { background-color: transparent !important; }
 
-    #main-window #urlbar[breakout][breakout-extend] {
+    #main-window #urlbar[focused=true][open] {
 
         position: fixed !important;
         top: 20vh !important;
@@ -73,19 +72,20 @@
         #urlbar-input {
             font-size: 16px !important;
         }    
+    }
 
-        & #urlbar-background {
-          background-color: var(--toolbar-field-background-color) !important;
+    #urlbar:not([focused=true][open]) {
+        & #urlbar-background { 
+            background: transparent !important; 
+        }
+        & #urlbar-input-container {
+            text-align: center !important;
+        /*     & > * { transition: opacity 1s ease-out; } */
+            & .urlbar-input-box { transition: none !important; }
         }
     }
 
-    #urlbar:not([breakout][breakout-extend]) #urlbar-input-container {
-          text-align: center !important;
-    /*     & > * { transition: opacity 1s ease-out; } */
-        & .urlbar-input-box { transition: none !important; }
-    }
-
-    #urlbar:not([breakout][breakout-extend], :hover) #urlbar-input-container {
+    #urlbar:not([focused=true][open], :hover) #urlbar-input-container {
         & >  * {
             opacity: 0 !important;
         }

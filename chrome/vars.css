@@ -1,5 +1,6 @@
 :root {
     --user-panel-gap: 8px;
+    --user-sidebar-gap: 4px;
     --user-radius: 6px;
     --user-rounded-corners-shadow: none;
     /*   0 -.8px 0 0 rgb(0 0 0 / 0.02), */

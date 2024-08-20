@@ -33,12 +33,13 @@ Extension:
 * [Sidebery](https://addons.mozilla.org/en-US/firefox/addon/sidebery)
 * [Userchrome Toggle](https://addons.mozilla.org/en-US/firefox/addon/userchrome-toggle/)
 * [Firefox Color](https://addons.mozilla.org/en-US/firefox/addon/firefox-color) or [Firefox Theme](https://addons.mozilla.org/en-US/firefox/themes/) 
+    * Without one of these two installed it will be somewhat broken 
 
 Download and move the chrome folder and user.js into your profiles root directory (about:profiles > default-release > Root Directory > Open Folder)
 
 ## Post Install
 
-- Press ctrl+shift+1 -> toggle sidebar collapsing. 
+- Press `ctrl+shift+1` or `cmd+shift+1` -> toggle sidebar collapsing
 - Import Sidebery config ( Sidebery Settings > Help > Import addon data )
 - Import Firefox Color [Theme](https://color.firefox.com/?theme=XQAAAAJIBAAAAAAAAABBqYhm849SCicxcUcPX38oKRicm6da8pG5gi-DrbS7fiEFLUzDsWXWyUHMSkHZ2PpRK_LvZGTF44fp7VnVXujpkKMjvOWQSIhdK22u1ZG2EgdMyNMx_0oKJ3H9Aulj_W-sLqp3C7P9xxbnSMyQXGvfNmFAc8Mw6b7sZVymuhR0izERZjptFUVqlI0Zglmvbx7Aqqf1yCNtF2ljYjJBJ2zeQ3SGqmjknTFkU7hkVMy3aRrVafVheQXSAb6urDunQ8LZD2shNDvg5bN-ozZG255xn3hB1gfB1yVOKWNg9jJYn6DntzqTwzgEmwpEgPB4NyBczypZzFqtS5oB-cT0e_lH4lrI8tO01TfXk0UUp6n29KfQU8nu5zesYpVUZThdOvZPqE6CpFbMooJ1cL6fU-TdtOGpTkrgd2fzHgwJX6a54v0tN0aHaAQD3jj-0fqNVcm4Lg-8eyxZ09ItqMLD48JaDU9OFPtiCyyvpsoYYfuZf9osapMO72ZS-AfpMq9oF6ZHatA6Xvt7B8-XGebHGtdzq0PHgpkZPu-zwq2PPoCCFGzjkUZVjpBGQm7UXoevFP_2oiQt) (Optional)
 
