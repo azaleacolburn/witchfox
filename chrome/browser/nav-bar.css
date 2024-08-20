@@ -11,7 +11,7 @@
     border: none !important;
 }
 
-@media (-moz-bool-pref: "uc.tweak.extra-thin-nav-bar") {
+@media (-moz-bool-pref: "uc.tweak.extra-compact") {
     :root[uidensity=compact] {
         #nav-bar { 
             max-height: 28px !important;
@@ -21,6 +21,12 @@
         }
         #urlbar {
             top: 1px !important;
+        }
+        #nav-bar-customization-target > :is(toolbarbutton, toolbaritem):first-child {
+            padding-inline-start: 2px !important;
+        }
+        #PanelUI-menu-button {
+            padding-inline-end: 2px !important;
         }
     }
 }

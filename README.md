@@ -54,7 +54,7 @@ Download and move the chrome folder and user.js into your profiles root director
 
 `uc.tweak.regular-search` -> return url-bar to original state
 
-`uc.tweak.extra-thin-nav-bar` -> make nav-bar extra thin (28px) (requires uidensity=compact)
+`uc.tweak.extra-compact` -> make nav-bar and sidebar extra thin (28px) (requires uidensity=compact)
 
 `uc.tweak.regular-extension-menu` -> bring regular extension menu back
 

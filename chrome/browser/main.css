@@ -62,7 +62,7 @@ html:not([sizemode="fullscreen"]) {
 #statuspanel {
     & #statuspanel-label {
         border-radius: var(--user-radius) !important;
-        background-color: transparent !important;
+        background-color: var(--lwt-accent-color) !important;
         border: none !important;
     }
     

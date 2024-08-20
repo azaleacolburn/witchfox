@@ -18,6 +18,8 @@
     margin-bottom: 0px !important;
 }
 
+#webextpanels-window { background-color: transparent !important; }
+
 #sidebar {
     border-radius: var(--user-radius);
     background-color: inherit !important;
