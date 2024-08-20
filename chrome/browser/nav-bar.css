@@ -1,0 +1,36 @@
+@media not (-moz-bool-pref: "uc.tweak.seperate-nav-bar") {
+    #navigator-toolbox, #nav-bar { 
+        background-color: var(--lwt-accent-color) !important;
+        box-shadow: none !important;
+    }
+}
+
+@media (-moz-bool-pref: "uc.tweak.seperate-nav-bar") {
+    #nav-bar {
+        margin: var(--user-panel-gap);
+        border-radius: var(--user-radius);
+    }  
+}
+
+@media (-moz-bool-pref: "uc.tweak.extra-thin-nav-bar") {
+    :root[uidensity=compact] {
+        #urlbar-container {
+            max-height: 28px !important;
+            min-height: 28px !important;
+        }
+        #urlbar-container {
+            padding-block: none !important;
+        }
+        #urlbar {
+            top: 1px !important;
+        }
+    }
+}
+#PlacesToolbar, #PlacesToolbarItems {
+    flex-direction: row-reverse !important;
+    max-width: max-content !important;
+}
+
+#personal-bookmarks {
+    max-width: max-content !important;
+}

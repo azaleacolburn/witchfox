@@ -1,0 +1,177 @@
+@import url("icons.css");
+@import url("sidebar.css");
+@import url("tweaks.css");
+@import url("url-bar.css");
+@import url("window-controls.css");
+@import url("extensions.css");
+@import url("nav-bar.css");
+
+:root {
+    --user-panel-gap: 8px;
+    --user-radius: 6px;
+    --user-rounded-corners-shadow:
+      0 -.8px 0 0 rgb(0 0 0 / 0.02),
+      0 0.5px 1px 1px rgb(0 0 0 / 0.06),
+      0 1px 1px rgb(0 0 0 / 0.1);
+    @media (resolution > 1.8dppx) {
+        --user-rounded-corners-shadow:
+        0 0 0.5px 0.5px rgb(0 0 0 / 0.06),
+        0 0.5px 1.5px rgb(0 0 0 / 0.1);
+    }
+}
+
+:root[uidensity=compact] { --user-panel-gap: 6px; }
+@media (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") {
+    :root { --user-panel-gap: 12px }
+    :root[uidensity=compact] { --user-panel-gap: 10px; } 
+}
+
+body {
+    background-color: var(--lwt-accent-color);
+}
+ 
+/* tabs */
+
+#appcontent {
+    margin: var(--user-panel-gap);
+}
+
+#identity-box.extensionPage {
+    display: none;
+}
+
+#urlbar-background {
+    border: none !important; 
+}
+
+/* address bar */
+
+#urlbar-background {
+    border-radius: 6px;
+}
+
+
+html:not([sizemode="fullscreen"]) {
+    #navigator-toolbox {
+        border-bottom: none !important;
+        margin-bottom: calc(var(--user-panel-gap) * -1);
+    } 
+}
+
+#navigator-toolbox {
+    transition: margin-top 150ms ease-out;
+}
+ 
+/* appcontent */
+ 
+#browser { background-color: var(--lwt-accent-color) !important; }
+
+html:not([sizemode="fullscreen"])  {
+    #sidebar-header { background-color: inherit !important; }
+    #sidebar-box {
+        border-radius: var(--user-radius) !important;
+        background-color: var(--lwt-accent-color) !important;
+        margin: 
+            calc(var(--user-panel-gap)*0.5)
+            calc(var(--user-panel-gap)*-0.5) 
+            var(--user-panel-gap)
+            calc(var(--user-panel-gap)*0.5)            
+            !important;
+    }
+
+    #sidebar {
+        border-radius: var(--user-radius);
+        background-color: inherit !important;
+    }
+
+    #appcontent .browserStack {
+        border-radius: var(--user-radius);
+        box-shadow: var(--user-rounded-corners-shadow) !important;
+        background-color: var(--lwt-accent-color);
+        
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            /* Draw toolbar background on the negative corner space, then draw the
+            * same from the browser window shadow on top. */
+            box-shadow:
+                var(--uc-tweak-rounded-corners-shadow, 0 0 transparent),
+                0 0 0 16px var(--lwt-accent-color) !important;       
+            clip-path: inset(0);
+            pointer-events: none;
+        }
+    }
+}
+
+#statuspanel {
+    overflow: hidden;
+}
+ 
+#tabbrowser-tabpanels {
+    background: transparent !important;
+}
+
+
+/* remove sidebar button bg */
+toolbar .toolbarbutton-1 {
+    &:not([disabled], :hover:active) {
+        &:is([open], [checked]) > :is(.toolbarbutton-icon, .toolbarbutton-text, .toolbarbutton-badge-stack) {
+            background-color: transparent !important;
+        }
+    }
+}
+
+/* find bar */
+.browserContainer > findbar {
+    z-index: 5;
+    border-radius: var(--user-radius);
+    margin-top: var(--user-panel-gap);
+}
+
+
+
+/* dev tools */
+splitter.devtools-horizontal-splitter {
+    opacity: 0 !important;
+}
+
+.devtools-side-splitter {
+    opacity: 0 !important;
+}
+
+.devtools-toolbox-bottom-iframe {
+    border-radius: var(--user-radius) !important;
+    margin-top: var(--user-panel-gap) !important;
+}
+
+.devtools-toolbox-side-iframe {
+    border-radius: var(--user-radius) !important;
+
+    &:first-child {
+        margin-inline-end: var(--user-panel-gap) !important;
+    }
+
+    &:last-child {
+        margin-inline-start: var(--user-panel-gap) !important;
+    }
+}
+
+.browserContainer.responsive-mode {
+    background-color: var(--lwt-accent-color) !important;
+}
+
+.browserContainer.responsive-mode > .browserStack > browser {
+    border: none !important;
+}
+
+.browserContainer.responsive-mode > .rdm-toolbar {
+    border-radius: var(--user-radius) !important;
+    background-color: var(--lwt-accent-color) !important;
+}
+
+
+
+
+

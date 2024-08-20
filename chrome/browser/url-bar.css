@@ -1,0 +1,78 @@
+@media (-moz-bool-pref: "uc.tweak.popup-search") {
+
+/* url-bar animation */
+#nav-bar {
+    display: flex;
+    justify-content: center;
+}
+
+#urlbar-container {
+    flex: 1;
+    max-width: 1000px;
+    margin: auto !important;
+}
+
+#main-window #urlbar {
+    z-index: 9999 !important;
+    opacity: 100 !important;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    /* transition: width 0.3s ease, left 0.3s ease, margin-top 0.3s ease, margin-left 0.3s ease, margin-right 0.3s ease; */
+}
+
+#urlbar-background { background-color: transparent !important; }
+    
+#main-window #urlbar[breakout][breakout-extend] {
+    
+    position: fixed !important;
+    top: 20vh !important;
+    left: 18vw !important;
+    right: 18vw !important;
+    width: 64vw !important;
+    
+    opacity: 0.97 !important;
+    left: 0;
+    right: 0;
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    /* transition: width 0.3s ease, left 0.3s ease, margin-top 0.3s ease, margin-left 0.3s ease, margin-right 0.3s ease; */
+    #urlbar-input {
+        font-size: 16px !important;
+    }    
+    
+    & #urlbar-background {
+      background-color: var(--toolbar-field-background-color) !important;
+    }
+}
+  
+#urlbar:not([breakout][breakout-extend]) #urlbar-input-container {
+      text-align: center !important;
+/*     & > * { transition: opacity 1s ease-out; } */
+    & .urlbar-input-box { transition: none !important; }
+}
+
+#urlbar:not([breakout][breakout-extend], :hover) #urlbar-input-container {
+    & >  * {
+        opacity: 0 !important;
+    }
+    & .urlbar-input-box {
+        opacity: 100 !important;
+    }
+} 
+
+.identity-box-button {
+    padding-inline: 4px !important;
+    
+    & #identity-icon-label {
+        visibility: collapse;
+    }
+    & #identity-icon {
+        filter: grayscale(100%) contrast(100%) !important;
+    }
+}
+    
+    
+
+}

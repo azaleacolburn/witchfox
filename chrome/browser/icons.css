@@ -1,0 +1,5 @@
+:is(.webextension-browser-action,
+.eom-addon-button):is([data-extensionid="userchrome-toggle-extended@n2ezr.ru"],
+[data-extensionid="userchrome-toggle@joolee.nl"]) .toolbarbutton-icon {
+    list-style-image: url("chrome://browser/skin/sidebars.svg");
+}
