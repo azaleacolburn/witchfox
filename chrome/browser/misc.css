@@ -100,3 +100,8 @@ splitter.devtools-horizontal-splitter {
     &:not([mirror="true"]) { left: 2px !important; }
     &[mirror="true"] { right: 2px !important; }
 }
+
+/* menu that appears when alt is pressed */
+#toolbar-menubar[autohide="true"]:not([inactive], [customizing]) {
+    height: unset !important;
+}
