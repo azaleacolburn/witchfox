@@ -22,3 +22,6 @@ user_pref("widget.gtk.rounded-bottom-corners.enabled", true);
 
 // show compact mode
 user_pref("browser.compactmode.show", true);
+
+// fix sidebar tab drag on linux
+user_pref("widget.gtk.ignore-bogus-leave-notify", 1);
