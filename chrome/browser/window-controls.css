@@ -8,7 +8,7 @@
 #TabsToolbar { visibility: collapse; will-change: auto !important; }
 
 @media not (-moz-bool-pref: "uc.tweak.no-window-controls") { 
-:root:not([inDOMFullscreen], [sizemode="fullscreen"]) {
+:root:not([inDOMFullscreen], [sizemode="fullscreen"], [titlepreface*="="]) {
     
     & .titlebar-buttonbox-container {
         height: 40.5px !important;
