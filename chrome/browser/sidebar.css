@@ -208,11 +208,12 @@
                     opacity: 1 !important;
                     background-color: var(--uc-panel-hint) !important;
                     border-radius: var(--uc-content-radius) !important;
-                    transition: all var(--uc-transition) !important;    
+                    transition: opacity var(--uc-transition) var(--uc-mouseout-delay) !important;    
                 }
 
                 &:not([sizemode="fullscreen"]) #sidebar-box:hover::before {
                     opacity: 0 !important;
+                    transition: opacity var(--uc-transition) !important;    
                 }
             }
             
