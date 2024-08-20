@@ -60,6 +60,7 @@ html:not([sizemode="fullscreen"]) {
 
 #navigator-toolbox {
     transition: margin-top 150ms ease-out;
+    z-index: 10;
 }
  
 /* appcontent */
