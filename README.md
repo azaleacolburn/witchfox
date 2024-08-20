@@ -1,6 +1,6 @@
 ![](Media/Screenshot0.png)
 
-### **Not Tested** on MacOS & Windows!!
+### **Not Tested** on Windows!!
 
 ## Install Instructions
 
