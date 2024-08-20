@@ -15,6 +15,10 @@
     --uc-bg: var(--uc-bg-opaque);
     
     --uc-bg-opaque: light-dark(rgb(239, 239, 242), rgb(27, 26, 32));
+    @media (-moz-platform: linux) {
+        --uc-bg-opaque: ActiveCaption;
+    }
+    
     @media (-moz-bool-pref: "uc.tweak.translucency") {
         --uc-bg: light-dark(
             color-mix(in srgb, rgb(239, 239, 242), transparent 10%), 
