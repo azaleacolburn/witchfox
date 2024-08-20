@@ -36,7 +36,7 @@
     --gtk-window-control-single: 38px;
     --gtk-window-control-dual: 76px;
     --gtk-window-control-tri: 114px;
-    /* linux window controls w/ firefox color */
+    /* linux window controls w/ firefox color extension enabled*/
     &[lwtheme="true"] {
         --gtk-window-control-single: 35px;
         --gtk-window-control-dual: 73px;
