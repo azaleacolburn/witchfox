@@ -21,13 +21,6 @@
         } &:not([positionend="true"]) {
             margin-left: var(--uc-sidebar-margin);
         }
-        
-        will-change: margin min-width width max-width;
-        transition: 
-            min-width var(--uc-transition), 
-            max-width var(--uc-transition),
-            width var(--uc-transition),
-            margin var(--uc-transition);
     }
 
     #sidebar {
