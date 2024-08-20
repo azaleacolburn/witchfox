@@ -108,9 +108,9 @@
          
         #sidebar, #sidebar-header {
             transition:  
-                min-width var(--uc-transition) var(--uc-sidebar-mouseout-delay), 
-                max-width var(--uc-transition) var(--uc-sidebar-mouseout-delay),
-                width var(--uc-transition) var(--uc-sidebar-mouseout-delay) 
+                min-width var(--uc-transition) var(--uc-mouseout-delay), 
+                max-width var(--uc-transition) var(--uc-mouseout-delay),
+                width var(--uc-transition) var(--uc-mouseout-delay) 
                 !important;
             will-change: min-width;
         }

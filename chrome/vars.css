@@ -23,9 +23,9 @@
         --uc-sidebar-margin: 3px;
     }
     
+    --uc-mouseout-delay: 150ms;
     /* sidebar vars */
     --uc-sidebar-hover-width: 200px;
-    --uc-sidebar-mouseout-delay: 150ms;
     
     --uc-sidebar-width: 40px;
     &[uidensity=compact] {
