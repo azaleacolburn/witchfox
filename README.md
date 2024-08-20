@@ -25,7 +25,7 @@ Tested on Linux, MacOS, and Windows.
 
 ## Install Instructions
 
-Required Extension:
+Extension:
 
 * [Sidebery](https://addons.mozilla.org/en-US/firefox/addon/sidebery)
 * [Userchrome Toggle Extended](https://addons.mozilla.org/en-US/firefox/addon/userchrome-toggle-extended)
