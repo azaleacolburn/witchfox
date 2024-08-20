@@ -27,9 +27,9 @@
     
     position: fixed !important;
     top: 20vh !important;
-    left: 18vw !important;
-    right: 18vw !important;
-    width: 64vw !important;
+    left: calc(50vw - (clamp(400px,64vw,800px)/2)) !important;
+    right: calc(50vw - (clamp(400px,64vw,800px)/2)) !important;
+    width: clamp(400px,64vw,800px) !important;
     
     opacity: 0.97 !important;
     left: 0;
