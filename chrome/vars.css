@@ -24,10 +24,8 @@
     }
     
     /* sidebar vars */
-    &:is([titlepreface*="؜"], [titlepreface*="‌"]) {
-        --uc-sidebar-hover-width: 200px;
-        --uc-autohide-sidebar-delay: 0ms;
-    }
+    --uc-sidebar-hover-width: 200px;
+    --uc-sidebar-mouseout-delay: 150ms;
     
     --uc-sidebar-width: 40px;
     &[uidensity=compact] {
