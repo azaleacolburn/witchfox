@@ -1,6 +1,5 @@
 @import url("icons.css");
 @import url("sidebar.css");
-@import url("tweaks.css");
 @import url("url-bar.css");
 @import url("window-controls.css");
 @import url("extensions.css");
@@ -57,6 +56,17 @@ html:not([sizemode="fullscreen"]) {
     border-radius: 6px;
 }
 
+/* link thingy when hovering over url */
+#statuspanel {
+    & #statuspanel-label {
+        border-radius: var(--user-radius) !important;
+        border: none !important;
+    }
+    
+    bottom: 2px !important;
+    &:not([mirror="true"]) { left: 2px !important; }
+    &[mirror="true"] { right: 2px !important; }
+}
 
 html:not([sizemode="fullscreen"]) {
     #navigator-toolbox {
@@ -127,13 +137,6 @@ toolbar .toolbarbutton-1 {
             background-color: transparent !important;
         }
     }
-}
-
-/* find bar */
-.browserContainer > findbar {
-    z-index: 5;
-    border-radius: var(--user-radius);
-    margin-top: var(--user-panel-gap);
 }
 
 

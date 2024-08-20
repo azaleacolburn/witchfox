@@ -13,8 +13,9 @@
     & .toolbarbutton-icon {
         list-style-image: url("../icons/ublock.svg");
     }
-/*    & .toolbarbutton-badge {
-        color: transparent !important;
+    & .toolbarbutton-badge {
+        opacity: 0 !important;
+        /* color: transparent !important;
         background-color: var(--toolbarbutton-icon-fill) !important;
         border-radius: 20px !important;
         padding: 0 !important;
@@ -22,8 +23,8 @@
         width: 8px !important;
         height: 8px !important;
         margin-inline-end: -3.5px !important;
-        box-shadow: none !important;
-    } */
+        box-shadow: none !important; */
+    } 
 }
 
 /* Bitwarden => custom svg icon */
