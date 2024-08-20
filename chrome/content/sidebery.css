@@ -15,7 +15,7 @@
         --general-border-radius: var(--uc-radius) !important;
          
 /*         @media (-moz-bool-pref:"uc.tweak.translucency") {
-            --frame-bg: transparent !important;
+            background-color: transparent !important;
         } */
     }
 
@@ -69,8 +69,8 @@
     
     /* tab audio indicator */
     .Tab .audio {
-        top: 1px !important;
-        left: 1px !important;
+        top: 2px !important;
+        left: 2px !important;
         height: 12px !important;
         width: 12px !important;
     }
@@ -83,6 +83,10 @@
         fill: transparent;
         background-color: var(--nav-btn-fg);
         mask: url("chrome://global/skin/icons/plus.svg") !important;
+    }
+    
+    .nav-item .audio, .nav-item .bookmarks-badge-icon {
+        background-color: var(--frame-bg) !important;
     }
     
     /* new tab button */
