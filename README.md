@@ -1,5 +1,9 @@
 ![](Media/Screenshot0.png)
 
+## Compatibility
+
+Works on Linux, Macos, and Windows. Recommended to add spacers to navbar as to have somewhere to grab with your mouse.
+
 ## Install Instructions
 
 Extension:
@@ -10,7 +14,9 @@ Extension:
 
 about:config settings:
 - `toolkit.legacyUserProfileCustomizations.stylesheets` -> `true` 
-- `browser.uidensity` -> `1`
+- `browser.uidensity` -> `1` (optional, will make UI more compact)
+
+Download and move the chrome folder into your profiles root directory (about:profiles > default-release > Root Directory > Open Folder)
 
 ## Post Install
 
