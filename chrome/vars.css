@@ -13,7 +13,11 @@
     --user-transition: all 0.2s ease-out;
  
     
-    @media (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") {
+    @media 
+        (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") 
+        or
+        (-moz-bool-pref: "uc.tweak.extra-thick")
+    {
         --user-panel-gap: 12px;
         --user-sidebar-gap: 6px;
     }
@@ -22,7 +26,11 @@
         --user-panel-gap: 6px; 
         --user-sidebar-gap: 3px;
 
-        @media (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") {
+        @media 
+            (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") 
+            or
+            (-moz-bool-pref: "uc.tweak.extra-thick") 
+        {
             --user-panel-gap: 10px; 
             --user-sidebar-gap: 5px;
         }
