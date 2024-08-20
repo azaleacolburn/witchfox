@@ -13,9 +13,12 @@ user_pref("browser.urlbar.suggest.calculator", true);
 // Integrated unit convertor at urlbar
 user_pref("browser.urlbar.unitConversion.enabled", true);
 
-/* Trim  URL */
+// Trim  URL
 user_pref("browser.urlbar.trimHttps", true);
 user_pref("browser.urlbar.trimURLs", true);
 
-/* show compact mode */
+// GTK rounded corners
+user_pref("widget.gtk.rounded-bottom-corners.enabled", true);
+
+// show compact mode
 user_pref("browser.compactmode.show", true);
