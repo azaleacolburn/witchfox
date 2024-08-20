@@ -60,7 +60,7 @@
     }
 
 
-    #main-window #urlbar[focused=true][open] {
+    #main-window #urlbar[breakout][breakout-extend] {
 
         position: fixed !important;
         top: 20vh !important;
@@ -80,7 +80,7 @@
         }    
     }
 
-    #urlbar:not([focused=true][open]) {
+    #urlbar:not([breakout][breakout-extend]) {
         & #urlbar-background { 
             background: transparent !important; 
         }
@@ -91,7 +91,7 @@
         }
     }
 
-    #urlbar:not([focused=true][open], :hover) #urlbar-input-container {
+    #urlbar:not([breakout][breakout-extend], :hover) #urlbar-input-container {
         & >  * {
             opacity: 0 !important;
         }
