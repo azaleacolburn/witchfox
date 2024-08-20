@@ -114,7 +114,7 @@
             
             toolbarspring  { flex-grow: 0 !important; }
             
-            #nav-bar-customization-target > *:not(#urlbar-container),
+            #nav-bar-customization-target > *,
             #nav-bar-overflow-button,
             #PanelUI-button {
                 opacity: 0 !important;
@@ -125,8 +125,8 @@
             #navigator-toolbox:hover,
             #nav-bar-customization-target:hover,
             #PanelUI-button:hover,
-            #urlbar:focus-within:not([searchmode=""]),
-            #urlbar[breakout][breakout-extend]:not([searchmode=""]),
+            #urlbar:focus-within,
+            #urlbar[breakout][breakout-extend],
             #nav-bar-overflow-button[open],
             #nav-bar-overflow-button:hover,
             #nav-bar-customization-target toolbarbutton[open="true"],
