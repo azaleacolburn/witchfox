@@ -6,6 +6,13 @@
 
 /* themes for about:* pages */
 
+button,
+html|select,
+html|input[type="color"], 
+xul|menulist {
+    border-radius: var(--uc-button-radius) !important;
+}
+
 @-moz-document 
 url-prefix("about:newtab"),
 url-prefix("about:privatebrowsing"),
@@ -23,6 +30,14 @@ url-prefix("about:home") {
         height: auto !important;
         border-radius: var(--uc-content-radius) !important;
         box-shadow: none !important;
+        margin: var(--uc-content-margin) !important;
+        
+        & .close-button-wrapper {
+            background-color: transparent !important;
+        }
+        & .wallpaper-list.category {
+            height: 90% !important;
+        }
     }
     .personalize-button {
         border-radius: var(--uc-radius) !important;
