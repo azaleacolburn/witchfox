@@ -42,7 +42,7 @@ html:not([sizemode="fullscreen"]) {
  
 /* appcontent */
  
-#sidebar-splitter, #sidebar-header {
+#sidebar-header {
   display: none !important;
 }
 
@@ -81,12 +81,28 @@ html:not([sizemode="fullscreen"])  {
 }
 
 #sidebar-box {
-  width: 170px !important;
+  width: 170px;
   min-width: 36px !important;
+}
+
+#sidebar-splitter {
+  border: none !important;
+  width: var(--user-panel-gap) !important;
+  margin-top: 40px !important;
+  margin-bottom: 40px !important;
+  margin-right: calc( -1 * var(--user-panel-gap) ) !important;
+  background-color: var(--toolbar-bgcolor) !important;
+  border-radius: var(--user-radius);
+}
+#sidebar-splitter:not(:hover) {
+  opacity: 0 !important;
 }
 
 /* dynamic sidebar */
 :root[titlepreface=""] {
+  #sidebar-splitter {
+    display: none !important;
+  }
   [titlepreface*="."] #sidebar-header {
     visibility: collapse !important;
   }
