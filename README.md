@@ -79,7 +79,7 @@ nyoom switch potatofox
 * `uc.tweak.sidebar-header` -> show sidebar header
 * `sidebar.position_start` -> whether the sidebar is on the left or right
 * `uc.tweak.sidebery-top-navbar` -> move the Sidebery navbar thingy from the bottom to the top
-* `uc.tweak.sidebery-big-pinned` -> Pinned tabs look like buttons, like Arc's pinned tabs
+* `uc.tweak.sidebery-big-pinned` -> Pinned tabs look like buttons, like Arc's pinned tabs (make sure to set Sidebery settings > tabs > pinned tabs > Show titles is off)
 * `uc.tweak.no-custom-icons` -> removes theming of some extensions icons
 * `uc.tweak.no-window-controls` -> hide window controls
 * `uc.tweak.regular-search` -> return urlbar to original state
