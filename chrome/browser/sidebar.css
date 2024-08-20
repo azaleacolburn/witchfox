@@ -174,8 +174,8 @@
                     height: 80%;
                     top: 10%;
                     bottom: auto !important;
-                    width: calc(var(--uc-content-margin)*0.5) !important;
-                    left: calc(var(--uc-content-margin)*0.25) !important;
+                    width: var(--uc-panel-hint-size) !important;
+                    left: calc(var(--uc-content-margin)*0.5 - var(--uc-panel-hint-size)*0.5) !important;
                     z-index: 199 !important;
                               
                     visibility: visible;
