@@ -91,7 +91,7 @@ toolbarspring {
     }
     
     @media not (-moz-bool-pref: "uc.tweak.borderless") {
-    &:not([sizemode="fullscreen"]) #navigator-toolbox {
+    &:not([customizing]):not([sizemode="fullscreen"]) #navigator-toolbox {
         &::before {
             content: "";
             position: absolute;
@@ -129,8 +129,9 @@ toolbarspring {
             margin-top: var(--nav-height) !important;
         }
         & #nav-bar {
+            margin-top: var(--uc-sidebar-margin) !important;
             top: var(--uc-content-margin-top) !important;
-            border: 1px solid var(--toolbarbutton-icon-fill) !important;
+            background-color: var(--uc-bg) !important;
         }
     }
     
