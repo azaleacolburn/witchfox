@@ -59,6 +59,11 @@
         --nav-height: 34.5px;
     }
     
+    --uc-navbar-hover-margin-top: calc(2*var(--uc-content-margin)); 
+    &[sizemode="fullscreen"] {
+        --uc-navbar-hover-margin-top: var(--uc-content-margin);
+    }
+
     #PersonalToolbar {
         display: none !important;
     }
@@ -144,7 +149,7 @@
             #PanelUI-menu-button[open="true"]
         ) {
             #nav-bar {
-                margin-top: calc(2*var(--uc-content-margin-top)) !important;
+                margin-top: var(--uc-navbar-hover-margin-top) !important;
 
                 #nav-bar-customization-target > *:not([disabled="true"]),
                 #nav-bar-overflow-button, #PanelUI-button:not([disabled="true"]) {opacity: 1 !important;}
