@@ -97,13 +97,13 @@
         }
     }
 
-    #main-window:not([titlepreface*="="]) #urlbar:not([breakout="true"][breakout-extend="true"], :hover) #urlbar-input-container {
-        & >  * {
-            opacity: 0 !important;
-        }
-        & .urlbar-input-box {
-            opacity: 100 !important;
-        }
-    }   
+    /* &:not([titlepreface*="="]) #urlbar:not([breakout="true"][breakout-extend="true"], :hover) #urlbar-input-container { */
+    /*     & >  * { */
+    /*         opacity: 0 !important; */
+    /*     } */
+    /*     & .urlbar-input-box { */
+    /*         opacity: 100 !important; */
+    /*     } */
+    /* }    */
 }
 }

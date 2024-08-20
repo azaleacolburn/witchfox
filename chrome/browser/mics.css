@@ -1,0 +1,74 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
+
+/* dev tools */
+splitter.devtools-horizontal-splitter {
+    opacity: 0 !important;
+}
+
+.devtools-side-splitter {
+    opacity: 0 !important;
+}
+
+.devtools-toolbox-bottom-iframe {
+    border-radius: var(--user-radius) !important;
+    margin-top: var(--user-panel-gap) !important;
+}
+
+.devtools-toolbox-side-iframe {
+    border-radius: var(--user-radius) !important;
+
+    &:first-child {
+        margin-inline-end: var(--user-panel-gap) !important;
+    }
+
+    &:last-child {
+        margin-inline-start: var(--user-panel-gap) !important;
+    }
+}
+
+.browserContainer.responsive-mode {
+    background-color: var(--lwt-accent-color) !important;
+}
+
+.browserContainer.responsive-mode > .browserStack > browser {
+    border: none !important;
+}
+
+.browserContainer.responsive-mode > .rdm-toolbar {
+    border-radius: var(--user-radius) !important;
+    background-color: var(--lwt-accent-color) !important;
+}
+
+/* screenshot tool */
+#screenshotsPagePanel {
+    screenshots-buttons {
+        top: var(--user-panel-gap) !important;
+        right: calc(var(--user-panel-gap)*2) !important;
+        
+        padding: var(--user-panel-gap) !important;
+        border-radius: var(--user-radius) !important;
+    }
+    
+    & .footer-button {
+        margin-inline-start: var(--user-panel-gap) !important;
+    }
+}
+
+#preview-image-container {
+    padding: var(--user-panel-gap) !important;
+    padding-top: 0px !important;
+}
+
+#preview-image {
+    border-radius: var(--user-radius) !important;
+}
+
+.dialogBox[sizeto="available"] {
+    border-radius: var(--user-radius) !important;
+    margin: var(--user-panel-gap) !important;
+}
+

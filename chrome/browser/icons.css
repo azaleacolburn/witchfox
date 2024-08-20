@@ -4,7 +4,7 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-/* Credit to artsyfriedchicken */
+/* Modifed from code by artsyfriedchicken */
 
 /* userChrome toggle => sidebar icon */
 :is(.webextension-browser-action, .eom-addon-button):is(
