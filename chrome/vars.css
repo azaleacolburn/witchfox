@@ -13,7 +13,7 @@
     --uc-sidebar-margin: 4px;
     --uc-radius: 5px;
      
-    &[uidensity=compact] {
+    &[uidensity="compact"] {
         --uc-content-margin: 8px;
         --uc-sidebar-margin: 3px;
     }

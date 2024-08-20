@@ -35,7 +35,7 @@ splitter.devtools-horizontal-splitter,
     --uc-content-margin-bottom: var(--uc-content-margin);
     --uc-content-margin-left: var(--uc-content-margin);
 
-    &:not([inDOMFullscreen="true"]) #appcontent {
+    &:not([inDOMFullscreen="true"], [chromehidden*="toolbar"], [chromehidden*="menubar"]) #appcontent {
         margin:
             var(--uc-content-margin-top)
             var(--uc-content-margin-right)

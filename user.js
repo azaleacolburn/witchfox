@@ -26,8 +26,8 @@ user_pref("browser.compactmode.show", true);
 // fix sidebar tab drag on linux
 user_pref("widget.gtk.ignore-bogus-leave-notify", 1);
 
-// option for transparent tab bg (comment out to due issues on some websites)
-// user_pref("browser.tabs.allow_transparent_browser", true);
+// option for transparent tab bg (disabled to due issues on some websites)
+user_pref("browser.tabs.allow_transparent_browser", false);
 
 // uidensity -> compact
 user_pref("browser.uidensity", 1)

@@ -8,17 +8,15 @@
   #sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"]:not([hidden])
 ) {
     /* adjust #appcontent margin */
-    &:not(:has(#sidebar-box[positionend="true"])) {
+    &:has(#sidebar-box:not([positionend="true"])) {
         --uc-content-margin-left: 0px !important;
     } &:has(#sidebar-box[positionend="true"]) {
         --uc-content-margin-right: 0px !important;
     }
     
-    &[titlepreface*="="] #sidebar-box {
-        margin-top: var(--uc-sidebar-margin)
-    } #sidebar-box {
+    #sidebar-box {
         min-width: var(--uc-sidebar-width) !important;
-        margin-bottom: var(--uc-sidebar-margin);
+        margin-block: var(--uc-content-margin-top) !important;
         &[positionend="true"] {
             margin-right: var(--uc-sidebar-margin);
         } &:not([positionend="true"]) {
@@ -40,8 +38,7 @@
         border: none !important;
         border-top-left-radius: var(--uc-radius) !important;
         border-top-right-radius: var(--uc-radius) !important;
-        
-
+        margin-inline: none !important; 
     }
     
     #sidebar-header {

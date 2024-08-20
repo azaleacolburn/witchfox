@@ -32,7 +32,6 @@
 #PanelUI-menu-button {
     padding: 0 var(--toolbarbutton-outer-padding) !important;
 }
-
 #nav-bar-customization-target > :is(toolbarbutton, toolbaritem):first-child, 
 #nav-bar-customization-target > toolbarpaletteitem:first-child > :is(toolbarbutton, toolbaritem) {
     padding-inline-start: 0px !important;
