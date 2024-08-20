@@ -95,6 +95,9 @@
         height: 12px !important;
         width: 12px !important;
     }
+    .Tab .child-count {
+        display: none !important;
+    }
     .Tab[data-audible="true"] .t-box .title, .Tab[data-muted="true"] .t-box .title, .Tab[data-paused="true"] .t-box .title {
         transform: translateX(0px) !important;
     }
