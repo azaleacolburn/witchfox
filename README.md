@@ -13,7 +13,7 @@ Tested on Linux, MacOS, and Windows.
 - option to hide the navbar for a ultra-minimal experience 
 - general visual enhancements  
 - custom SVG icons for some extensions
-- support for vertical tabs on the right
+- support for vertical tabs on the left or right
 
 ## Screenshots
 
