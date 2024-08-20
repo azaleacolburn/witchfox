@@ -4,7 +4,7 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-#main-window:not([customizing]) {
+#main-window:not([customizing]):has(#sidebar-box:not([hidden="true"])) {
     /* adjust #appcontent margin */
     &:has(#sidebar-box:not([positionend="true"])) {
         --uc-content-margin-left: 0px !important;
