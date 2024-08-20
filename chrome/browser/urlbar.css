@@ -45,7 +45,7 @@
         background-color: var(--toolbar-field-background-color) !important;
     }
     
-    #main-window #urlbar {
+    #urlbar {
         z-index: 9999 !important;
         opacity: 100 !important;
         margin-top: 0 !important;
