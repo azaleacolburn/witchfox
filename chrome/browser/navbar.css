@@ -107,6 +107,7 @@
             width: 100% !important;
             background-color: var(--uc-bg-opaque) !important;
             z-index: 100 !important;
+            border: 1px solid var(--toolbarbutton-icon-fill) !important;
             
             toolbarspring  { flex-grow: 0 !important; }
             
