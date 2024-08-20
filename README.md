@@ -34,7 +34,7 @@ Required Extension:
 * [Userchrome Toggle Extended](https://addons.mozilla.org/en-US/firefox/addon/userchrome-toggle-extended)
 * [Firefox Color](https://addons.mozilla.org/en-US/firefox/addon/firefox-color) (**Strongly** recommend on Linux, otherwise the window controls may look strange)
 
-Open the [releases tab](https://codeberg.org/awwpotato/PotatoFox/releases) and download the correct release for your version of Firefox (Urlbar > about:support > Application Basics > Version). Then copy the chrome directory and user.js file into your Firefox profiles directory (about:support > Application Basics > Profile Directory). Then restart firefox.
+Open the [releases tab](https://codeberg.org/awwpotato/PotatoFox/releases) and download the correct release for your version of Firefox (Urlbar > about:support > Application Basics > Version). Then copy the chrome directory and user.js file into your Firefox profiles directory (about:support > Application Basics > Profile Directory), then restart Firefox.
 
 ## Post Install
 
