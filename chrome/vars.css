@@ -13,6 +13,8 @@
     --uc-button-radius: 5px;
     --uc-content-radius: 5px;
     
+    --uc-panel-hint-size: clamp(2px, calc(var(--uc-content-margin)*0.5), 5px);
+    
     --uc-content-margin: 10px;
     --uc-sidebar-margin: 4px;
      

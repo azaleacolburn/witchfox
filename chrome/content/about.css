@@ -49,7 +49,7 @@ url-prefix("about:addons") {
         :root {
             --in-content-page-background: transparent !important;
             --in-content-table-background: transparent !important;
-/*             --in-content-table-header-background: 
+            /* --in-content-table-header-background: 
                 color-mix(in srgb, var(--in-content-primary-button-background), transparent 80%) !important;  */
             --in-content-box-background: 
                 color-mix(in srgb, var(--background-color-box), transparent 80%) !important; 

@@ -70,9 +70,9 @@
         &::before {
             content: "";
             position: absolute;
-            top: calc(var(--uc-content-margin)*0.25) !important;
+            top: calc(var(--uc-content-margin)*0.5 - var(--uc-panel-hint-size)*0.5) !important;
             width: 100%;
-            height: calc(var(--uc-content-margin)*0.5) !important;
+            height: var(--uc-panel-hint-size) !important;
             background-color: var(--uc-panel-hint) !important;
             border-radius: var(--uc-radius) !important;
             transition: opacity var(--uc-transition) !important;
