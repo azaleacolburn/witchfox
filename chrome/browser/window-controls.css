@@ -27,6 +27,16 @@
         #nav-bar {
             margin-left: 68px !important;
         }
+    }   
+
+    @media (-moz-platform: windows) {
+        .titlebar-buttonbox-container {
+            top: 0 !important;
+            right: 0 !important;
+        }
+        #nav-bar {
+            margin-right: 138px !important;
+        }
     }
 
     @media (-moz-platform: linux) {
