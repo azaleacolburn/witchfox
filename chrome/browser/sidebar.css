@@ -83,12 +83,16 @@
 
     
     @media (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") { 
-        #sidebar-box:hover #sidebar-header,
-        #sidebar-box:hover #sidebar {
-            padding: 0 var(--user-sidebar-gap) !important;
-            background-color: var(--user-bg) !important;
-            transition: min-width 0s, width 0s, padding 0s !important;
-            transition-delay: 2ms !important;
+        #sidebar-box:hover {
+            & #sidebar-header, #sidebar {
+                padding: 0 var(--user-sidebar-gap) !important;
+                background-color: var(--user-bg) !important;
+                transition: min-width 0s, width 0s, padding 0s !important;
+                transition-delay: 2ms !important;
+            }
+            &::before {
+                background-color: transparent !important;
+            }
         }
         #sidebar-box {
             max-width: var(--user-panel-gap) !important;
@@ -106,9 +110,27 @@
                 transition: min-width 0s, width 0s, padding 0s !important;
                 transition-delay: 2ms !important;
             }
+
+            &::before {
+                content: "";
+                position: absolute;
+                opacity: 1 !important;
+                background-color: var(--user-panel-hint) !important;
+                border-radius: var(--user-radius) !important;
+                transition: var(--user-transition) !important;                 
+                visibility: visible;
+                display: unset;
+
+                height: 80%;
+                top: 10%;
+                bottom: auto !important;
+                width: calc(var(--user-panel-gap)*0.5) !important;
+                left: calc(var(--user-panel-gap)*0.25) !important;
+                z-index: 199 !important;
+            }
         }
         #sidebar-box:not(:hover) {
-            opacity: 0 !important;
+            & > * { opacity: 0 !important; }
             & #sidebar-header, & #sidebar {
                 min-width: 0px !important;
                 transition: min-width 0s, width 0s, padding 0s !important;

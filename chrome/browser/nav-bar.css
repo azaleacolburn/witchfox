@@ -51,10 +51,10 @@
     #main-window[titlepreface*="="] {
         --nav-width: clamp(400px, 60vw, 850px);
         --nav-height: 38px;
-        &[uidensity=compact]{
+        &[uidensity=compact] {
             --nav-height: 34.5px;
             @media (-moz-bool-pref: "uc.tweak.extra-compact") {
-                --nav-height;
+                --nav-height 28px;
             }
         }
         
@@ -74,9 +74,9 @@
             &::before {
                 content: "";
                 position: absolute;
-                top: 0px !important;
+                top: calc(var(--user-panel-gap)*0.25) !important;
                 width: 100%;
-                height: calc(var(--user-panel-gap)*0.75) !important;
+                height: calc(var(--user-panel-gap)*0.5) !important;
                 background-color: var(--user-panel-hint) !important;
                 border-radius: var(--user-radius) !important;
                 transition: var(--user-transition) !important;
