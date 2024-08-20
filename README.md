@@ -1,7 +1,5 @@
 ![](Media/Screenshot0.png)
 
-### **Not Tested** on Windows!!
-
 ## Install Instructions
 
 Extension:
