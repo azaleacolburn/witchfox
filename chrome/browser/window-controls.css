@@ -5,6 +5,9 @@
     
     .titlebar-buttonbox-container {
         height: 40px !important;
+        visibility: visible !important;
+        z-index: 100 !important;
+        position: absolute !important;
     }
     :root[uidensity=compact] .titlebar-buttonbox-container { 
         height: 34px !important; 
@@ -19,11 +22,6 @@
     }
 
     @media (-moz-platform: macos ) {
-        .titlebar-buttonbox-container {
-            visibility: visible !important;
-            z-index: 100 !important;
-            position: absolute !important;
-        }
         #nav-bar {
             margin-left: 68px !important;
         }
@@ -58,12 +56,7 @@
             }
             
         }
-        
-        .titlebar-buttonbox-container {
-            position: absolute;
-            visibility: visible !important;
-            z-index: 100 !important;
-        }
+
         @media not (-moz-gtk-csd-reversed-placement) {
             #nav-bar { margin-right: var(--gtk-window-button-width) !important; }
             .titlebar-buttonbox-container { right: 0; }
@@ -73,7 +66,4 @@
             .titlebar-buttonbox-container { left: 0; }
         }
     }   
-    
-    
-
 }
