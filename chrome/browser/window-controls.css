@@ -42,7 +42,7 @@
         #toolbar-menubar > .titlebar-buttonbox-container {
             visibility: collapse !important;
         }
-        :root {
+        & {
             @media (-moz-gtk-csd-minimize-button) or (-moz-gtk-csd-maximize-button) or (-moz-gtk-csd-close-button) {
                 --gtk-window-button-width: 36px;
                 @media (-moz-bool-pref: "uc.tweak.extra-thin-nav-bar") {
