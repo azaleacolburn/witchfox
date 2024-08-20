@@ -80,6 +80,9 @@ nyoom switch potatofox
 * `uc.tweak.translucency` -> **EXPERIMENTAL** translucency support
 * `browser.tabs.allow_transparent_browser` -> allow tab contents to have transparent bg (requires `uc.tweak.translucency`)
 
+### Advanced Configuration
+The variables used by the theme are in `vars.css` and `userChrome.css` (colors). If you would like to ensure there aren't git conflicts you can add a `overrides.css` file in the `chrome` file and override the variables from `vars.css` in there (using `!important;` is necessary). Keep in mind the theme defaults to using `uidensity="compact"`, so you will want to change the variables inside there.
+ 
 ## Credits
 
 [KiKaraage](https://github.com/KiKaraage/ArcWTF) - ArcWTF
