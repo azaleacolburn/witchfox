@@ -67,6 +67,18 @@
         padding: var(--tabs-margin) !important;
     }
     
+    .NavigationBar.-top .hidden-panels-popup {
+        position: absolute !important;
+        margin-top: -1000px !important;
+        top: auto !important;
+        bottom: 36px !important;
+        
+    }
+    .NavigationBar.-top .hidden-panels-popup-layer::before {
+        display: none !important;
+        background-color: transparent !important;
+    }
+    
     /* tab audio indicator */
     .Tab .audio {
         top: 2px !important;
