@@ -1,3 +1,5 @@
+# PotatoFox
+
 ![Firefox with Custom CSS applied](Media/Screenshot0.png)
 
 ## Compatibility
