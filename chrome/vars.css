@@ -14,7 +14,7 @@
     --uc-button-radius: 5px;
     --uc-content-radius: 5px;
     
-    --uc-panel-hint-size: clamp(2px, calc(var(--uc-content-margin)*0.5), 5px);
+    --uc-panel-hint-size: clamp(min(4px, var(--uc-content-margin)), calc(var(--uc-content-margin)*0.5), 5px);
     
     --uc-hover-margin: 10px;
     --uc-content-margin: 8px;
