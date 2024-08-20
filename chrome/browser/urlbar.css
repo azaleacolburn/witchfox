@@ -77,13 +77,8 @@
         }    
     }
     
-    #urlbar:not([breakout="true"][breakout-extend="true"]) {
-        & #urlbar-background { 
-            background: transparent !important; 
-        }
-        & .urlbar-input-container {
-            text-align: center !important;
-            & .urlbar-input-box { transition: none !important; }
-        }
+    #urlbar:not([breakout="true"][breakout-extend="true"]) .urlbar-input-container {
+        text-align: center !important;
+        & .urlbar-input-box { transition: none !important; }
     }
 }}
