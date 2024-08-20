@@ -24,7 +24,7 @@
     }
     
     /* sidebar vars */
-    &[titlepreface*="؜"] {
+    &:is([titlepreface*="؜"], [titlepreface*="‌"]) {
         --uc-sidebar-hover-width: 200px;
         --uc-autohide-sidebar-delay: 0ms;
     }

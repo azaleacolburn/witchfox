@@ -62,15 +62,15 @@ splitter.devtools-horizontal-splitter,
                 background-color: transparent !important;
             }
             
-                    /* navbar collapse */
+            /* not navbar collapse */
             &:not([titlepreface*="​"]) {
                 & #appcontent browser {
                     border-top-left-radius: var(--uc-content-radius) !important;
                     border-top-right-radius: var(--uc-content-radius) !important;
                 }
             }
-            
-            @media not (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") { 
+            /* not sidebar full collapse */
+            &:not([titlepreface*="‌"]) { 
                 &:has(#sidebar-box:not([positionend="true"])) #appcontent browser {
                     border-top-left-radius: var(--uc-content-radius) !important;
                     border-bottom-left-radius: var(--uc-content-radius) !important;
@@ -79,16 +79,15 @@ splitter.devtools-horizontal-splitter,
                     border-bottom-right-radius: var(--uc-content-radius) !important;
                 } 
             }
-            @media (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") {
-                &:not([titlepreface*="؜"]) { 
-                    &:has(#sidebar-box:not([positionend="true"])) #appcontent browser {
-                        border-top-left-radius: var(--uc-content-radius) !important;
-                        border-bottom-left-radius: var(--uc-content-radius) !important;
-                    } &:has(#sidebar-box[positionend="true"]) #appcontent browser {
-                        border-top-right-radius: var(--uc-content-radius) !important;
-                        border-bottom-right-radius: var(--uc-content-radius) !important;
-                    } 
-                }
+            /* sidebar full collapse */
+            &[titlepreface*="‌"] {
+                &:has(#sidebar-box:not([positionend="true"])) #appcontent browser {
+                    border-top-left-radius: var(--uc-content-radius) !important;
+                    border-bottom-left-radius: var(--uc-content-radius) !important;
+                } &:has(#sidebar-box[positionend="true"]) #appcontent browser {
+                    border-top-right-radius: var(--uc-content-radius) !important;
+                    border-bottom-right-radius: var(--uc-content-radius) !important;
+                } 
             }
         }
     }
@@ -101,15 +100,15 @@ splitter.devtools-horizontal-splitter,
             clip-path: circle(100%);
             background-color: transparent !important;
         }
-                /* navbar collapse */
+        /* not navbar collapse */
         &:not([titlepreface*="​"]) {
             & #appcontent browser {
                 border-top-left-radius: var(--uc-content-radius) !important;
                 border-top-right-radius: var(--uc-content-radius) !important;
             }
         }
-
-        @media not (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") { 
+        /* not sidebar full collapse */
+        &:not([titlepreface*="‌"]) { 
             &:has(#sidebar-box:not([positionend="true"])) #appcontent browser {
                 border-top-left-radius: var(--uc-content-radius) !important;
                 border-bottom-left-radius: var(--uc-content-radius) !important;
@@ -118,17 +117,15 @@ splitter.devtools-horizontal-splitter,
                 border-bottom-right-radius: var(--uc-content-radius) !important;
             } 
         }
-        @media (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") {
-                    /* sidebar collapse */
-            &:not([titlepreface*="؜"]) { 
-                &:has(#sidebar-box:not([positionend="true"])) #appcontent browser {
-                    border-top-left-radius: var(--uc-content-radius) !important;
-                    border-bottom-left-radius: var(--uc-content-radius) !important;
-                } &:has(#sidebar-box[positionend="true"]) #appcontent browser {
-                    border-top-right-radius: var(--uc-content-radius) !important;
-                    border-bottom-right-radius: var(--uc-content-radius) !important;
-                } 
-            }
+        /* sidebar full collapse */
+        &[titlepreface*="‌"] {
+            &:has(#sidebar-box:not([positionend="true"])) #appcontent browser {
+                border-top-left-radius: var(--uc-content-radius) !important;
+                border-bottom-left-radius: var(--uc-content-radius) !important;
+            } &:has(#sidebar-box[positionend="true"]) #appcontent browser {
+                border-top-right-radius: var(--uc-content-radius) !important;
+                border-bottom-right-radius: var(--uc-content-radius) !important;
+            } 
         }
     }
 

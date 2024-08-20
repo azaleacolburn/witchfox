@@ -82,8 +82,8 @@
         }
     }
   
-    /* sidebar collapse */
-    &[titlepreface*="؜"] {
+    /* sidebar collapse */          /* full collapse */
+    &:is([titlepreface*="؜"], [titlepreface*="‌"]) {
         #sidebar-splitter {
             display: none !important;
         }
@@ -121,7 +121,8 @@
             background-color: var(--uc-bg) !important;
         }
          
-        @media (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") { 
+        /* sidebar full collapse */
+        &[titlepreface*="‌"] { 
             #sidebar-box {
                 min-width: var(--uc-content-margin) !important;
                 max-width: var(--uc-content-margin) !important;

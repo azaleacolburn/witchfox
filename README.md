@@ -71,7 +71,6 @@ nyoom switch potatofox
 
 * `uc.tweak.borderless` -> removes margins around the webpage
 * `uc.tweak.sidebar-header` -> show sidebar header
-* `uc.tweak.sidebar-full-collapse` -> make sidebar fully hidden when collapse (like the hidden navbar)
 * `sidebar.position_start` -> whether the sidebar is on the left or right
 * `uc.tweak.sidebery-top-navbar` -> move the Sidebery navbar thingy from the bottom to the top
 * `uc.tweak.no-window-controls` -> hide window controls
