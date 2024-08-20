@@ -10,18 +10,23 @@ Tested on Linux, MacOS, and Windows.
 
 - collapsing vertical tabs using Sidebery 
 - pop-up arc-like urlbar
-- option to hide the navbar for a ultra-minimal experience 
+- option to hide the navbar  
+- ability to remove borders around webpage for an ultra minimal experience
 - general visual enhancements  
 - custom SVG icons for some extensions
 - support for vertical tabs on the left or right
 
 ## Screenshots
 
-![](./Media/Screenshot1.png)
+![Potatofox theme with sidebar collapsed](./Media/Screenshot1.png)
 
-![](./Media/Screenshot2.png)
+![Potatofox theme with navbar and sidebar collapsed](./Media/Screenshot2.png)
 
-![](./Media/Screenshot3.png)
+![Potatofox theme with navbar and sidebar collapsed while the urlbar is floating](./Media/Screenshot3.png)
+
+![Potatofox theme with navbar and sidebar fully collapsed](./Media/Screenshot4.png)
+
+![borderless Potatofox theme with navbar and sidebar collapsed](./Media/Screenshot5.png)
 
 ## Install Instructions
 
