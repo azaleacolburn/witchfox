@@ -4,7 +4,7 @@
 
 ## Compatibility
 
-Works on Linux, Macos, and Windows. Recommended to add spacers to navbar as to have somewhere to grab with your mouse.
+Tested on Linux, MacOS, and Windows. 
 
 ## Features
 
