@@ -31,7 +31,7 @@ Tested on Linux, MacOS, and Windows.
 Required Extension:
 
 * [Sidebery](https://addons.mozilla.org/en-US/firefox/addon/sidebery)
-* [Userchrome Toggle](https://addons.mozilla.org/en-US/firefox/addon/userchrome-toggle/)
+* [Userchrome Toggle Extended](https://addons.mozilla.org/en-US/firefox/addon/userchrome-toggle-extended)
 * [Firefox Color](https://addons.mozilla.org/en-US/firefox/addon/firefox-color)
 
 Download and move the chrome folder and user.js into your profiles root directory (about:profiles > default-release > Root Directory > Open Folder)
