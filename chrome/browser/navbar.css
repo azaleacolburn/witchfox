@@ -3,8 +3,8 @@
 * License, v. 2.0. If a copy of the MPL was not distributed with this
 * file, You can obtain one at https://mozilla.org/MPL/2.0/.
 */
-
-:root:not([titlepreface*="="], [inDOMFullscreen="true"]) {
+          /* navbar collapse */
+:root:not([titlepreface*="​"], [inDOMFullscreen="true"]) {
     --uc-content-margin-top: 0px !important;
 }
 
@@ -50,8 +50,8 @@
 
 /* tab bar */
 #TabsToolbar { display: none !important; }
-
-#main-window[titlepreface*="="]:not([inDOMFullscreen="true"]) {
+            /* navbar collapse */
+#main-window[titlepreface*="​"]:not([inDOMFullscreen="true"]) {
     --uc-content-margin-top: var(--uc-content-margin) !important;
     --nav-width: clamp(400px, 75vw, 1000px);
     --nav-height: 38px;

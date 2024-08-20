@@ -3,8 +3,8 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
-
-:root[titlepreface*="="] .titlebar-buttonbox-container {
+    /* navbar collapse */
+:root[titlepreface*="​"] .titlebar-buttonbox-container {
     display: none !important;
 }
 
@@ -15,7 +15,8 @@
 }
 
 @media not (-moz-bool-pref: "uc.tweak.no-window-controls") { 
-:root:not([inDOMFullscreen], [titlepreface*="="]) {
+                                /* navbar collapse */
+:root:not([inDOMFullscreen], [titlepreface*="​"]) {
     
     & .titlebar-buttonbox-container {
         z-index: 100 !important;

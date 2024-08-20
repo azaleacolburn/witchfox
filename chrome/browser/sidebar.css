@@ -27,7 +27,8 @@
     }
     
     @media (-moz-bool-pref: "uc.tweak.borderless") {
-        &[titlepreface*="="] #sidebar-box {
+        /* navbar collpase */
+        &[titlepreface*="​"] #sidebar-box {
             margin-top: var(--uc-sidebar-margin) !important;
         }
     }
@@ -71,8 +72,9 @@
         }
         #sidebar-close { display: none !important; }
     }
-     
-    &[sizemode="fullscreen"][titlepreface*="="] #sidebar-box {
+    
+    /* navbar collapse */
+    &[sizemode="fullscreen"][titlepreface*="​"] #sidebar-box {
         margin-top: 0 !important;
         height: 100% !important;
         & #sidebar {
@@ -81,7 +83,7 @@
     }
   
     /* sidebar collapse */
-    &[titlepreface*="-"] {
+    &[titlepreface*="؜"] {
         #sidebar-splitter {
             display: none !important;
         }
