@@ -4,6 +4,23 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
+#identity-box[pageproxystate="valid"]:is(.notSecureText, .chromeUI, .extensionPage) > 
+.identity-box-button {
+    
+    &:not(:hover){
+        background-color: transparent !important;        
+    }
+    & image {
+        list-style-image: url("../icons/firefox.svg") !important;
+    }
+    
+    & #identity-icon-label {
+        display: none !important;
+    }
+
+    fill: var(--toolbarbutton-icon-fill) !important;
+}
+
 @media not (-moz-bool-pref: "uc.tweak.regular-url") {
 #main-window:not([customizing]) {
     
