@@ -133,14 +133,20 @@
                 max-width: var(--uc-content-margin) !important;
                 margin-inline: 0px !important;
                 
-                & #sidebar, & #sidebar-header {
+                & #sidebar, 
+                & #sidebar-header {
                     will-change: auto !important;
-                    transition: margin var(--uc-transition) !important;
+                    transition: margin var(--uc-transition) var(--uc-mouseout-delay) !important;
                     
                     margin-left: calc(-1 * (var(--uc-sidebar-hover-width) + var(--uc-content-margin-left))) !important;
                     min-width: var(--uc-sidebar-hover-width) !important;
                     max-width: var(--uc-sidebar-hover-width) !important;
                     background-color: var(--uc-bg-opaque) !important;
+                }
+                
+                &:hover #sidebar,
+                &:hover #sidebar-header {
+                    transition: margin var(--uc-transition) !important;
                 }
                 
                 & #sidebar-header { margin-top: var(--uc-content-margin) !important; }
