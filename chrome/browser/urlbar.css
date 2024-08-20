@@ -20,6 +20,10 @@
         margin: auto !important;
     }
     
+    #urlbar-background {
+        border: none !important;
+    }
+    
     #main-window #urlbar {
         z-index: 9999 !important;
         opacity: 100 !important;
@@ -46,7 +50,7 @@
         z-index: 100 !important;
         margin-left: auto !important;
         margin-right: auto !important;
-
+        
         /* transition: width 0.3s ease, left 0.3s ease, margin-top 0.3s ease, margin-left 0.3s ease, margin-right 0.3s ease; */
         .urlbar-input {
             font-size: 16px !important;
@@ -59,7 +63,6 @@
         }
         & .urlbar-input-container {
             text-align: center !important;
-        /*     & > * { transition: opacity 1s ease-out; } */
             & .urlbar-input-box { transition: none !important; }
         }
     }

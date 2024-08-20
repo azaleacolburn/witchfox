@@ -8,11 +8,11 @@ Tested on Linux, MacOS, and Windows.
 
 ## Features
 
-- collapsing sidebery tabs 
-    - with option to fully collapse 
-- pop up arc-like url bar
+- collapsing Sidebery tabs 
+- pop up arc-like urlbar
+- option to hide the navbar for a ultra-minimal experience 
 - general visual enhancements  
-- custom svg icons for some extensions
+- custom SVG icons for some extensions
 
 ## Screenshots
 
@@ -22,26 +22,23 @@ Tested on Linux, MacOS, and Windows.
 
 ![](./Media/Screenshot3.png)
 
-![](./Media/Screenshot4.png)
-
-![](./Media/Screenshot5.png)
-
 ## Install Instructions
 
 Required Extension:
 
 * [Sidebery](https://addons.mozilla.org/en-US/firefox/addon/sidebery)
 * [Userchrome Toggle Extended](https://addons.mozilla.org/en-US/firefox/addon/userchrome-toggle-extended)
-* [Firefox Color](https://addons.mozilla.org/en-US/firefox/addon/firefox-color) (**Strongly** recommend on Linux, otherwise the window controls may look strange)
+* [Firefox Color](https://addons.mozilla.org/en-US/firefox/addon/firefox-color) (optional)
 
 Open the [releases tab](https://codeberg.org/awwpotato/PotatoFox/releases) and download the correct release for your version of Firefox (Urlbar > about:support > Application Basics > Version). Then copy the chrome directory and user.js file into your Firefox profiles directory (about:support > Application Basics > Profile Directory), then restart Firefox.
 
 ## Post Install
 
 - Press `ctrl+shift+1` or `cmd+shift+1` -> toggle sidebar collapsing
-- Press `ctrl+shift+2` or `cmd+shift+2` -> toggle floating navbar (requires `uc.tweak.no-window-controls` to be enabled)
+- Press `ctrl+shift+2` or `cmd+shift+2` -> toggle floating navbar 
 - Import Sidebery config ( Sidebery Settings > Help > Import addon data )
 - Import Firefox Color [Theme](https://color.firefox.com/?theme=XQAAAAJIBAAAAAAAAABBqYhm849SCicxcUcPX38oKRicm6da8pG5gi-DrbS7fiEFLUzDsWXWyUHMSkHZ2PpRK_LvZGTF44fp7VnVXujpkKMjvOWQSIhdK22u1ZG2EgdMyNMx_0oKJ3H9Aulj_W-sLqp3C7P9xxbnSMyQXGvfNmFAc8Mw6b7sZVymuhR0izERZjptFUVqlI0Zglmvbx7Aqqf1yCNtF2ljYjJBJ2zeQ3SGqmjknTFkU7hkVMy3aRrVafVheQXSAb6urDunQ8LZD2shNDvg5bN-ozZG255xn3hB1gfB1yVOKWNg9jJYn6DntzqTwzgEmwpEgPB4NyBczypZzFqtS5oB-cT0e_lH4lrI8tO01TfXk0UUp6n29KfQU8nu5zesYpVUZThdOvZPqE6CpFbMooJ1cL6fU-TdtOGpTkrgd2fzHgwJX6a54v0tN0aHaAQD3jj-0fqNVcm4Lg-8eyxZ09ItqMLD48JaDU9OFPtiCyyvpsoYYfuZf9osapMO72ZS-AfpMq9oF6ZHatA6Xvt7B8-XGebHGtdzq0PHgpkZPu-zwq2PPoCCFGzjkUZVjpBGQm7UXoevFP_2oiQt) (Optional)
+- about:addons (url) > Userchrome Toggle Extended preferences > General settings > allow multiple styles to be active together, apply changes 
 
 ### about:config tweaks
 
@@ -53,7 +50,7 @@ Open the [releases tab](https://codeberg.org/awwpotato/PotatoFox/releases) and d
 
 `uc.tweak.no-panel-hint` -> hide the small bars showing location of hidden panels
 
-`uc.tweak.translucency` -> **EXPERIMENTAL** translucency support  
+`uc.tweak.translucency` -> **EXPERIMENTAL** translucency support
 
 ## Credits
 
