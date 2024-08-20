@@ -1,4 +1,3 @@
-# README
 
 ![](Media/Screenshot0.png)
 
