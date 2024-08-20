@@ -86,6 +86,7 @@
         height: calc(var(--tabs-height) + var(--tabs-margin)) !important;
         width: calc(100% - var(--tabs-margin)*2) !important;
         padding: 0px !important;
+        padding-bottom: var(--tabs-margin) !important;
         margin: 0 var(--tabs-margin);
         border-radius: var(--tabs-border-radius);
         
