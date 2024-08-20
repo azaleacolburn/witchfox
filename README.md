@@ -42,25 +42,16 @@ Open the [releases tab](https://codeberg.org/awwpotato/PotatoFox/releases) and d
 - about:addons (url) > Userchrome Toggle Extended preferences > General settings > allow multiple styles to be active together, apply changes 
 
 
-<details> <summary> about:config tweaks </summary>
-<br/>
+### about:config tweaks 
 
-`uc.tweak.sidebar-header` -> show sidebar header
-
-`uc.tweak.sidebar-full-collapse` -> make sidebar fully hidden when collapse (like the hidden navbar)
-
-`sidebar.position_start` -> whether the sidebar is on the left or right
-
-`uc.tweak.no-window-controls` -> hide window controls
-
-`uc.tweak.regular-search` -> return urlbar to original state
-
-`uc.tweak.no-panel-hint` -> hide the small bars showing location of hidden panels
-
-`uc.tweak.translucency` -> **EXPERIMENTAL** translucency support
-
-`browser.tabs.allow_transparent_browser` -> allow tab contents to have transparent bg (requires `uc.tweak.translucency`)
-</details>
+* `uc.tweak.sidebar-header` -> show sidebar header
+* `uc.tweak.sidebar-full-collapse` -> make sidebar fully hidden when collapse (like the hidden navbar)
+* `sidebar.position_start` -> whether the sidebar is on the left or right
+* `uc.tweak.no-window-controls` -> hide window controls
+* `uc.tweak.regular-search` -> return urlbar to original state
+* `uc.tweak.no-panel-hint` -> hide the small bars showing location of hidden panels
+* `uc.tweak.translucency` -> **EXPERIMENTAL** translucency support
+* `browser.tabs.allow_transparent_browser` -> allow tab contents to have transparent bg (requires `uc.tweak.translucency`)
 
 ## Credits
 
