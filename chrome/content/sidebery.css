@@ -19,7 +19,7 @@
         }
     }
 
-    @media (max-width: 60px) {
+    @media (max-width: 40px) {
         .TabsPanel {
             --tabs-indent: 0px !important; 
         }
@@ -27,7 +27,23 @@
             --bookmarks-indent: 0px !important;
         }
     }
-     
+    
+    .NavigationBar .main-items .nav-item[data-index="-1"]:not([data-active="true"]), 
+    .NavigationBar:not(:has(.nav-item:not([data-index="-1"]))) .static-btns {
+        display: none !important;
+    }
+    @media (max-width: 66px ) {
+        .NavigationBar .static-btns {
+            display: none !important;
+        }
+    }
+    
+    .NavigationBar .main-items .nav-item[data-index="-1"] {
+        opacity: 1 !important;
+        z-index: 1 !important;
+        transform: scale(1,1) !important;
+    }
+    
     .TabsPanel .new-tab-btns {
         padding: 0 var(--tabs-margin) !important;
     }
