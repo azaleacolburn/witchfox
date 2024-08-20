@@ -125,7 +125,9 @@
             #urlbar[breakout][breakout-extend],
             #nav-bar-overflow-button[open],
             #nav-bar-overflow-button:hover,
-            #nav-bar-customization-target toolbarbutton[open="true"]
+            #nav-bar-customization-target toolbarbutton[open="true"],
+            .urlbar-input-container > *[role="button"][open="true"],
+            #identity-box > *[role="button"][open="true"]
         ) {
             #nav-bar {
                 margin-top: calc(2*var(--uc-content-margin-top)) !important;
