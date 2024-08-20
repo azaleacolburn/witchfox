@@ -127,7 +127,7 @@ html:not([sizemode="fullscreen"])  {
   transition-delay: 0ms !important;
 }
 /* navbar animation */
-
+/*
 #nav-bar {
     display: flex;
     justify-content: center;
@@ -159,7 +159,7 @@ html:not([sizemode="fullscreen"])  {
     margin-top: 25vh !important;
     transition: width 0.3s ease, left 0.3s ease, margin-top 0.3s ease, margin-left 0.3s ease, margin-right 0.3s ease;
 }
-
+*/
 /* remove sidebar button bg */
 toolbar .toolbarbutton-1 {
   &:not([disabled], :hover:active) {
