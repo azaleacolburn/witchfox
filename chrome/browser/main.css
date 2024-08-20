@@ -18,30 +18,11 @@ html:not([sizemode="fullscreen"]) {
         margin-top: 0 !important;
     }
     
-    #appcontent .browserStack {
+    #appcontent browser {
         border-radius: var(--user-radius);
-        box-shadow: var(--user-rounded-corners-shadow) !important;
         background-color: transparent;
-        
-        &::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            border-radius: inherit;
-            /* Draw toolbar background on the negative corner space, then draw the
-            * same from the browser window shadow on top. */
-            box-shadow:
-                var(--uc-tweak-rounded-corners-shadow, 0 0 transparent),
-                0 0 0 16px var(--user-bg) !important;       
-            @media (-moz-bool-pref: "uc.tweak.translucency") {
-                box-shadow:
-                    var(--uc-tweak-rounded-corners-shadow, 0 0 transparent),
-                    0 0 0 16px transparent !important;
-            }
-            clip-path: inset(0);
-            pointer-events: none;
-        }
-    }
+        clip-path: circle(100%);
+    } 
 }
 
 #identity-box.extensionPage {

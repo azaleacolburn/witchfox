@@ -2,9 +2,11 @@
 @import url("vars.css");
 
 :root {
-    --user-bg: rgb(27, 26, 32) !important;
-    @media (-moz-bool-pref: "uc.tweak.translucency") {
-        --user-bg: color-mix(in srgb, rgb(27, 26, 32), transparent 20%) !important;
+    @media (prefers-color-scheme: dark) {
+        --user-bg: rgb(27, 26, 32) !important;
+        @media (-moz-bool-pref: "uc.tweak.translucency") {
+            --user-bg: color-mix(in srgb, rgb(27, 26, 32), transparent 20%) !important;
+        }
     }
 }
 

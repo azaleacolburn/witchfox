@@ -2,53 +2,43 @@
     --user-panel-gap: 8px;
     --user-sidebar-gap: 4px;
     --user-radius: 6px;
-    --user-rounded-corners-shadow: none;
-    /*   0 -.8px 0 0 rgb(0 0 0 / 0.02), */
-    /*   0 0.5px 1px 1px rgb(0 0 0 / 0.06), */
-    /*   0 1px 1px rgb(0 0 0 / 0.1); */
-    /* @media (resolution > 1.8dppx) { */
-    /*     --user-rounded-corners-shadow: */
-    /*     0 0 0.5px 0.5px rgb(0 0 0 / 0.06), */
-    /*     0 0.5px 1.5px rgb(0 0 0 / 0.1); */
-    /* } */
-}
 
-:root[uidensity=compact] {
-    --user-panel-gap: 6px; 
-    --user-sidebar-gap: 3px;
-}
-@media (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") {
-    :root { 
+    @media (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") {
         --user-panel-gap: 12px;
         --user-sidebar-gap: 6px;
     }
-    :root[uidensity=compact] { 
-        --user-panel-gap: 10px; 
-        --user-sidebar-gap: 5px;
-    } 
+
+    &[uidensity=compact] {
+        --user-panel-gap: 6px; 
+        --user-sidebar-gap: 3px;
+
+        @media (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") {
+            --user-panel-gap: 10px; 
+            --user-sidebar-gap: 5px;
+        }
+    }
+
+    &[titlepreface=""] #sidebar-box {
+        --uc-sidebar-hover-width: 200px;
+        --uc-autohide-sidebar-delay: 30ms;
+    }
 }
+
 
 /* sidebar vars */
 
-:root[titlepreface=""] #sidebar-box {
-    --uc-sidebar-hover-width: 200px;
-    --uc-autohide-sidebar-delay: 30ms;
-}
-
 @media not (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") {
-    #sidebar-box {
-        --uc-sidebar-width: 40px;
-    }
+#sidebar-box {
+    --uc-sidebar-width: 40px;
     @media not (-moz-bool-pref: "uc.tweak.extra-compact") {
-        :root[uidensity=compact] #sidebar-box {
+        :root[uidensity=compact] & {
             --uc-sidebar-width: 34px !important;
         }
     }
     @media (-moz-bool-pref: "uc.tweak.wider-sidebar-collapse") {
-        #sidebar-box {
-            --uc-sidebar-width: 80px;
-        }
-        &[uidensity=compact] #sidebar-box {
+        --uc-sidebar-width: 80px;
+         
+        :root[uidensity=compact] & {
             --uc-sidebar-width: 66px !important;
         }
     }
@@ -60,4 +50,4 @@
             }
         }
     }
-}
+}}
