@@ -4,9 +4,7 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-#main-window:not([customizing]):has(
-  #sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"]:not([hidden])
-) {
+#main-window:not([customizing]) {
     /* adjust #appcontent margin */
     &:has(#sidebar-box:not([positionend="true"])) {
         --uc-content-margin-left: 0px !important;
@@ -16,7 +14,8 @@
     
     #sidebar-box {
         min-width: var(--uc-sidebar-width) !important;
-        margin-block: var(--uc-content-margin-top) !important;
+        margin-bottom: var(--uc-content-margin-bottom) !important;
+        margin-top: var(--uc-content-margin-top) !important;
         &[positionend="true"] {
             margin-right: var(--uc-sidebar-margin);
         } &:not([positionend="true"]) {
@@ -36,8 +35,6 @@
     #sidebar-splitter {
         width: var(--uc-sidebar-margin) !important;
         border: none !important;
-        border-top-left-radius: var(--uc-radius) !important;
-        border-top-right-radius: var(--uc-radius) !important;
         margin-inline: none !important; 
     }
     
@@ -45,6 +42,8 @@
         @media not (-moz-bool-pref: "uc.tweak.sidebar-header") {
             display: none !important;
         }
+        border-top-left-radius: var(--uc-radius) !important;
+        border-top-right-radius: var(--uc-radius) !important;
     }
   
     /* sidebar collapse */

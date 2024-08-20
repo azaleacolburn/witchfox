@@ -81,6 +81,7 @@ splitter.devtools-horizontal-splitter {
 /* findbar thingy */
 .browserContainer > findbar {
     background-color: transparent !important;
+    background-image: none !important;
     border: none !important;
 
     .findbar-textbox {
