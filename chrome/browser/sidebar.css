@@ -174,10 +174,10 @@
                 background-color: var(--uc-panel-hint) !important;
                 border-radius: var(--uc-content-radius) !important;
                 transition: all var(--uc-transition) !important;    
-                
-                &:hover {
-                    opacity: 0 !important;
-                }
+            }
+            
+            &:not([sizemode="fullscreen"]) #sidebar-box:hover::before {
+                opacity: 0 !important;
             }
             
             &[sizemode="fullscreen"] #sidebar-box {
