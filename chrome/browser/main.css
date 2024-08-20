@@ -25,6 +25,10 @@
     :root { --user-panel-gap: 12px }
     :root[uidensity=compact] { --user-panel-gap: 10px; } 
 }
+@media (-moz-bool-pref: "uc.tweak.extra-thicc-browser-margin"){
+    :root { --user-panel-gap: 14px }
+    :root[uidensity=compact] { --user-panel-gap: 12px; } 
+}
 
 body {
     background-color: var(--lwt-accent-color);

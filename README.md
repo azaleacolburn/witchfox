@@ -40,6 +40,8 @@ Download and move the chrome folder into your profiles root directory (about:pro
 
 `uc.tweak.extra-thin-nav-bar` -> make nav-bar extra thin (28px) (requires uidensity=compact)
 
+`uc.tweak.extra-thicc-browser-margin` -> thicker margins around web content
+
 `uc.tweak.regular-extension-menu` -> bring regular extension menu back
 
 ## Credits
