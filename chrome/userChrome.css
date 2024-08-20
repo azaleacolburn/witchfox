@@ -91,10 +91,7 @@ html:not([sizemode="fullscreen"])  {
   margin-top: 40px !important;
   margin-bottom: 40px !important;
   margin-right: calc( -1 * var(--user-panel-gap) ) !important;
-  background-color: var(--toolbar-bgcolor) !important;
   border-radius: var(--user-radius);
-}
-#sidebar-splitter:not(:hover) {
   opacity: 0 !important;
 }
 
