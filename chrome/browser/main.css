@@ -40,6 +40,26 @@ html:not([sizemode="fullscreen"]) {
         margin: var(--user-panel-gap);
         margin-top: 0 !important;
     }
+    
+    #appcontent .browserStack {
+        border-radius: var(--user-radius);
+        box-shadow: var(--user-rounded-corners-shadow) !important;
+        background-color: var(--lwt-accent-color);
+        
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            /* Draw toolbar background on the negative corner space, then draw the
+            * same from the browser window shadow on top. */
+            box-shadow:
+                var(--uc-tweak-rounded-corners-shadow, 0 0 transparent),
+                0 0 0 16px var(--lwt-accent-color) !important;       
+            clip-path: inset(0);
+            pointer-events: none;
+        }
+    }
 }
 
 #identity-box.extensionPage {
@@ -69,11 +89,9 @@ html:not([sizemode="fullscreen"]) {
     &[mirror="true"] { right: 2px !important; }
 }
 
-html:not([sizemode="fullscreen"]) {
-    #navigator-toolbox {
-        border-bottom: none !important;
-    } 
-}
+#navigator-toolbox {
+    border-bottom: none !important;
+} 
 
 #navigator-toolbox {
     transition: margin-top 150ms ease-out;
@@ -84,42 +102,27 @@ html:not([sizemode="fullscreen"]) {
  
 #browser, #sidebar-header, #sidebar-box { background-color: var(--lwt-accent-color) !important; }
 
-html:not([sizemode="fullscreen"])  {
-    #sidebar-box {
+#sidebar-box {
+    :root:not([sizemode="fullscreen"]) {
         border-radius: var(--user-radius) !important;
-        background-color: var(--lwt-accent-color) !important;
-        margin: 
-            0
-            calc(var(--user-panel-gap)*-0.5) 
-            var(--user-panel-gap)
-            calc(var(--user-panel-gap)*0.5)            
-            !important;
     }
+    background-color: var(--lwt-accent-color) !important;
+    margin: 
+        0
+        calc(var(--user-panel-gap)*-0.5) 
+        var(--user-panel-gap)
+        calc(var(--user-panel-gap)*0.5)            
+        !important;
+    
+}
+:root[sizemode="fullscreen"] #sidebar-box {
+        margin-right: calc(var(--user-panel-gap)*0.5) !important;
+        margin-bottom: 0px !important;
+}
 
-    #sidebar {
-        border-radius: var(--user-radius);
-        background-color: inherit !important;
-    }
-
-    #appcontent .browserStack {
-        border-radius: var(--user-radius);
-        box-shadow: var(--user-rounded-corners-shadow) !important;
-        background-color: var(--lwt-accent-color);
-        
-        &::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            border-radius: inherit;
-            /* Draw toolbar background on the negative corner space, then draw the
-            * same from the browser window shadow on top. */
-            box-shadow:
-                var(--uc-tweak-rounded-corners-shadow, 0 0 transparent),
-                0 0 0 16px var(--lwt-accent-color) !important;       
-            clip-path: inset(0);
-            pointer-events: none;
-        }
-    }
+#sidebar {
+    border-radius: var(--user-radius);
+    background-color: inherit !important;
 }
 
 #statuspanel {

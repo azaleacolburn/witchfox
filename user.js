@@ -18,4 +18,4 @@ user_pref("browser.urlbar.trimHttps", true);
 user_pref("browser.urlbar.trimURLs", true);
 
 /* show compact mode */
-user_pref("browser.compactmode.show", true)
+user_pref("browser.compactmode.show", true);

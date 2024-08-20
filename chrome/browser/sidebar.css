@@ -4,6 +4,7 @@
 }
 
 #sidebar-splitter {
+    background-color: var(--lwt-accent-color) !important;
     border: none !important;
     width: var(--user-panel-gap) !important;
     margin-right: calc( -1 * var(--user-panel-gap) ) !important;
@@ -11,9 +12,13 @@
     opacity: 0 !important;
     border-radius: var(--user-radius);
 }
+:root[sizemode="fullscreen"] #sidebar-splitter {
+    opacity: 1 !important;
+    margin-right: 0 !important;
+}
 
 /* dynamic sidebar */
-:root[titlepreface=""]:not([sizemode="fullscreen"]) {
+:root[titlepreface=""] {
     #sidebar-splitter {
         display: none !important;
     }
@@ -49,6 +54,7 @@
                 --uc-sidebar-width: 66px !important;
             }
         }
+        
         #sidebar-box {
             min-width: var(--uc-sidebar-width) !important;
             width: var(--uc-sidebar-width) !important;
@@ -75,6 +81,7 @@
     #sidebar{
         transition: min-width 115ms linear var(--uc-autohide-sidebar-delay) !important;
         min-width: var(--uc-sidebar-width) !important;
+        width: var(--uc-sidebar-width) !important;
         will-change: min-width;
     }
     #sidebar-box:hover > #sidebar-header,
@@ -99,8 +106,8 @@
             width: var(--user-panel-gap) !important; 
             transition: min-width 0s, width 0s, padding 0s, margin 0s !important;
             transition-delay: 2ms !important;
-
             margin-right: calc(-1*var(--user-panel-gap)) !important;
+      
             margin-left: 0 !important;
             & #sidebar-header, & #sidebar {
                 will-change: auto !important;

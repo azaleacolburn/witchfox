@@ -22,7 +22,7 @@ Works on Linux, Macos, and Windows. Recommended to add spacers to navbar as to h
 
 Extension:
 
-* Required -> [Sidebery](https://addons.mozilla.org/en-US/firefox/addon/sidebery), [Userchrome Toggle](https://addons.mozilla.org/en-US/firefox/addon/userchome-toggle/?utm_content=addons-manager-reviews-link&utm_medium=firefox-browser&utm_source=firefox-browser)
+* Required -> [Sidebery](https://addons.mozilla.org/en-US/firefox/addon/sidebery), [Userchrome Toggle](https://addons.mozilla.org/en-US/firefox/addon/userchrome-toggle/)
 * Recommended 
     - [Firefox Color](https://addons.mozilla.org/en-US/firefox/addon/firefox-color) or [Firefox Theme](https://addons.mozilla.org/en-US/firefox/themes/) 
 
@@ -45,8 +45,6 @@ Download and move the chrome folder and user.js into your profiles root director
 `uc.tweak.no-window-controls` -> hide window controls
 
 `uc.tweak.popup-search` -> arc like search bar
-
-`uc.tweak.seperate-nav-bar` -> make nav-bar a separate color
 
 `uc.tweak.extra-thin-nav-bar` -> make nav-bar extra thin (28px) (requires uidensity=compact)
 

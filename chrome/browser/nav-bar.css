@@ -1,15 +1,6 @@
-@media not (-moz-bool-pref: "uc.tweak.seperate-nav-bar") {
-    #navigator-toolbox, #nav-bar { 
-        background-color: var(--lwt-accent-color) !important;
-        box-shadow: none !important;
-    }
-}
-
-@media (-moz-bool-pref: "uc.tweak.seperate-nav-bar") {
-    #nav-bar {
-        margin: var(--user-panel-gap);
-        border-radius: var(--user-radius);
-    } 
+#navigator-toolbox, #nav-bar {
+    background-color: var(--lwt-accent-color) !important;
+    box-shadow: none !important;
 }
 
 .browserContainer > findbar {
