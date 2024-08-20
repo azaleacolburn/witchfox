@@ -12,7 +12,7 @@
         --tabs-height: 30px !important;
         --nav-btn-width: 30px !important;
         --nav-btn-height: 28px !important;
-        --general-border-radius: var(--user-radius) !important;
+        --general-border-radius: var(--uc-radius) !important;
          
         @media (-moz-bool-pref:"uc.tweak.translucency") {
             --frame-bg: transparent !important;

@@ -1,88 +1,50 @@
 /*
- * This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at https://mozilla.org/MPL/2.0/.
- */
+* This Source Code Form is subject to the terms of the Mozilla Public
+* License, v. 2.0. If a copy of the MPL was not distributed with this
+* file, You can obtain one at https://mozilla.org/MPL/2.0/.
+*/
 
-@import url("../vars.css");
 @import url("icons.css");
+@import url("misc.css");
+@import url("navbar.css");
 @import url("sidebar.css");
-@import url("url-bar.css");
+@import url("toolbar.css");
+@import url("urlbar.css");
 @import url("window-controls.css");
-@import url("nav-bar.css");
-@import url("mics.css");
 
 body {
-    background-color: var(--user-bg);
-}
- 
-/* tabs */
-
-html:not([sizemode="fullscreen"]) {
-    #appcontent {
-        margin: var(--user-panel-gap);
-        margin-top: 0 !important;
-
-        & browser {
-            border-radius: var(--user-radius);
-            background-color: transparent;
-            clip-path: circle(100%);
-        }
-    } 
+    background-color: var(--uc-bg) !important;
 }
 
-#identity-box.extensionPage {
-    display: none;
+/* remove bg from things */
+#nav-bar,
+#navigator-toolbox,
+#appcontent,
+splitter.devtools-horizontal-splitter, 
+.devtools-side-splitter,
+#tabbrowser-tabpanels,
+#sidebar-box,
+#sidebar,
+#sidebar-splitter {
+    background-color: transparent !important;
 }
 
-#navigator-toolbox, #urlbar-background {
-    border: none !important; 
+:root {
+    --uc-content-margin-top: var(--uc-content-margin);
+    --uc-content-margin-right: var(--uc-content-margin);
+    --uc-content-margin-bottom: var(--uc-content-margin);
+    --uc-content-margin-left: var(--uc-content-margin);
 }
 
-/* address bar */
-
-#urlbar-background {
-    border-radius: var(--user-radius);
-}
-
-/* link thingy when hovering over url */
-#statuspanel {
-    & #statuspanel-label {
-        border-radius: var(--user-radius) !important;
-        background-color: var(--user-bg) !important;
-        border: none !important;
-    }
-    
-    bottom: 2px !important;
-    &:not([mirror="true"]) { left: 2px !important; }
-    &[mirror="true"] { right: 2px !important; }
-}
-
-#navigator-toolbox {
-    transition: margin-top 150ms ease-out;
-    z-index: 10;
-}
- 
-/* appcontent */
- 
-#browser, #sidebar-header, #sidebar-box { background-color: transparent !important; }
-
-#statuspanel {
-    overflow: hidden;
-}
- 
-#tabbrowser-tabpanels {
-    background: transparent !important;
-}
-
-
-/* remove sidebar button bg */
-toolbar .toolbarbutton-1 {
-    &:not([disabled], :hover:active) {
-        &:is([open], [checked]) > :is(.toolbarbutton-icon, .toolbarbutton-text, .toolbarbutton-badge-stack) {
-            background-color: transparent !important;
-        }
+#appcontent {
+    margin:
+        var(--uc-content-margin-top)
+        var(--uc-content-margin-right)
+        var(--uc-content-margin-bottom)
+        var(--uc-content-margin-left);
+    & browser {
+        border-radius: var(--uc-radius);
+        clip-path: circle(100%);
+        background-color: transparent !important;
     }
 }
-
-

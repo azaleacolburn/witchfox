@@ -9,9 +9,9 @@
 
 :root {
     @media not (-moz-bool-pref: "uc.tweak.no-panel-hint") {
-        --user-panel-hint: color-mix( in srgb, var(--toolbarbutton-icon-fill), transparent 75%);
+        --uc-panel-hint: color-mix( in srgb, var(--toolbarbutton-icon-fill), transparent 75%);
     }
-    
+
     --uc-bg: light-dark(rgb(239, 239, 242), rgb(27, 26, 32)) !important;
     @media (-moz-bool-pref: "uc.tweak.translucency") {
         --uc-bg: light-dark(
@@ -21,9 +21,9 @@
     }
 
     &[lwtheme="true"] {
-        --user-bg: var(--lwt-accent-color) !important;
+        --uc-bg: var(--lwt-accent-color) !important;
         @media (-moz-bool-pref: "uc.tweak.translucency") {
-            --user-bg: color-mix(in srgb, var(--lwt-accent-color), transparent 20%) !important;
+            --uc-bg: color-mix(in srgb, var(--lwt-accent-color), transparent 20%) !important;
         }
     }
 }

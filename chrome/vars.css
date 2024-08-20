@@ -7,60 +7,25 @@
 @import url("overrides.css");
 
 :root {
-    --user-panel-gap: 8px;
-    --user-sidebar-gap: 4px;
-
-
-    --user-radius: 5px;
+    --uc-transition: 200ms ease-in-out;
     
-
-    --user-transition: all 0.2s ease-out;
- 
-    
-    @media (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") {
-        --user-panel-gap: 12px;
-        --user-sidebar-gap: 6px;
-    }
-    
-    @media (-moz-bool-pref: "uc.tweak.extra-thick") {
-        --user-panel-gap: 10px;
-    }
-
+    --uc-content-margin: 10px;
+    --uc-sidebar-margin: 4px;
+    --uc-radius: 5px;
+     
     &[uidensity=compact] {
-        --user-panel-gap: 6px; 
-        --user-sidebar-gap: 3px;
-
-        @media (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") {
-            --user-panel-gap: 10px; 
-            --user-sidebar-gap: 5px;
-        }
-        
-        @media (-moz-bool-pref: "uc.tweak.extra-thick") {
-            --user-panel-gap: 8px !important;
-        }
+        --uc-appcontent-margin: 8px;
+        --uc-sidebar-margin: 4px;
     }
-
+    
+    /* sidebar vars */
     &[titlepreface*="-"] {
         --uc-sidebar-hover-width: 200px;
         --uc-autohide-sidebar-delay: 30ms;
     }
     
-    @media (-moz-bool-pref: "uc.tweak.separate-sidebar") {
-        --user-sidebar-gap: var(--user-panel-gap) !important;
+    --uc-sidebar-width: 40px;
+    &[uidensity=compact] {
+        --uc-sidebar-width: 34px;
     }
 }
-
-
-/* sidebar vars */
-
-@media not (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") {
-#sidebar-box {
-    --uc-sidebar-width: 40px;
-    @media (-moz-bool-pref: "uc.tweak.wider-sidebar-collapse") {
-        --uc-sidebar-width: 80px;
-         
-        :root[uidensity=compact] & {
-            --uc-sidebar-width: 66px !important;
-        }
-    }
-}}

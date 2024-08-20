@@ -14,8 +14,8 @@ splitter.devtools-horizontal-splitter {
 }
 
 .devtools-toolbox-bottom-iframe {
-    border-radius: var(--user-radius) !important;
-    margin-top: var(--user-panel-gap) !important;
+    border-radius: var(--uc-radius) !important;
+    margin-top: var(--uc-sidebar-margin) !important;
 }
 
 #main-window:has(
@@ -25,28 +25,28 @@ splitter.devtools-horizontal-splitter {
 }
 
 .devtools-toolbox-side-iframe {
-    border-radius: var(--user-radius) !important;
+    border-radius: var(--uc-radius) !important;
 
     &:first-child {
-        margin-inline-end: var(--user-panel-gap) !important;
+        margin-inline-end: var(--uc-sidebar-margin) !important;
     }
 
     &:last-child {
-        margin-inline-start: var(--user-panel-gap) !important;
+        margin-inline-start: var(--uc-sidebar-margin) !important;
     }
 }
 
 .browserContainer.responsive-mode {
-    background-color: var(--lwt-accent-color) !important;
+    background-color: transparent !important;
 }
 
 .browserContainer.responsive-mode > .browserStack > browser {
     border: none !important;
+    box-shadow: none !important;
 }
 
 .browserContainer.responsive-mode > .rdm-toolbar {
-    border-radius: var(--user-radius) !important;
-    background-color: var(--lwt-accent-color) !important;
+    border-radius: var(--uc-radius) !important;
 }
 
 /* screenshot tool */
@@ -78,8 +78,25 @@ splitter.devtools-horizontal-splitter {
     margin: var(--user-panel-gap) !important;
 }
 
+/* findbar thingy */
+.browserContainer > findbar {
+    background-color: transparent !important;
+    border: none !important;
 
+    .findbar-textbox {
+        border-radius: var(--uc-radius) !important;
+    }
+}
 
-.findbar-textbox {
-    border-radius: var(--user-radius) !important;
+/* link thingy when hovering over url */
+#statuspanel {
+    & #statuspanel-label {
+        border-radius: var(--uc-radius) !important;
+        background-color: var(--uc-bg) !important;
+        border: none !important;
+    }
+    
+    bottom: 2px !important;
+    &:not([mirror="true"]) { left: 2px !important; }
+    &[mirror="true"] { right: 2px !important; }
 }

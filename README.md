@@ -45,19 +45,13 @@ Open the [releases tab](https://codeberg.org/awwpotato/PotatoFox/releases) and d
 
 ### about:config tweaks
 
-`uc.tweak.sidebar-full-collapse` -> arc like fully hidden sidebar when not hovered over
-
 `uc.tweak.sidebar-header` -> show sidebar header
-
-`uc.tweak.wider-sidebar-collapse` -> sidebar is wider when collapsed
 
 `uc.tweak.no-window-controls` -> hide window controls
 
-`uc.tweak.regular-search` -> return url-bar to original state
+`uc.tweak.regular-search` -> return urlbar to original state
 
-`uc.tweak.extra-thick` -> make margin around browser 2px thicker
-
-`uc.tweak.no-panel-hint` -> hide the small bars showing hidden panels
+`uc.tweak.no-panel-hint` -> hide the small bars showing location of hidden panels
 
 `uc.tweak.translucency` -> **EXPERIMENTAL** translucency support  
 

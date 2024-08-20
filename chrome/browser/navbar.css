@@ -1,55 +1,16 @@
 /*
- * This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at https://mozilla.org/MPL/2.0/.
- */
+* This Source Code Form is subject to the terms of the Mozilla Public
+* License, v. 2.0. If a copy of the MPL was not distributed with this
+* file, You can obtain one at https://mozilla.org/MPL/2.0/.
+*/
 
-#navigator-toolbox, #main-window:not([titlepreface*="="]) #nav-bar {
-    background-color: transparent !important;
+:root:not([titlepreface*="="]) {
+    --uc-content-margin-top: 0px !important;
+}
+
+#nav-bar, #navigator-toolbox {
+    border: none !important;
     box-shadow: none !important;
-}
-
-#main-window:not([titlepreface*="="]) #nav-bar {
-    margin-left: var(--user-panel-gap);
-    margin-right: var(--user-panel-gap);
-}
-
-.browserContainer > findbar {
-    z-index: 5 !important;
-    margin: 0 !important;
-    background-color: transparent !important;
-    background-image: none !important;
-    border: none !important;
-}
-
-#nav-bar-customization-target > :is(toolbarbutton, toolbaritem):first-child, #nav-bar-customization-target > toolbarpaletteitem:first-child > :is(toolbarbutton, toolbaritem) {
-    padding-inline-start: 0px !important;
-}
-
-#PanelUI-menu-button {
-    padding: 0 var(--toolbarbutton-outer-padding) !important;
-}
-
-#PlacesToolbar, #PlacesToolbarItems {
-    flex-direction: row-reverse !important;
-    max-width: max-content !important;
-}
-
-#personal-bookmarks {
-    max-width: max-content !important;
-}
-
-
-/* modification on https://github.com/Naezr/ShyFox/blob/main/chrome/ShyFox/shy-navbar.css */
-#toolbar-menubar .titlebar-button {
-    display: none !important;
-}
-& #toolbar-menubar[autohide="true"]:not([inactive="true"]) {
-    height: unset !important;
-}
-
-#nav-bar {
-    border: none !important;
 }
 
 #main-window[titlepreface*="="]:not([sizemode="fullscreen"]) {
@@ -59,33 +20,28 @@
         --nav-height: 34.5px;
     }
     
-
-    
-    #browser { margin-top: var(--user-panel-gap) !important; }
-    
     #urlbar-container { width: unset !important; }
-    #PanelUI-menu-button { padding-left: 0px !important; }
-    
+
     #navigator-toolbox {
         position: absolute;
         
         width: var(--nav-width) !important;
-        height: var(--user-panel-gap) !important;
+        height: var(--uc-content-margin) !important;
         left: calc(50vw - var(--nav-width)*0.5) !important;
         right: auto !important;
         
-        border-radius: var(--user-radius) !important;
+        border-radius: var(--uc-radius) !important;
         background-color: transparent !important;
         
         &::before {
             content: "";
             position: absolute;
-            top: calc(var(--user-panel-gap)*0.25) !important;
+            top: calc(var(--uc-content-margin-top)*0.25) !important;
             width: 100%;
-            height: calc(var(--user-panel-gap)*0.5) !important;
-            background-color: var(--user-panel-hint) !important;
-            border-radius: var(--user-radius) !important;
-            transition: var(--user-transition) !important;
+            height: calc(var(--uc-content-margin-top)*0.5) !important;
+            background-color: var(--uc-panel-hint) !important;
+            border-radius: var(--uc-radius) !important;
+            transition: opacity var(--uc-transition) !important;
         }
     }
     
@@ -94,22 +50,22 @@
         max-height: unset !important;
         height: var(--nav-height) !important;
         
-        border-radius: var(--user-radius) !important;
+        border-radius: var(--uc-radius) !important;
     }
-    
+
     &[customizing] {
         & #customization-content-container {
             margin-top: var(--nav-height) !important;
         }
         & #nav-bar {
-            top: var(--user-panel-gap) !important;
+            top: var(--uc-content-margin-top) !important;
             border: 1px solid var(--toolbarbutton-icon-fill) !important;
         }
     }
     
     &:not([customizing]) {
         #nav-bar {
-            top: calc(var(--user-panel-gap)*2 - var(--nav-height)) !important;
+            top: calc(var(--uc-content-margin-top)*2 - var(--nav-height)) !important;
             background-color: transparent !important;
             
             toolbarspring  { flex-grow: 0 !important; }
@@ -117,7 +73,6 @@
             #nav-bar-customization-target > *,
             #nav-bar-overflow-button,
             #PanelUI-button {
-                transition: var(--user-transition) !important;
                 opacity: 0 !important;
             }
         }
@@ -133,9 +88,9 @@
             #nav-bar-customization-target toolbarbutton[open="true"]
         ) {
             #nav-bar {
-                margin-top: calc(2*var(--user-panel-gap)) !important;
+                margin-top: calc(2*var(--uc-content-margin-top)) !important;
                 top: 0 !important;
-                background-color: var(--user-bg) !important;
+                background-color: var(--uc-bg) !important;
                 backdrop-filter: blur(100px) !important;
                 border: 1px solid var(--toolbarbutton-icon-fill) !important;            
 

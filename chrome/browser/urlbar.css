@@ -4,38 +4,6 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-#urlbar-search-mode-indicator {
-    background-color: transparent !important;
-    padding-inline-start: 0px !important;
-    
-    & #urlbar-search-mode-indicator-close {
-        display: none !important;
-    }
-}
-
-
-#identity-box[pageproxystate="valid"]:is(.notSecureText, .chromeUI, .extensionPage) > 
-.identity-box-button {
-    
-    &:not(:hover){
-        background-color: transparent !important;        
-    }
-    & image {
-        list-style-image: url("../icons/firefox.svg") !important;
-    }
-    
-    & #identity-icon-label {
-        display: none !important;
-    }
-
-    fill: var(--toolbarbutton-icon-fill) !important;
-}
-
-#identity-box[pageproxystate="invalid"]:is(.chromeUI) {
-    margin-inline-end: 0px !important;
-}
-
-
 @media not (-moz-bool-pref: "uc.tweak.regular-url") {
 #main-window:not([customizing]) {
     
@@ -44,14 +12,14 @@
         display: flex;
         justify-content: center;
         border-radius: var(--user-radius) !important;
-    }                                   
-
+    }
+    
     #urlbar-container {
         flex: 1;
         max-width: 1000px;
         margin: auto !important;
     }
-
+    
     #main-window #urlbar {
         z-index: 9999 !important;
         opacity: 100 !important;
@@ -60,8 +28,7 @@
         margin-right: 0 !important;
         /* transition: width 0.3s ease, left 0.3s ease, margin-top 0.3s ease, margin-left 0.3s ease, margin-right 0.3s ease; */
     }
-
-
+    
     #urlbar[breakout="true"][breakout-extend="true"] {
         position: fixed !important;
         width: clamp(400px,64vw,800px) !important;
@@ -85,7 +52,7 @@
             font-size: 16px !important;
         }    
     }
-
+    
     #urlbar:not([breakout="true"][breakout-extend="true"]) {
         & #urlbar-background { 
             background: transparent !important; 
@@ -96,14 +63,4 @@
             & .urlbar-input-box { transition: none !important; }
         }
     }
-
-    /* &:not([titlepreface*="="]) #urlbar:not([breakout="true"][breakout-extend="true"], :hover) #urlbar-input-container { */
-    /*     & >  * { */
-    /*         opacity: 0 !important; */
-    /*     } */
-    /*     & .urlbar-input-box { */
-    /*         opacity: 100 !important; */
-    /*     } */
-    /* }    */
-}
-}
+}}
