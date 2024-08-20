@@ -34,17 +34,17 @@ splitter.devtools-horizontal-splitter,
     --uc-content-margin-right: var(--uc-content-margin);
     --uc-content-margin-bottom: var(--uc-content-margin);
     --uc-content-margin-left: var(--uc-content-margin);
-}
 
-#appcontent {
-    margin:
-        var(--uc-content-margin-top)
-        var(--uc-content-margin-right)
-        var(--uc-content-margin-bottom)
-        var(--uc-content-margin-left);
-    & browser {
-        border-radius: var(--uc-radius);
-        clip-path: circle(100%);
-        background-color: transparent !important;
+    &:not([inDOMFullscreen="true"], [sizemode="fullscreen"]) #appcontent {
+        margin:
+            var(--uc-content-margin-top)
+            var(--uc-content-margin-right)
+            var(--uc-content-margin-bottom)
+            var(--uc-content-margin-left);
+        & browser {
+            border-radius: var(--uc-radius);
+            clip-path: circle(100%);
+            background-color: transparent !important;
+        }
     }
 }

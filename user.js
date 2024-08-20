@@ -29,5 +29,5 @@ user_pref("widget.gtk.ignore-bogus-leave-notify", 1);
 // option for transparent tab bg
 user_pref("browser.tabs.allow_transparent_browser", true);
 
-// uidensity -> compact
-user_pref("browser.uidensity", 1)
+// uidensity -> compact (comment out due to issues with some websites)
+// user_pref("browser.uidensity", 1)
