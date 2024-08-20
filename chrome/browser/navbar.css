@@ -44,6 +44,9 @@
     padding-inline-start: 0px !important;
 }
 
+/* tab bar */
+#TabsToolbar { display: none !important; }
+
 #main-window[titlepreface*="="]:not([inDOMFullscreen="true"]) {
     --nav-width: clamp(400px, 75vw, 1000px);
     --nav-height: 38px;
