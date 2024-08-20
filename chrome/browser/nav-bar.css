@@ -57,9 +57,6 @@
     --nav-height: 38px;
     &[uidensity=compact] {
         --nav-height: 34.5px;
-        @media (-moz-bool-pref: "uc.tweak.extra-compact") {
-            --nav-height: 28px;
-        }
     }
     
 
