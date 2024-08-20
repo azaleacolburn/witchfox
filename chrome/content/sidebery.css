@@ -14,9 +14,9 @@
         --nav-btn-height: 28px !important;
         --general-border-radius: var(--uc-radius) !important;
          
-        @media (-moz-bool-pref:"uc.tweak.translucency") {
+/*         @media (-moz-bool-pref:"uc.tweak.translucency") {
             --frame-bg: transparent !important;
-        }
+        } */
     }
 
     @media (max-width: 40px) {

@@ -80,6 +80,7 @@
             background-color linear 0s,
             margin-top var(--uc-transition)
             !important;
+        will-change: margin-top !important;
         border-radius: var(--uc-radius) !important;
     }
 
@@ -97,6 +98,7 @@
         #nav-bar {
             width: 100% !important;
             background-color: transparent !important;
+            z-index: 100 !important;
             
             toolbarspring  { flex-grow: 0 !important; }
             
@@ -119,10 +121,8 @@
         ) {
             #nav-bar {
                 margin-top: calc(2*var(--uc-content-margin-top)) !important;
-                background-color: var(--uc-bg) !important;
-                backdrop-filter: blur(100px) !important;
-                border: 1px solid var(--toolbarbutton-icon-fill) !important;  
-                z-index: 100 !important;
+                background-color: var(--uc-bg-opaque) !important;
+
 
                 #nav-bar-customization-target > *:not([disabled="true"]),
                 #nav-bar-overflow-button, #PanelUI-button:not([disabled="true"]) {opacity: 1 !important;}

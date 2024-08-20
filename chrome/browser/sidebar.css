@@ -22,9 +22,11 @@
             margin-left: var(--uc-sidebar-margin);
         }
         
+        will-change: margin min-width width max-width;
         transition: 
             min-width var(--uc-transistion), 
-            max-width var(--uc-transistion), 
+            max-width var(--uc-transistion),
+            width var(--uc-transistion),
             margin var(--uc-transistion);
     }
 
@@ -92,8 +94,7 @@
             #sidebar-box {
                 min-width: var(--uc-content-margin) !important;
                 max-width: var(--uc-content-margin) !important;
-                margin-left: 0px !important;
-                margin-right: 0px !important;
+                margin-inline: 0px !important;
                 
                 & #sidebar, & #sidebar-header {
                     will-change: auto !important;
@@ -103,7 +104,7 @@
                     margin-block: var(--uc-sidebar-margin) !important;
                     min-width: var(--uc-sidebar-hover-width) !important;
                     max-width: var(--uc-sidebar-hover-width) !important;
-                    background-color: var(--uc-bg) !important;
+                    background-color: var(--uc-bg-opaque) !important;
                 }
                 
                 &:hover #sidebar,

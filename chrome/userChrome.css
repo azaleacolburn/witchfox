@@ -12,18 +12,20 @@
         --uc-panel-hint: color-mix( in srgb, var(--toolbarbutton-icon-fill), transparent 75%);
     }
 
-    --uc-bg: light-dark(rgb(239, 239, 242), rgb(27, 26, 32)) !important;
+    --uc-bg: var(--uc-bg-opaque);
+    
+    --uc-bg-opaque: light-dark(rgb(239, 239, 242), rgb(27, 26, 32));
     @media (-moz-bool-pref: "uc.tweak.translucency") {
         --uc-bg: light-dark(
-            color-mix(in srgb, rgb(239, 239, 242), transparent 20%), 
-            color-mix(in srgb, rgb(27, 26, 32), transparent 20%) 
-        ) !important;
+            color-mix(in srgb, rgb(239, 239, 242), transparent 10%), 
+            color-mix(in srgb, rgb(27, 26, 32), transparent 10%) 
+        );
     }
 
     &[lwtheme="true"] {
-        --uc-bg: var(--lwt-accent-color) !important;
+        --uc-bg-opaque: var(--lwt-accent-color);
         @media (-moz-bool-pref: "uc.tweak.translucency") {
-            --uc-bg: color-mix(in srgb, var(--lwt-accent-color), transparent 20%) !important;
+            --uc-bg: color-mix(in srgb, var(--lwt-accent-color), transparent 10%);
         }
     }
 }
