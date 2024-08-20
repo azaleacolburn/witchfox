@@ -64,26 +64,28 @@
         margin: 0.3px !important
     }
     
-    .top-horizontal-box {
-        order: 100 !important;
-        margin-bottom: 0px !important;
-    }
-    
     #nav_bar {
         background-color: transparent !important;
         padding: var(--tabs-margin) !important;
     }
     
-    .NavigationBar.-top .hidden-panels-popup {
-        position: absolute !important;
-        margin-top: -1000px !important;
-        top: auto !important;
-        bottom: 36px !important;
+    @media not (-moz-bool-pref: "uc.tweak.sidebery-top-navbar") {
+        .top-horizontal-box {
+            order: 100 !important;
+            margin-bottom: 0px !important;
+        }
         
-    }
-    .NavigationBar.-top .hidden-panels-popup-layer::before {
-        display: none !important;
-        background-color: transparent !important;
+        .NavigationBar.-top .hidden-panels-popup {
+            position: absolute !important;
+            margin-top: -1000px !important;
+            top: auto !important;
+            bottom: 36px !important;
+
+        }
+        .NavigationBar.-top .hidden-panels-popup-layer::before {
+            display: none !important;
+            background-color: transparent !important;
+        }
     }
     
     /* tab audio indicator */

@@ -47,6 +47,7 @@ Open the [releases tab](https://codeberg.org/awwpotato/PotatoFox/releases) and d
 * `uc.tweak.sidebar-header` -> show sidebar header
 * `uc.tweak.sidebar-full-collapse` -> make sidebar fully hidden when collapse (like the hidden navbar)
 * `sidebar.position_start` -> whether the sidebar is on the left or right
+* `uc.tweak.sidebery-top-navbar` -> move the Sidebery navbar thingy from the bottom to the top
 * `uc.tweak.no-window-controls` -> hide window controls
 * `uc.tweak.regular-search` -> return urlbar to original state
 * `uc.tweak.no-panel-hint` -> hide the small bars showing location of hidden panels
