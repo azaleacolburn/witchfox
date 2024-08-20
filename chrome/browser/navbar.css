@@ -25,6 +25,10 @@
     box-shadow: none !important;
 }
 
+#PersonalToolbar {
+    background-color: transparent !important;
+}
+
 #nav-bar {
     margin-inline: var(--uc-sidebar-margin) !important;
     --toolbarbutton-border-radius: var(--uc-button-radius) !important;

@@ -42,7 +42,6 @@
     
     #urlbar-background {
         border: none !important;
-        background-color: var(--toolbar-field-background-color) !important;
     }
     
     #urlbar {
