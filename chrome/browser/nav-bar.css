@@ -49,7 +49,7 @@
 /* modification on https://github.com/Naezr/ShyFox/blob/main/chrome/ShyFox/shy-navbar.css */
 @media (-moz-bool-pref: "uc.tweak.no-window-controls") {
     #main-window[titlepreface*="="] {
-        --nav-width: clamp(400px, 60vw, 850px);
+        --nav-width: clamp(400px, 75vw, 1000px);
         --nav-height: 38px;
         &[uidensity=compact] {
             --nav-height: 34.5px;
@@ -59,6 +59,9 @@
         }
         
         #browser { margin-top: var(--user-panel-gap) !important; }
+        
+        #urlbar-container { width: unset !important; }
+        #PanelUI-menu-button { padding-left: 0px !important; }
         
         #navigator-toolbox {
             position: absolute;
