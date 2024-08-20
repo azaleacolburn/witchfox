@@ -57,76 +57,96 @@ html:not([sizemode="fullscreen"])  {
     border-radius: var(--user-radius);
     outline: 4px solid var(--lwt-accent-color) !important;
     outline-offset: -0.4px !important;
-    overflow: hidden !important
+    overflow: hidden !important;
+    box-shadow: none !important;
   }
+
+  /* dev tools */
+  .devtools-toolbox-side-iframe {
+    border-radius: var(--user-panel-gap) !important;
+  }
+  .devtools-side-splitter { display: None !important}
+  .browserStack { background-color: var(--lwt-accent-color); }
+  .rdm-toolbar {
+    border-radius: var(--user-radius);
+    border: none !important;
+    margin-right: var(--user-panel-gap);
+    background-color: var(--lwt-accent-color);
+  }
+  #toolbar.user-agent { background-color: var(--toolbar-bgcolor) !important; }
 }
  
 #tabbrowser-tabpanels {
     background: transparent !important;
 }
 
+#sidebar-box {
+  width: 170px !important;
+  min-width: 36px !important;
+}
+
 /* dynamic sidebar */
+:root[titlepreface=""] {
+  [titlepreface*="."] #sidebar-header {
+    visibility: collapse !important;
+  }
+  /*
+  [titlepreface*="."] #titlebar {
+    visibility: collapse;
+  }
+  */
+  #sidebar-box{
+    --uc-sidebar-width: 36px !important;
+    --uc-sidebar-hover-width: 200px;
+    --uc-autohide-sidebar-delay: 90ms;
+    position: relative;
+    min-width: var(--uc-sidebar-width) !important;
+    width: var(--uc-sidebar-width) !important;
+    max-width: var(--uc-sidebar-width) !important;
+    z-index:1;
+  }
 
-[titlepreface*="."] #sidebar-header {
-  visibility: collapse !important;
-}
-/*
-[titlepreface*="."] #titlebar {
-  visibility: collapse;
-}
-*/
-#sidebar-box{
-  --uc-sidebar-width: 36px !important;
-  --uc-sidebar-hover-width: 200px;
-  --uc-autohide-sidebar-delay: 90ms;
-  position: relative;
-  min-width: var(--uc-sidebar-width) !important;
-  width: var(--uc-sidebar-width) !important;
-  max-width: var(--uc-sidebar-width) !important;
-  z-index:1;
-}
+  #sidebar-box[positionend]{ direction: rtl }
+  #sidebar-box[positionend] > *{ direction: ltr }
 
-#sidebar-box[positionend]{ direction: rtl }
-#sidebar-box[positionend] > *{ direction: ltr }
+  #sidebar-box[positionend]:-moz-locale-dir(rtl){ direction: ltr }
+  #sidebar-box[positionend]:-moz-locale-dir(rtl) > *{ direction: rtl }
 
-#sidebar-box[positionend]:-moz-locale-dir(rtl){ direction: ltr }
-#sidebar-box[positionend]:-moz-locale-dir(rtl) > *{ direction: rtl }
+  #main-window[sizemode="fullscreen"] #sidebar-box{ --uc-sidebar-width: 1px; }
 
-#main-window[sizemode="fullscreen"] #sidebar-box{ --uc-sidebar-width: 1px; }
+  #sidebar-splitter{ display: none }
 
-#sidebar-splitter{ display: none }
+  #sidebar-header{
+    overflow: hidden;
+    color: var(--chrome-color, inherit) !important;
+    padding-inline: 0 !important;
+  }
 
-#sidebar-header{
-  overflow: hidden;
-  color: var(--chrome-color, inherit) !important;
-  padding-inline: 0 !important;
-}
-
-#sidebar-header::before,
-#sidebar-header::after{
-  content: "";
-  display: -moz-box;
-  padding-left: 8px;
+  #sidebar-header::before,
+  #sidebar-header::after{
+    content: "";
+    display: -moz-box;
+    padding-left: 8px;
   padding-right: 8px;
 
-}
+  }
 
-#sidebar-switcher-target{
-  -moz-box-pack: start !important;
-}
+  #sidebar-switcher-target{
+    -moz-box-pack: start !important;
+  }
 
-#sidebar-header,
-#sidebar{
-  transition: min-width 115ms linear var(--uc-autohide-sidebar-delay) !important;
-  min-width: var(--uc-sidebar-width) !important;
-  will-change: min-width;
-}
-#sidebar-box:hover > #sidebar-header,
-#sidebar-box:hover > #sidebar{
-  min-width: var(--uc-sidebar-hover-width) !important;
-  transition-delay: 0ms !important;
-}
-/* navbar animation */
+  #sidebar-header,
+  #sidebar{
+    transition: min-width 115ms linear var(--uc-autohide-sidebar-delay) !important;
+    min-width: var(--uc-sidebar-width) !important;
+    will-change: min-width;
+  }
+  #sidebar-box:hover > #sidebar-header,
+  #sidebar-box:hover > #sidebar{
+    min-width: var(--uc-sidebar-hover-width) !important;
+    transition-delay: 0ms !important;
+  }
+}/* navbar animation */
 /*
 #nav-bar {
     display: flex;
