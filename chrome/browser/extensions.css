@@ -4,7 +4,7 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-@media not (-moz-bool-pref:"uc.tweak..regualar-extension-menu") {
+@media not (-moz-bool-pref:"uc.tweak.regular-extension-menu") {
     /*  Clean and tight extensions menu */
     #unified-extensions-panel #unified-extensions-view {
         width: 100% !important;
