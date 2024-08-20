@@ -35,22 +35,96 @@ splitter.devtools-horizontal-splitter,
         [chromehidden*="toolbar"], 
         [chromehidden*="menubar"]
     ) {
-        --uc-content-margin-top: var(--uc-content-margin);
-        --uc-content-margin-right: var(--uc-content-margin);
-        --uc-content-margin-bottom: var(--uc-content-margin);
-        --uc-content-margin-left: var(--uc-content-margin);
-        
-        & #appcontent {
-            margin:
-                var(--uc-content-margin-top)
-                var(--uc-content-margin-right)
-                var(--uc-content-margin-bottom)
-                var(--uc-content-margin-left)
-                !important;
-            & browser {
-                border-radius: var(--uc-content-radius);
+        @media not (-moz-bool-pref: "uc.tweak.borderless") {
+            --uc-content-margin-top: var(--uc-content-margin);
+            --uc-content-margin-right: var(--uc-content-margin);
+            --uc-content-margin-bottom: var(--uc-content-margin);
+            --uc-content-margin-left: var(--uc-content-margin);
+
+            & #appcontent {
+                margin:
+                    var(--uc-content-margin-top)
+                    var(--uc-content-margin-right)
+                    var(--uc-content-margin-bottom)
+                    var(--uc-content-margin-left)
+                    !important;
+                & browser {
+                    border-radius: var(--uc-content-radius);
+                    clip-path: circle(100%);
+                    background-color: transparent !important;
+                }
+            }
+        }
+        @media (-moz-bool-pref: "uc.tweak.borderless") {
+            & #appcontent browser {
                 clip-path: circle(100%);
                 background-color: transparent !important;
+            }
+            
+            &:not([titlepreface*="="]) {
+                & #appcontent browser {
+                    border-top-left-radius: var(--uc-content-radius) !important;
+                    border-top-right-radius: var(--uc-content-radius) !important;
+                }
+            }
+            
+            @media not (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") { 
+                &:has(#sidebar-box:not([positionend="true"])) #appcontent browser {
+                    border-top-left-radius: var(--uc-content-radius) !important;
+                    border-bottom-left-radius: var(--uc-content-radius) !important;
+                } &:has(#sidebar-box[positionend="true"]) #appcontent browser {
+                    border-top-right-radius: var(--uc-content-radius) !important;
+                    border-bottom-right-radius: var(--uc-content-radius) !important;
+                } 
+            }
+            @media (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") {
+                &:not([titlepreface*="-"]) { 
+                    &:has(#sidebar-box:not([positionend="true"])) #appcontent browser {
+                        border-top-left-radius: var(--uc-content-radius) !important;
+                        border-bottom-left-radius: var(--uc-content-radius) !important;
+                    } &:has(#sidebar-box[positionend="true"]) #appcontent browser {
+                        border-top-right-radius: var(--uc-content-radius) !important;
+                        border-bottom-right-radius: var(--uc-content-radius) !important;
+                    } 
+                }
+            }
+        }
+    }
+    &:not(
+        [inDOMFullscreen="true"],
+        [chromehidden*="toolbar"], 
+        [chromehidden*="menubar"]
+    ) {
+        & #appcontent browser {
+            clip-path: circle(100%);
+            background-color: transparent !important;
+        }
+
+        &:not([titlepreface*="="]) {
+            & #appcontent browser {
+                border-top-left-radius: var(--uc-content-radius) !important;
+                border-top-right-radius: var(--uc-content-radius) !important;
+            }
+        }
+
+        @media not (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") { 
+            &:has(#sidebar-box:not([positionend="true"])) #appcontent browser {
+                border-top-left-radius: var(--uc-content-radius) !important;
+                border-bottom-left-radius: var(--uc-content-radius) !important;
+            } &:has(#sidebar-box[positionend="true"]) #appcontent browser {
+                border-top-right-radius: var(--uc-content-radius) !important;
+                border-bottom-right-radius: var(--uc-content-radius) !important;
+            } 
+        }
+        @media (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") {
+            &:not([titlepreface*="-"]) { 
+                &:has(#sidebar-box:not([positionend="true"])) #appcontent browser {
+                    border-top-left-radius: var(--uc-content-radius) !important;
+                    border-bottom-left-radius: var(--uc-content-radius) !important;
+                } &:has(#sidebar-box[positionend="true"]) #appcontent browser {
+                    border-top-right-radius: var(--uc-content-radius) !important;
+                    border-bottom-right-radius: var(--uc-content-radius) !important;
+                } 
             }
         }
     }

@@ -63,6 +63,9 @@
     &[sizemode="fullscreen"] {
         --uc-navbar-hover-margin-top: var(--uc-content-margin);
     }
+    @media (-moz-bool-pref: "uc.tweak.borderless") {
+        --uc-navbar-hover-margin-top: var(--uc-content-margin);
+    }
 
     #PersonalToolbar {
         display: none !important;
@@ -83,6 +86,7 @@
         background-color: transparent !important;
     }
     
+    @media not (-moz-bool-pref: "uc.tweak.borderless") {
     &:not([sizemode="fullscreen"]) #navigator-toolbox::before {
         content: "";
         position: absolute;
@@ -92,7 +96,7 @@
         background-color: var(--uc-panel-hint) !important;
         border-radius: var(--uc-radius) !important;
         transition: opacity var(--uc-transition) !important; 
-    }
+    }}
     
     #nav-bar {
         min-height: unset !important;

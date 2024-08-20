@@ -64,6 +64,7 @@ nyoom switch potatofox
 
 ### about:config tweaks 
 
+* `uc.tweak.borderless` -> removes margins around the webpage
 * `uc.tweak.sidebar-header` -> show sidebar header
 * `uc.tweak.sidebar-full-collapse` -> make sidebar fully hidden when collapse (like the hidden navbar)
 * `sidebar.position_start` -> whether the sidebar is on the left or right
