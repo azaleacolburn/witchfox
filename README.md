@@ -58,7 +58,7 @@ Download and move the chrome folder and user.js into your profiles root director
 
 `uc.tweak.regular-extension-menu` -> bring regular extension menu back
 
-`uc.tweak.blur` -> **EXPERIMENTAL** blur support  
+`uc.tweak.translucency` -> **EXPERIMENTAL** blur support  
 
 ## Credits
 

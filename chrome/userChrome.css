@@ -3,7 +3,7 @@
 
 :root {
     --user-bg: var(--lwt-accent-color);
-    @media (-moz-bool-pref: "uc.tweak.blur") {
+    @media (-moz-bool-pref: "uc.tweak.translucency") {
         --user-bg: color-mix(in srgb, var(--lwt-accent-color), transparent 20%) !important;
     }
 }
