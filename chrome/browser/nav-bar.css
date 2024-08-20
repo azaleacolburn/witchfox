@@ -1,5 +1,5 @@
 #navigator-toolbox, #nav-bar {
-    background-color: var(--lwt-accent-color) !important;
+    background-color: transparent !important;
     box-shadow: none !important;
 }
 

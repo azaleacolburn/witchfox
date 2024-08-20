@@ -1,2 +1,9 @@
 @import url("browser/main.css");
 @import url("vars.css");
+
+:root {
+    --user-bg: var(--lwt-accent-color);
+    @media (-moz-bool-pref: "uc.tweak.blur") {
+        --user-bg: color-mix(in srgb, var(--lwt-accent-color), transparent 20%) !important;
+    }
+}

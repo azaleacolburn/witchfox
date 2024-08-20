@@ -7,7 +7,7 @@
 @import url("nav-bar.css");
 
 body {
-    background-color: var(--lwt-accent-color);
+    background-color: var(--user-bg);
 }
  
 /* tabs */
@@ -21,7 +21,7 @@ html:not([sizemode="fullscreen"]) {
     #appcontent .browserStack {
         border-radius: var(--user-radius);
         box-shadow: var(--user-rounded-corners-shadow) !important;
-        background-color: var(--lwt-accent-color);
+        background-color: transparent;
         
         &::after {
             content: "";
@@ -32,7 +32,7 @@ html:not([sizemode="fullscreen"]) {
             * same from the browser window shadow on top. */
             box-shadow:
                 var(--uc-tweak-rounded-corners-shadow, 0 0 transparent),
-                0 0 0 16px var(--lwt-accent-color) !important;       
+                0 0 0 16px transparent !important;       
             clip-path: inset(0);
             pointer-events: none;
         }
@@ -57,7 +57,7 @@ html:not([sizemode="fullscreen"]) {
 #statuspanel {
     & #statuspanel-label {
         border-radius: var(--user-radius) !important;
-        background-color: var(--lwt-accent-color) !important;
+        background-color: transparent !important;
         border: none !important;
     }
     
@@ -77,7 +77,7 @@ html:not([sizemode="fullscreen"]) {
  
 /* appcontent */
  
-#browser, #sidebar-header, #sidebar-box { background-color: var(--lwt-accent-color) !important; }
+#browser, #sidebar-header, #sidebar-box { background-color: transparent !important; }
 
 #statuspanel {
     overflow: hidden;
