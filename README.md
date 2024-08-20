@@ -91,3 +91,7 @@ The variables used by the theme are in `vars.css` and `userChrome.css` (colors).
 [artsyfriedchicken](https://github.com/artsyfriedchicken/EdgyArc-fr) - EdgyArc-fr
 
 [Naezer](https://github.com/Naezr/ShyFox) - ShyFox
+
+## Mirrors
+
+Currently Potatofox is mirrored to [git.gay](https://git.gay/awwpotato/PotatoFox)
