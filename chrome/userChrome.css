@@ -22,7 +22,7 @@
 
 :root[lwtheme="true"] {
     --user-bg: var(--lwt-accent-color) !important;
-    @media (-moz-bool-pref: "uc.tweak.seperate-sidebar") {
+    @media (-moz-bool-pref: "uc.tweak.separate-sidebar") {
         --user-bg: var(--toolbar-bgcolor) !important;
     }
     @media (-moz-bool-pref: "uc.tweak.translucency") {
