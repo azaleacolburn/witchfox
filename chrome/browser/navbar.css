@@ -58,6 +58,7 @@
 
     #navigator-toolbox {
         position: absolute !important;
+        z-index: 50 !important;
         
         width: var(--nav-width) !important;
         height: var(--uc-content-margin) !important;

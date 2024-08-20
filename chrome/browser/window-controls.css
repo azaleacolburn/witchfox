@@ -19,6 +19,7 @@
     
     & .titlebar-buttonbox-container {
         z-index: 100 !important;
+        visibility: visible !important;
         position: absolute !important;
         height: 40.5px !important;
     } &[uidensity=compact] .titlebar-buttonbox-container { 
