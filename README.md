@@ -57,6 +57,8 @@ Open the [releases tab](https://codeberg.org/awwpotato/PotatoFox/releases) and d
 
 `uc.tweak.translucency` -> **EXPERIMENTAL** translucency support
 
+`browser.tabs.allow_transparent_browser` -> allow tab contents to have transparent bg (requires `uc.tweak.translucency`)
+
 ## Credits
 
 [KiKaraage](https://github.com/KiKaraage/ArcWTF) - ArcWTF
