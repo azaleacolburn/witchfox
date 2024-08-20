@@ -54,7 +54,7 @@
         &[uidensity=compact] {
             --nav-height: 34.5px;
             @media (-moz-bool-pref: "uc.tweak.extra-compact") {
-                --nav-height 28px;
+                --nav-height: 28px;
             }
         }
         
@@ -135,6 +135,7 @@
                     margin-top: calc(2*var(--user-panel-gap)) !important;
                     top: 0 !important;
                     background-color: var(--user-bg) !important;
+                    backdrop-filter: blur(100px) !important;
                     border: 1px solid var(--toolbarbutton-icon-fill) !important;            
 
                     #nav-bar-customization-target > *:not([disabled="true"]),
