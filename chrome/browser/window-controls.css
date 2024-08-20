@@ -11,7 +11,7 @@
 :root:not([inDOMFullscreen], [sizemode="fullscreen"]) {
     
     & .titlebar-buttonbox-container {
-        height: 40px !important;
+        height: 40.5px !important;
         visibility: visible !important;
         z-index: 100 !important;
         position: absolute !important;
@@ -48,42 +48,49 @@
         #toolbar-menubar > .titlebar-buttonbox-container {
             visibility: collapse !important;
         }
+        
+        .titlebar-button > .toolbarbutton-icon {
+            border-radius: var(--toolbarbutton-border-radius) !important;
+            height: 32px !important;
+            width: 32px !important;
+        }
+        &[uidensity="compact"] .titlebar-button > .toolbarbutton-icon {
+            height: 28px !important;
+            width: 28px !important;
+        }
+        &:not([uidensity="compact"]) .titlebar-button > .toolbarbutton-icon {
+            margin-block: 3px !important;
+        }
 
         @media (-moz-gtk-csd-minimize-button) or (-moz-gtk-csd-maximize-button) or (-moz-gtk-csd-close-button) {
-            --gtk-window-button-width: 36px;
-            @media (-moz-bool-pref: "uc.tweak.extra-thin-nav-bar") {
-                &[uidensity=compact] {
-                    --gtk-window-button-width: 32px;
-                }
+            --gtk-window-button-width: 38px;
+            &[uidensity=compact] {
+                --gtk-window-button-width: 34px;
             }
         }
         @media ((-moz-gtk-csd-minimize-button) and (-moz-gtk-csd-maximize-button)) or 
            ((-moz-gtk-csd-minimize-button) and (-moz-gtk-csd-close-button)) or
            ((-moz-gtk-csd-maximize-button) and (-moz-gtk-csd-close-button)) {
-            --gtk-window-button-width: 66px;
-            @media (-moz-bool-pref: "uc.tweak.extra-thin-nav-bar") {
-                &[uidensity=compact] {
-                    --gtk-window-button-width: 60px;
-                }
+            --gtk-window-button-width: 76px;
+            &[uidensity=compact] {
+                --gtk-window-button-width: 68px;
             }
         }
 
         @media (-moz-gtk-csd-minimize-button) and (-moz-gtk-csd-maximize-button) and (-moz-gtk-csd-close-button) {
-            --gtk-window-button-width: 96px;
-            @media (-moz-bool-pref: "uc.tweak.extra-thin-nav-bar") {
-                &[uidensity=compact] {
-                    --gtk-window-button-width: 84px;
-                }
+            --gtk-window-button-width: 114px;
+            &[uidensity=compact] {
+                --gtk-window-button-width: 102px;
             }
         }       
 
         @media not (-moz-gtk-csd-reversed-placement) {
-            #nav-bar { margin-right: var(--gtk-window-button-width) !important; }
-            .titlebar-buttonbox-container { right: 0; }
+            #nav-bar { margin-right: calc(var(--gtk-window-button-width) + var(--user-panel-gap) - 3px) !important; }
+            .titlebar-buttonbox-container { right: calc(var(--user-panel-gap) - 3px); }
         }
         @media (-moz-gtk-csd-reversed-placement) {
-            #nav-bar { margin-left: var(--gtk-window-button-width) !important; }
-            .titlebar-buttonbox-container { left: 0; }
+            #nav-bar { margin-left: calc(var(--gtk-window-button-width) + var(--user-panel-gap) - 3px) !important; }
+            .titlebar-buttonbox-container { left: calc(var(--user-panel-gap) - 3px); }
         }
     }   
 }}
