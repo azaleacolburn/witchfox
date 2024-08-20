@@ -110,3 +110,8 @@ splitter.devtools-horizontal-splitter {
 #tab-notification-deck .notificationbox-stack {
     background-color: transparent !important;
 }
+
+/* private browser indicator */
+#private-browsing-indicator-with-label {
+    display: none !important;
+}
