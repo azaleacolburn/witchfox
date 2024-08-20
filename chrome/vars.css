@@ -9,10 +9,11 @@
 :root {
     --uc-transition: 200ms ease-in-out;
     
-    --uc-content-margin: 10px;
-    --uc-sidebar-margin: 4px;
     --uc-content-radius: 5px;
     --uc-radius: 5px;
+    
+    --uc-content-margin: 10px;
+    --uc-sidebar-margin: 4px;
      
     &[uidensity="compact"] {
         --uc-content-margin: 8px;
