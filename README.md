@@ -1,6 +1,5 @@
-# README
 
-My Firefox CSS Config
+![](Media/Screenshot0.png)
 
 Most of the CSS in this repo comes from other people,
 credit to [Shina Fox](https://github.com/Shina-SG/Shina-Fox) for the URL bar animation, 
