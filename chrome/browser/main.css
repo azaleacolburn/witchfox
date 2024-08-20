@@ -1,3 +1,9 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
+
 @import url("../vars.css");
 @import url("icons.css");
 @import url("sidebar.css");
@@ -16,12 +22,12 @@ html:not([sizemode="fullscreen"]) {
     #appcontent {
         margin: var(--user-panel-gap);
         margin-top: 0 !important;
-    }
-    
-    #appcontent browser {
-        border-radius: var(--user-radius);
-        background-color: transparent;
-        clip-path: circle(100%);
+
+        & browser {
+            border-radius: var(--user-radius);
+            background-color: transparent;
+            clip-path: circle(100%);
+        }
     } 
 }
 
