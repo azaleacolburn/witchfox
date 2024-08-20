@@ -27,10 +27,19 @@
         height: 44px !important;
     }
     
+    #TabsToolbar { min-height: 0px !important; }
+
     &:not([sizemode="fullscreen"]) {
     @media (-moz-platform: macos ) {
         #nav-bar {
-            margin-left: 68px !important;
+            margin-left: 78px !important;
+        }
+        .titlebar-buttonbox-container {
+            width: 78px !important;
+            position: fixed !important;
+            & .titlebar-buttonbox {
+                margin-inline: 12px !important;
+            }
         }
     }}
     
