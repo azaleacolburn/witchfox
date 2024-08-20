@@ -9,6 +9,7 @@
     margin-top: 40px !important;
     margin-bottom: 40px !important;
     margin-right: calc( -1 * var(--user-panel-gap) ) !important;
+    margin-left: 0 !important;
     opacity: 0 !important;
     border-radius: var(--user-radius);
 }
