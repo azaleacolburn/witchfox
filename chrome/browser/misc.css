@@ -94,9 +94,9 @@ splitter.devtools-horizontal-splitter {
         border: none !important;
     }
     
-    bottom: 2px !important;
-    &:not([mirror="true"]) { left: 2px !important; }
-    &[mirror="true"] { right: 2px !important; }
+    bottom: 3px !important;
+    &:not([mirror="true"]) { left: 3px !important; }
+    &[mirror="true"] { right: 3px !important; }
 }
 
 /* menu that appears when alt is pressed */
