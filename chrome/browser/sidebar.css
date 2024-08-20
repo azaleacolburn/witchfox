@@ -129,8 +129,8 @@
         /* sidebar full collapse */
         &[titlepreface*="‌"] { 
             #sidebar-box {
-                min-width: var(--uc-hover-margin) !important;
-                max-width: var(--uc-hover-margin) !important;
+                min-width: var(--uc-content-margin) !important;
+                max-width: var(--uc-content-margin) !important;
                 margin-inline: 0px !important;
                 
                 & #sidebar, 
