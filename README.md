@@ -33,6 +33,26 @@ Extension:
 
 Open the [releases tab](https://codeberg.org/awwpotato/PotatoFox/releases) and download the correct release for your version of Firefox (Urlbar > about:support > Application Basics > Version). Then copy the chrome directory and user.js file into your Firefox profiles directory (about:support > Application Basics > Profile Directory), then restart Firefox.
 
+<details><summary>Advanced (cli) install</summary>
+
+#### Using git
+```bash
+git clone https://codeberg.org/awwpotato/potatofox.git
+cd potatofox
+ln -sr user.js chrome ~/.mozilla/firefox/<profile> # Linux
+ln -sr user.js chrome ~/Library/Application Support/Firefox/Profiles/<profile> # MacOS 
+```
+#### Using [Nyoom](https://github.com/ryanccn/nyoom)
+```bash
+nyoom profile <profile-dir>
+nyoom add codeberg:awwpotato/potatofox
+nyoom switch potatofox
+```
+> [!NOTE]
+> Make sure to install the required extensions.
+
+</details>
+
 ## Post Install
 
 - Press `ctrl+shift+1` or `cmd+shift+1` -> toggle sidebar collapsing
