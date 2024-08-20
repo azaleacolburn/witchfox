@@ -42,7 +42,7 @@ splitter.devtools-horizontal-splitter,
             var(--uc-content-margin-bottom)
             var(--uc-content-margin-left);
         & browser {
-            border-radius: var(--uc-radius);
+            border-radius: var(--uc-content-radius);
             clip-path: circle(100%);
             background-color: transparent !important;
         }

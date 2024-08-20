@@ -11,6 +11,7 @@
     
     --uc-content-margin: 10px;
     --uc-sidebar-margin: 4px;
+    --uc-content-radius: 5px;
     --uc-radius: 5px;
      
     &[uidensity="compact"] {
