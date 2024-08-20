@@ -69,35 +69,34 @@
         &[lwtheme="true"]:not([uidensity="compact"]) .titlebar-button > .toolbarbutton-icon {
             margin-block: 3px !important;
         }
-
+        
         @media (-moz-gtk-csd-minimize-button) or (-moz-gtk-csd-maximize-button) or (-moz-gtk-csd-close-button) {
-            --gtk-window-button-width: 38px;
-            &[uidensity=compact] {
-                --gtk-window-button-width: 34px;
-            }
+            --gtk-window-button-width: var(--gtk-window-control-single);
         }
         @media ((-moz-gtk-csd-minimize-button) and (-moz-gtk-csd-maximize-button)) or 
            ((-moz-gtk-csd-minimize-button) and (-moz-gtk-csd-close-button)) or
            ((-moz-gtk-csd-maximize-button) and (-moz-gtk-csd-close-button)) {
-            --gtk-window-button-width: 76px;
-            &[uidensity=compact] {
-                --gtk-window-button-width: 68px;
-            }
+            --gtk-window-button-width: var(--gtk-window-control-dual);
         }
 
         @media (-moz-gtk-csd-minimize-button) and (-moz-gtk-csd-maximize-button) and (-moz-gtk-csd-close-button) {
-            --gtk-window-button-width: 114px;
-            &[uidensity=compact] {
-                --gtk-window-button-width: 102px;
-            }
+            --gtk-window-button-width: var(--gtk-window-control-tri);
         }       
 
         @media not (-moz-gtk-csd-reversed-placement) {
-            #nav-bar { margin-right: calc(var(--gtk-window-button-width) - 3px) !important; }
+            #nav-bar { 
+                margin-right: 
+                    var(--gtk-window-button-width)
+                    !important; 
+            }
             .titlebar-buttonbox-container { right: 0px; }
         }
         @media (-moz-gtk-csd-reversed-placement) {
-            #nav-bar { margin-left: calc(var(--gtk-window-button-width) - 3px) !important; }
+            #nav-bar { 
+                margin-left:
+                    var(--gtk-window-button-width)
+                    !important; 
+            }
             .titlebar-buttonbox-container { left: 0px; }
         }
     } @media (-moz-platform: linux) and (not (-moz-gtk-csd-available)) {

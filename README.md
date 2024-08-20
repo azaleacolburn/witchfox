@@ -64,6 +64,9 @@ nyoom switch potatofox
 - Import Firefox Color [Theme](https://color.firefox.com/?theme=XQAAAAJIBAAAAAAAAABBqYhm849SCicxcUcPX38oKRicm6da8pG5gi-DrbS7fiEFLUzDsWXWyUHMSkHZ2PpRK_LvZGTF44fp7VnVXujpkKMjvOWQSIhdK22u1ZG2EgdMyNMx_0oKJ3H6SApxy3IyQ4DsJp5wXsJAe_-1mtgSkcENWz1hZ1gghq0xhXl6UO7VspWfsQ6vJg4Ug3n663qkVw8bLSpiIq6UZ0-WUMbVBt7-ALPxPVUB-S7EPdTdzkJxPMClIwcHP0JDv5qZANQwxTiL2qj3_6MMlX4Na3E2OdRK5C2gEjJ1vGxiNAKeqBLL9Caj1vDy56y6TcHlP-TGTBwju0MmWd88BWnnY33UAPhE85EIfBuQUUnOnDqE6ZvhrtBP-6mKMqcw4glFV5aTWHSlcIC22vuWuOBLdbRLJqDRGsFnQKuEWjwqlaZnkW00cfW6xFXES7FucYe45hz-JavOj-MRgeUprXgrziCzafFv9-HiTWYGsMrlhXAfFJmBStDWZJ1SlgDb5Vzorbe6Fg-eI9y9GPXEAFBbRIbn_rg5AaqGyHNq2SpI54ScDANxdzzbzy3R7Q67qcFXl3TEXU431c__1t8ujg) (Optional)
 - about:addons (url) > Userchrome Toggle Extended preferences > General settings > allow multiple styles to be active together, apply changes 
 
+> [!NOTE]
+> On Linux there may be extra padding before/after the window controls, this can be fixed by changing line 36-38 in `chrome/vars.css`
+
 ### Recommended Userchrome Toggle Extended settings
 ![Userchrome Toggle Settings](./Media/UCToggleSettings.png)
 

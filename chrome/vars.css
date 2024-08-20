@@ -31,4 +31,20 @@
     &[uidensity=compact] {
         --uc-sidebar-width: 34px;
     }
+    
+    /* linux window controls */
+    --gtk-window-control-single: 38px;
+    --gtk-window-control-dual: 76px;
+    --gtk-window-control-tri: 114px;
+    /* linux window controls w/ firefox color */
+    &[lwtheme="true"] {
+        --gtk-window-control-single: 35px;
+        --gtk-window-control-dual: 73px;
+        --gtk-window-control-tri: 114px;
+        &[uidensity=compact] {
+            --gtk-window-control-single: 31px;
+            --gtk-window-control-dual: 65px;
+            --gtk-window-control-tri: 99px;
+        }
+    }
 }
