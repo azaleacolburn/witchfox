@@ -1,33 +1,10 @@
+@import url("../vars.css");
 @import url("icons.css");
 @import url("sidebar.css");
 @import url("url-bar.css");
 @import url("window-controls.css");
 @import url("extensions.css");
 @import url("nav-bar.css");
-
-:root {
-    --user-panel-gap: 8px;
-    --user-radius: 6px;
-    --user-rounded-corners-shadow: none;
-    /*   0 -.8px 0 0 rgb(0 0 0 / 0.02), */
-    /*   0 0.5px 1px 1px rgb(0 0 0 / 0.06), */
-    /*   0 1px 1px rgb(0 0 0 / 0.1); */
-    /* @media (resolution > 1.8dppx) { */
-    /*     --user-rounded-corners-shadow: */
-    /*     0 0 0.5px 0.5px rgb(0 0 0 / 0.06), */
-    /*     0 0.5px 1.5px rgb(0 0 0 / 0.1); */
-    /* } */
-}
-
-:root[uidensity=compact] { --user-panel-gap: 6px; }
-@media (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") {
-    :root { --user-panel-gap: 12px }
-    :root[uidensity=compact] { --user-panel-gap: 10px; } 
-}
-@media (-moz-bool-pref: "uc.tweak.extra-thicc-browser-margin"){
-    :root { --user-panel-gap: 14px }
-    :root[uidensity=compact] { --user-panel-gap: 12px; } 
-}
 
 body {
     background-color: var(--lwt-accent-color);
@@ -101,29 +78,6 @@ html:not([sizemode="fullscreen"]) {
 /* appcontent */
  
 #browser, #sidebar-header, #sidebar-box { background-color: var(--lwt-accent-color) !important; }
-
-#sidebar-box {
-    :root:not([sizemode="fullscreen"]) {
-        border-radius: var(--user-radius) !important;
-    }
-    background-color: var(--lwt-accent-color) !important;
-    margin: 
-        0
-        calc(var(--user-panel-gap)*-0.5) 
-        var(--user-panel-gap)
-        calc(var(--user-panel-gap)*0.5)            
-        !important;
-    
-}
-:root[sizemode="fullscreen"] #sidebar-box {
-        margin-right: calc(var(--user-panel-gap)*0.5) !important;
-        margin-bottom: 0px !important;
-}
-
-#sidebar {
-    border-radius: var(--user-radius);
-    background-color: inherit !important;
-}
 
 #statuspanel {
     overflow: hidden;

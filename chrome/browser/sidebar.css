@@ -1,22 +1,39 @@
 #sidebar-box {
+    background-color: var(--lwt-accent-color) !important;
+    margin: 
+        0
+        calc(var(--user-sidebar-gap) - var(--user-panel-gap))
+        var(--user-panel-gap)
+        var(--user-sidebar-gap)
+        !important;
     width: 170px;
     min-width: 34px !important;
+
+}
+:root:not([sizemode="fullscreen"]) #sidebar-box {
+    border-radius: var(--user-radius) !important;
+}
+:root[sizemode="fullscreen"] #sidebar-box {
+    margin-right: var(--user-sidebar-gap) !important;
+    margin-bottom: 0px !important;
+}
+
+#sidebar {
+    border-radius: var(--user-radius);
+    background-color: inherit !important;
 }
 
 #sidebar-splitter {
     background-color: var(--lwt-accent-color) !important;
     border: none !important;
-    width: var(--user-panel-gap) !important;
+    width: var(--user-sidebar-gap) !important;
     margin-right: calc( -1 * var(--user-panel-gap) ) !important;
-    margin-left: 0 !important;
+    margin-left: calc(var(--user-panel-gap) - var(--user-sidebar-gap)) !important;
     opacity: 0 !important;
     border-radius: var(--user-radius);
 }
 :root[sizemode="fullscreen"] #sidebar-splitter {
-    opacity: 1 !important;
     margin-right: 0 !important;
-    margin-left: calc( -0.5 * var(--user-panel-gap) ) !important;
-    width: calc( 0.5 * var(--user-panel-gap) ) !important;
 }
 
 /* dynamic sidebar */
@@ -24,63 +41,25 @@
     #sidebar-splitter {
         display: none !important;
     }
-    [titlepreface*="."] #sidebar-header {
-        visibility: collapse !important;
-    }
-    /*
-    [titlepreface*="."] #titlebar {
-        visibility: collapse;
-    }
-    */
 
     #sidebar-box { 
-        --uc-sidebar-hover-width: 200px;
-        --uc-autohide-sidebar-delay: 90ms;
         position: relative;
-
         z-index:1;
+        min-width: var(--uc-sidebar-width) !important;
+        width: var(--uc-sidebar-width) !important;
+        max-width: var(--uc-sidebar-width) !important;
     }
-
-    @media not (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") {
-        #sidebar-box {
-            --uc-sidebar-width: 40px;
-        }
-        &[uidensity=compact] #sidebar-box {
-            --uc-sidebar-width: 34px !important;
-        }
-        @media (-moz-bool-pref: "uc.tweak.wider-sidebar-collapse") {
-            #sidebar-box {
-                --uc-sidebar-width: 80px;
-            }
-            &[uidensity=compact] #sidebar-box {
-                --uc-sidebar-width: 66px !important;
-            }
-        }
-        
-        #sidebar-box {
-            min-width: var(--uc-sidebar-width) !important;
-            width: var(--uc-sidebar-width) !important;
-            max-width: var(--uc-sidebar-width) !important;
-        }
-    }
-
 
     #sidebar-box[positionend]{ direction: rtl }
     #sidebar-box[positionend] > *{ direction: ltr }
-
     #sidebar-box[positionend]:-moz-locale-dir(rtl){ direction: ltr }
     #sidebar-box[positionend]:-moz-locale-dir(rtl) > *{ direction: rtl }
-
-    #main-window[sizemode="fullscreen"] #sidebar-box{ --uc-sidebar-width: 1px; }
-
-    #sidebar-splitter{ display: none }
 
     #sidebar-switcher-target{
         -moz-box-pack: start !important;
     }
 
-    #sidebar-header,        
-    #sidebar{
+    #sidebar-header, #sidebar {
         transition: min-width 115ms linear var(--uc-autohide-sidebar-delay) !important;
         min-width: var(--uc-sidebar-width) !important;
         width: var(--uc-sidebar-width) !important;
@@ -97,7 +76,7 @@
     @media (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") { 
         #sidebar-box:hover #sidebar-header,
         #sidebar-box:hover #sidebar {
-            padding: 0 calc(var(--user-panel-gap)*0.5) !important;
+            padding: 0 var(--user-sidebar-gap) !important;
             background-color: var(--lwt-accent-color) !important;
             transition: min-width 0s, width 0s, padding 0s !important;
             transition-delay: 2ms !important;
@@ -106,22 +85,22 @@
             max-width: var(--user-panel-gap) !important;
             min-width: var(--user-panel-gap) !important;
             width: var(--user-panel-gap) !important; 
-            transition: min-width 0s, width 0s, padding 0s, margin 0s !important;
+            transition: 
+                min-width 0s, width 0s, padding 0s, margin 0s,
+                opacity 5ms linear var(--uc-autohide-sidebar-delay) !important;
             transition-delay: 2ms !important;
             margin-right: calc(-1*var(--user-panel-gap)) !important;
-      
             margin-left: 0 !important;
+
             & #sidebar-header, & #sidebar {
                 will-change: auto !important;
-                width: 0px;
                 transition: min-width 0s, width 0s, padding 0s !important;
                 transition-delay: 2ms !important;
-           }
+            }
         }
         #sidebar-box:not(:hover) {
             opacity: 0 !important;
             & #sidebar-header, & #sidebar {
-                opacity: 0 !important;
                 min-width: 0px !important;
                 transition: min-width 0s, width 0s, padding 0s !important;
                 transition-delay: 2ms !important;
@@ -129,6 +108,10 @@
         }
     }
 }
+
+
+
+/* sidebar header */   
 
 @media not (-moz-bool-pref: "uc.tweak.sidebar-header") {
     #sidebar-header {
@@ -145,13 +128,8 @@
         border-top-left-radius: var(--user-radius);
         border-top-right-radius: var(--user-radius);
     }
-    :root[sizemode="fullscreen"] #sidebar-header {
-        margin-top: calc(var(--user-panel-gap)*0.5) !important;
-    }
 }
 
-
-    
 #sidebar-header {
     padding-inline: 0 !important;
     padding: 0 !important;

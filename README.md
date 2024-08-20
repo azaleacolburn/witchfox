@@ -44,7 +44,7 @@ Download and move the chrome folder and user.js into your profiles root director
 
 `uc.tweak.no-window-controls` -> hide window controls
 
-`uc.tweak.popup-search` -> arc like search bar
+`uc.tweak.regular-search` -> return url-bar to original state
 
 `uc.tweak.extra-thin-nav-bar` -> make nav-bar extra thin (28px) (requires uidensity=compact)
 

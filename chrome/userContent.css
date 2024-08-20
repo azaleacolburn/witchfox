@@ -1,0 +1,32 @@
+@import url("vars.css");
+
+/* pdf viewer */
+[mozdisallowselectionprint] > body {
+    & #mainContainer {
+        & .toolbar {
+            padding: 4px !important;
+            padding-bottom: none !important;
+            & #toolbarContainer {
+                border-radius: var(--user-radius) !important;
+                box-shadow: none !important;
+            }
+        }
+    }
+    & #outerContainer.sidebarOpen #sidebarContainer {
+        border-radius: var(--user-radius) !important;
+        display: flex !important;
+        flex-direction: column !important;
+
+        & #toolbarSidebar {
+            width: fit-content !important;
+            align-self: center !important;
+            background-color: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+            & #sidebarViewButtons {
+                display: flex !important;
+                justify-content: center !important;
+            }
+        }
+    }
+}
