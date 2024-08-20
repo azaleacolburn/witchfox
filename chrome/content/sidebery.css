@@ -21,12 +21,15 @@
         }
     }
 
-    @media (max-width: 80px) {
+    @media (max-width: 60px) {
         .TabsPanel {
             --tabs-indent: 0px !important; 
         }
         .bookmarks-tree {
             --bookmarks-indent: 0px !important;
+        }
+        .TabsPanel .new-tab-btn > svg, .TabsPanel .new-tab-btn > img {
+            left: 6px !important;
         }
     }
      
@@ -43,7 +46,4 @@
         margin: 0.3px !important
     }
 
-    .TabsPanel .new-tab-btn > svg, .TabsPanel .new-tab-btn > img {
-        left: 6px !important;
-    }
 }

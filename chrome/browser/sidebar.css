@@ -72,6 +72,7 @@
         min-width: var(--uc-sidebar-hover-width) !important;
         transition-delay: 0ms !important;
         transition: min-width 115ms linear var(--uc-autohide-sidebar-delay) !important;
+        background-color: var(--user-bg) !important;
     }
 
     
@@ -79,7 +80,7 @@
         #sidebar-box:hover #sidebar-header,
         #sidebar-box:hover #sidebar {
             padding: 0 var(--user-sidebar-gap) !important;
-            background-color: transparent !important;
+            background-color: var(--user-bg) !important;
             transition: min-width 0s, width 0s, padding 0s !important;
             transition-delay: 2ms !important;
         }
