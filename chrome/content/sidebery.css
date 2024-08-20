@@ -6,13 +6,12 @@
 
 @-moz-document regexp("^moz-extension://.*?/sidebar/sidebar.html") {
     :root.root, #root {
-        --tabs-margin: 1.5px !important; 
+        --tabs-margin: 1.5px !important;
         --tabs-pinned-height: 30px !important;
         --tabs-pinned-width: 30px !important;
         --tabs-height: 30px !important;
         --nav-btn-width: 30px !important;
         --nav-btn-height: 28px !important;
-        --general-border-radius: var(--uc-radius) !important;
          
 /*         @media (-moz-bool-pref:"uc.tweak.translucency") {
             background-color: transparent !important;
@@ -45,6 +44,10 @@
         opacity: 1 !important;
         z-index: 1 !important;
         transform: scale(1,1) !important;
+    }
+    
+    .central-box {
+        margin-top: var(--tabs-margin) !important;
     }
     
     .TabsPanel .new-tab-btns {

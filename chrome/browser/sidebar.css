@@ -24,10 +24,10 @@
         
         will-change: margin min-width width max-width;
         transition: 
-            min-width var(--uc-transistion), 
-            max-width var(--uc-transistion),
-            width var(--uc-transistion),
-            margin var(--uc-transistion);
+            min-width var(--uc-transition), 
+            max-width var(--uc-transition),
+            width var(--uc-transition),
+            margin var(--uc-transition);
     }
 
     #sidebar {
@@ -51,6 +51,23 @@
         }
         border-top-left-radius: var(--uc-radius) !important;
         border-top-right-radius: var(--uc-radius) !important;
+        padding: 0 var(--uc-tab-margin) !important;
+        border: none !important;
+        font-size: 16px !important;
+        
+        #sidebar-switcher-target {
+            margin-inline-end: 0 !important;
+            padding: 0 !important;
+        }
+        
+        #sidebar-icon {
+            margin-inline: 7px 5px !important;
+        }
+        
+        #sidebar-title {
+            padding: 0 !important;
+        }
+        #sidebar-close { display: none !important; }
     }
   
     /* sidebar collapse */
@@ -78,7 +95,10 @@
         }
          
         #sidebar, #sidebar-header {
-            transition: min-width var(--uc-transition);
+            transition:  
+                min-width var(--uc-transition), 
+                max-width var(--uc-transition),
+                width var(--uc-transition) !important;
             will-change: min-width;
         }
         
@@ -99,11 +119,19 @@
                     transition: margin var(--uc-transition) !important;
                     
                     margin-left: calc(-1 * (var(--uc-sidebar-hover-width) + var(--uc-content-margin-left))) !important;
-                    margin-block: var(--uc-sidebar-margin) !important;
                     min-width: var(--uc-sidebar-hover-width) !important;
                     max-width: var(--uc-sidebar-hover-width) !important;
                     background-color: var(--uc-bg-opaque) !important;
                 }
+                
+                & #sidebar-header { margin-top: var(--uc-sidebar-margin) !important; }
+                & #sidebar { 
+                    margin-block: var(--uc-sidebar-margin) !important; 
+                    @media (-moz-bool-pref: "uc.tweak.sidebar-header") {
+                        margin-top: 0 !important;
+                    }
+                }
+               
                 
                 &:not([positionend="true"]) #sidebar, 
                 &:not([positionend="true"]) #sidebar-header {
@@ -159,9 +187,9 @@
             }
         }
         
-        #sidebar-box[positionend]{ direction: rtl }
-        #sidebar-box[positionend] > *{ direction: ltr }
-        #sidebar-box[positionend]:-moz-locale-dir(rtl){ direction: ltr }
-        #sidebar-box[positionend]:-moz-locale-dir(rtl) > *{ direction: rtl }
+        #sidebar-box[positionend="true"]{ direction: rtl }
+        #sidebar-box[positionend="true"] > *{ direction: ltr }
+        #sidebar-box[positionend="true"]:-moz-locale-dir(rtl){ direction: ltr }
+        #sidebar-box[positionend="true"]:-moz-locale-dir(rtl) > *{ direction: rtl }
     }
 }
