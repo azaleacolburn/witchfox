@@ -129,8 +129,8 @@
         /* sidebar full collapse */
         &[titlepreface*="‌"] { 
             #sidebar-box {
-                min-width: var(--uc-content-margin) !important;
-                max-width: var(--uc-content-margin) !important;
+                min-width: var(--uc-hover-margin) !important;
+                max-width: var(--uc-hover-margin) !important;
                 margin-inline: 0px !important;
                 
                 & #sidebar, 
@@ -169,11 +169,11 @@
                 
                 &:not([positionend="true"]):hover #sidebar,
                 &:not([positionend="true"]):hover #sidebar-header {
-                    margin-left: calc(var(--uc-content-margin)*2) !important;
+                    margin-left: calc(var(--uc-content-margin) + var(--uc-hover-margin)) !important;
                 } 
                 &[positionend="true"]:hover #sidebar, 
                 &[positionend="true"]:hover #sidebar-header {
-                    margin-right: calc(var(--uc-content-margin)*2) !important;
+                    margin-right: calc(var(--uc-content-margin) + var(--uc-hover-margin)) !important;
                 }
                 
                 &:hover::after {

@@ -82,7 +82,7 @@ toolbarspring {
         z-index: 50 !important;
         
         width: var(--nav-width) !important;
-        height: var(--uc-content-margin) !important;
+        height: var(--uc-hover-margin) !important;
         left: calc(50vw - var(--nav-width)*0.5) !important;
         right: auto !important;
         
