@@ -1,8 +1,20 @@
-![](Media/Screenshot0.png)
+![Firefox with Custom CSS applied](Media/Screenshot0.png)
 
 ## Compatibility
 
 Works on Linux, Macos, and Windows. Recommended to add spacers to navbar as to have somewhere to grab with your mouse.
+
+## Screenshots
+
+![](./Media/Screenshot1.png)
+
+![](./Media/Screenshot2.png)
+
+![](./Media/Screenshot3.png)
+
+![](./Media/Screenshot4.png)
+
+![](./Media/Screenshot5.png)
 
 ## Install Instructions
 
