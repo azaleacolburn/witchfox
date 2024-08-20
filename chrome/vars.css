@@ -53,11 +53,9 @@
         }
     }
     @media (-moz-bool-pref: "uc.tweak.extra-compact") {
-        :root[uidensity=compact] {
+        :root[uidensity=compact] & {
             --user-sidebar-gap: 1px !important; 
-            & #sidebar-box {
-                --uc-sidebar-width: 28px !important;
-            }
+            --uc-sidebar-width: 28px !important;
         }
     }
 }}
