@@ -15,10 +15,6 @@
 @media (-moz-bool-pref: "uc.tweak.extra-thin-nav-bar") {
     :root[uidensity=compact] {
         #urlbar-container {
-            max-height: 28px !important;
-            min-height: 28px !important;
-        }
-        #urlbar-container {
             padding-block: none !important;
         }
         #urlbar {
