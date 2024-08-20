@@ -48,8 +48,6 @@
     padding-inline-start: 0px !important;
 }
 
-/* tab bar */
-#TabsToolbar { display: none !important; }
             /* navbar collapse */
 #main-window[titlepreface*="​"]:not([inDOMFullscreen="true"]) {
     --uc-content-margin-top: var(--uc-content-margin) !important;
