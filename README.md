@@ -67,6 +67,9 @@ nyoom switch potatofox
 > [!NOTE]
 > On Linux there may be extra padding before/after the window controls, this can be fixed by changing line 36-38 in `chrome/vars.css`
 
+> [!NOTE]
+> If fingerprinting is a concern for you, I recommend enabling `uc.tweak.no-custom-icons` and removing `svg.context-properties.content.enabled` from `user.js`
+
 ### Recommended Userchrome Toggle Extended settings
 ![Userchrome Toggle Settings](./Media/UCToggleSettings.png)
 
@@ -76,6 +79,7 @@ nyoom switch potatofox
 * `uc.tweak.sidebar-header` -> show sidebar header
 * `sidebar.position_start` -> whether the sidebar is on the left or right
 * `uc.tweak.sidebery-top-navbar` -> move the Sidebery navbar thingy from the bottom to the top
+* `uc.tweak.no-custom-icons` -> removes theming of some extensions icons
 * `uc.tweak.no-window-controls` -> hide window controls
 * `uc.tweak.regular-search` -> return urlbar to original state
 * `uc.tweak.no-panel-hint` -> hide the small bars showing location of hidden panels
