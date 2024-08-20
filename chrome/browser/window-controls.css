@@ -18,9 +18,9 @@
 :root:not([inDOMFullscreen], [titlepreface*="="]) {
     
     & .titlebar-buttonbox-container {
-        height: 40.5px !important;
         z-index: 100 !important;
         position: absolute !important;
+        height: 40.5px !important;
     } &[uidensity=compact] .titlebar-buttonbox-container { 
         height: 34px !important; 
     } &[uidensity=touch] .titlebar-buttonbox-container {

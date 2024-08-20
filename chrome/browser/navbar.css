@@ -13,6 +13,10 @@
     #navigator-toolbox {
         margin-top: 0px !important;
     }
+} @media (-moz-platform: macos) {
+    #navigator-toolbox[style*="transform: translateY"] {
+        background-color: var(--uc-bg) !important;
+    }
 }
 
 #nav-bar, #navigator-toolbox {
@@ -44,7 +48,7 @@
     #urlbar-container { width: unset !important; }
 
     #navigator-toolbox {
-        position: absolute;
+        position: absolute !important;
         
         width: var(--nav-width) !important;
         height: var(--uc-content-margin) !important;
@@ -86,6 +90,8 @@
     
     &:not([customizing]) {
         #nav-bar {
+            position: absolute !important;
+            width: 100% !important;
             top: calc(var(--uc-content-margin-top)*2 - var(--nav-height)) !important;
             background-color: transparent !important;
             
