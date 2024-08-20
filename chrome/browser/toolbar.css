@@ -4,9 +4,8 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-/* sooooooooooooon */
+/* sooooooooooooon? */
 
-#TabsToolbar > .titlebar-spacer,
-#TabsToolbar > .toolbar-items {
+#TabsToolbar {
     display: none !important;
 }
