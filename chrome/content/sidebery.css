@@ -6,6 +6,7 @@
 
 @-moz-document regexp("^moz-extension://.*?/sidebar/sidebar.html") {
     :root.root, #root {
+        --general-border-radius: var(--uc-button-radius) !important;
         --tabs-margin: 1.5px !important;
         --tabs-pinned-height: 30px !important;
         --tabs-pinned-width: 30px !important;
@@ -13,7 +14,7 @@
         --nav-btn-width: 30px !important;
         --nav-btn-height: 28px !important;
          
-/*         @media (-moz-bool-pref:"uc.tweak.translucency") {
+        /* @media (-moz-bool-pref:"uc.tweak.translucency") {
             background-color: transparent !important;
         } */
     }
