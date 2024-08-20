@@ -77,9 +77,16 @@ splitter.devtools-horizontal-splitter {
 
 /* findbar thingy */
 .browserContainer > findbar {
-    background-color: transparent !important;
     background-image: none !important;
     border: none !important;
+    background-color: var(--uc-bg) !important;
+    border-radius: var(--uc-radius) !important;
+    
+    position: absolute !important;
+    bottom: var(--uc-content-margin) !important;
+    left: var(--uc-content-margin) !important;
+    right: var(--uc-content-margin) !important;
+    width: auto !important;
 
     .findbar-textbox {
         border-radius: var(--uc-radius) !important;
