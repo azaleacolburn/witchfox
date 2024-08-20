@@ -21,6 +21,11 @@
         } &:not([positionend="true"]) {
             margin-left: var(--uc-sidebar-margin);
         }
+        
+        transition: 
+            min-width var(--uc-transistion), 
+            max-width var(--uc-transistion), 
+            margin var(--uc-transistion);
     }
 
     #sidebar {
@@ -54,7 +59,7 @@
          
         #sidebar-box { 
             position: relative;
-            z-index:1;
+            z-index: 1;
             min-width: var(--uc-sidebar-width) !important;
             width: var(--uc-sidebar-width) !important;
             max-width: var(--uc-sidebar-width) !important;
@@ -71,7 +76,9 @@
         }
          
         #sidebar, #sidebar-header {
-            transition: min-width var(--uc-transition) 100ms !important;
+            transition: 
+                min-width var(--uc-transition) 100ms, 
+                opacity ease 0ms 100ms !important;
             will-change: min-width;
         }
         
@@ -79,6 +86,53 @@
         #sidebar-box:hover > #sidebar {
             min-width: var(--uc-sidebar-hover-width) !important;
             background-color: var(--uc-bg) !important;
+        }
+                
+        @media (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") { 
+            #sidebar-box {
+                min-width: var(--uc-content-margin) !important;
+                max-width: var(--uc-content-margin) !important;
+                margin-left: 0px !important;
+                margin-right: 0px !important;
+                
+                & #sidebar, & #sidebar-header {
+                    will-change: auto !important;
+                    transition: margin-left var(--uc-transition) !important;
+                    
+                    margin-left: calc(-1 * (var(--uc-sidebar-hover-width) + var(--uc-content-margin))) !important;
+                    margin-block: var(--uc-sidebar-margin) !important;
+                    min-width: var(--uc-sidebar-hover-width) !important;
+                    max-width: var(--uc-sidebar-hover-width) !important;
+                    background-color: var(--uc-bg) !important;
+                }
+                
+                &:hover #sidebar,
+                &:hover #sidebar-header {
+                    margin-left: calc(var(--uc-content-margin) + var(--uc-sidebar-margin)) !important;
+                }
+                
+                &:hover::before {
+                    opacity: 0 !important;
+                }
+                
+                &::before {
+                    content: "";
+                    position: absolute;
+                    height: 80%;
+                    top: 10%;
+                    bottom: auto !important;
+                    width: calc(var(--uc-content-margin)*0.5) !important;
+                    left: calc(var(--uc-content-margin)*0.25) !important;
+                    z-index: 199 !important;
+                              
+                    visibility: visible;
+                    display: unset;
+                    opacity: 1 !important;
+                    background-color: var(--uc-panel-hint) !important;
+                    border-radius: var(--uc-radius) !important;
+                    transition: all var(--uc-transition) !important;       
+                }
+            }
         }
         
         #sidebar-box[positionend]{ direction: rtl }

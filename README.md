@@ -45,6 +45,8 @@ Open the [releases tab](https://codeberg.org/awwpotato/PotatoFox/releases) and d
 
 `uc.tweak.sidebar-header` -> show sidebar header
 
+`uc.tweak.sidebar-full-collapse` -> make sidebar fully hidden when collapse (like the hidden navbar)
+
 `sidebar.position_start` -> whether the sidebar is on the left or right
 
 `uc.tweak.no-window-controls` -> hide window controls
