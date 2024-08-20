@@ -30,25 +30,6 @@
     padding: 0 var(--toolbarbutton-outer-padding) !important;
 }
 
-@media (-moz-bool-pref: "uc.tweak.extra-compact") {
-    :root[uidensity=compact] {
-        #nav-bar { 
-            max-height: 28px !important;
-        }
-        #urlbar-container {
-            padding-block: none !important;
-        }
-        #urlbar {
-            top: 1px !important;
-        }
-        #nav-bar-customization-target > :is(toolbarbutton, toolbaritem):first-child {
-            padding-inline-start: 2px !important;
-        }
-        #PanelUI-menu-button {
-            padding-inline-end: 2px !important;
-        }
-    }
-}
 #PlacesToolbar, #PlacesToolbarItems {
     flex-direction: row-reverse !important;
     max-width: max-content !important;
@@ -135,7 +116,7 @@
             background-color: transparent !important;
             
             toolbarspring  { flex-grow: 0 !important; }
-
+            
             #nav-bar-customization-target > *,
             #nav-bar-overflow-button,
             #PanelUI-button {
@@ -165,8 +146,13 @@
                 #nav-bar-overflow-button, #PanelUI-button:not([disabled="true"]) {opacity: 1 !important;}
                 #nav-bar-customization-target > *[disabled="true"], #PanelUI-button[disabled="true"] {opacity: 0.5 !important;}
             }
-            #navigator-toolbox::before {
-                opacity: 0 !important;
+            #navigator-toolbox {
+                height: calc(2*var(--uc-panel-gap) + var(--nav-height)) !important;
+                z-index: 100 !important;
+                 
+                &::before {
+                    opacity: 0 !important;
+                }
             }
         }
     }

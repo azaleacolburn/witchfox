@@ -22,11 +22,6 @@
     &[uidensity=touch] .titlebar-buttonbox-container {
         height: 44px !important;
     }
-    @media (-moz-bool-pref: "uc.tweak.extra-thin-nav-bar") {
-        :root[uidensity=compact] .titlebar-buttonbox-container {
-            height: 28px !important;
-        }
-    }
 
     @media (-moz-platform: macos ) {
         #nav-bar {

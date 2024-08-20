@@ -22,14 +22,8 @@
 
 :root[lwtheme="true"] {
     --user-bg: var(--lwt-accent-color) !important;
-    @media (-moz-bool-pref: "uc.tweak.separate-sidebar") {
-        --user-bg: var(--toolbar-bgcolor) !important;
-    }
     @media (-moz-bool-pref: "uc.tweak.translucency") {
         --user-bg: color-mix(in srgb, var(--lwt-accent-color), transparent 20%) !important;
-        @media (-moz-bool-pref: "uc.tweak.seperate-sidebar") {
-            --user-bg: color-mix(in srgb, var(--toolbar-bgcolor), transparent 20%) !important;
-        }
     }
 }
 

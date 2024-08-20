@@ -55,15 +55,11 @@ Download and move the chrome folder and user.js into your profiles root director
 
 `uc.tweak.regular-search` -> return url-bar to original state
 
-`uc.tweak.extra-compact` -> make nav-bar and sidebar extra thin (28px) (requires uidensity=compact)
-
 `uc.tweak.extra-thick` -> make margin around browser 2px thicker
 
 `uc.tweak.regular-extension-menu` -> bring regular extension menu back
 
 `uc.tweak.no-panel-hint` -> hide the small bars showing hidden panels
-
-`uc.tweak.separate-sidebar` -> make the sidebar separate from the browser margins 
 
 `uc.tweak.translucency` -> **EXPERIMENTAL** translucency support  
 
