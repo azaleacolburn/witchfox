@@ -21,6 +21,10 @@
     fill: var(--toolbarbutton-icon-fill) !important;
 }
 
+#urlbar-background {
+    border-radius: var(--uc-radius) !important;
+}
+
 @media not (-moz-bool-pref: "uc.tweak.regular-url") {
 #main-window:not([customizing]) {
     

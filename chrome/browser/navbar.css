@@ -29,6 +29,10 @@
     margin-inline: var(--uc-sidebar-margin) !important;
 } 
 
+.toolbarbutton-icon {
+    border-radius: var(--uc-radius) !important;
+}
+
 /* fix margin for buttons on the sides */
 #PanelUI-menu-button {
     padding: 0 var(--toolbarbutton-outer-padding) !important;
@@ -92,6 +96,11 @@
     }
     
     &:not([customizing]) {
+        
+        #toolbar-menubar {
+            display: none !important;
+        }
+        
         #nav-bar {
             width: 100% !important;
             background-color: var(--uc-bg-opaque) !important;

@@ -98,7 +98,7 @@
                 
                 & #sidebar, & #sidebar-header {
                     will-change: auto !important;
-                    transition: margin-left var(--uc-transition) !important;
+                    transition: margin var(--uc-transition) !important;
                     
                     margin-left: calc(-1 * (var(--uc-sidebar-hover-width) + var(--uc-content-margin))) !important;
                     margin-block: var(--uc-sidebar-margin) !important;
@@ -107,9 +107,22 @@
                     background-color: var(--uc-bg-opaque) !important;
                 }
                 
-                &:hover #sidebar,
-                &:hover #sidebar-header {
+                &:not([positionend="true"]) #sidebar, 
+                &:not([positionend="true"]) #sidebar-header {
+                    margin-left: calc(-1 * (var(--uc-sidebar-hover-width) + var(--uc-content-margin))) !important;
+                } 
+                &[positionend="true"] #sidebar, 
+                &[positionend="true"] #sidebar-header {
+                    margin-right: calc(-1 * (var(--uc-sidebar-hover-width) + var(--uc-content-margin))) !important;
+                }
+                
+                &:not([positionend="true"]):hover #sidebar,
+                &:not([positionend="true"]):hover #sidebar-header {
                     margin-left: calc(var(--uc-content-margin) + var(--uc-sidebar-margin)) !important;
+                } 
+                &[positionend="true"]:hover #sidebar, 
+                &[positionend="true"]:hover #sidebar-header {
+                    margin-right: calc(var(--uc-content-margin) + var(--uc-sidebar-margin)) !important;
                 }
                 
                 &:hover::before {
