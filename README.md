@@ -13,6 +13,7 @@ Tested on Linux, MacOS, and Windows.
 - option to hide the navbar for a ultra-minimal experience 
 - general visual enhancements  
 - custom SVG icons for some extensions
+- support for vertical tabs on the right
 
 ## Screenshots
 
@@ -43,6 +44,8 @@ Open the [releases tab](https://codeberg.org/awwpotato/PotatoFox/releases) and d
 ### about:config tweaks
 
 `uc.tweak.sidebar-header` -> show sidebar header
+
+`sidebar.position_start` -> whether the sidebar is on the left or right
 
 `uc.tweak.no-window-controls` -> hide window controls
 
