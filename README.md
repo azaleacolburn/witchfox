@@ -38,14 +38,14 @@ Extension:
 
 Open the [releases tab](https://codeberg.org/awwpotato/PotatoFox/releases) and download the correct release for your version of Firefox (Urlbar > about:support > Application Basics > Version). Then copy the chrome directory and user.js file into your Firefox profiles directory (about:support > Application Basics > Profile Directory), then restart Firefox.
 
-<details><summary>Advanced (cli) install</summary>
+<details><summary>Advanced (cli) install (macOS/Linux)</summary>
 
 #### Using git
 ```bash
 git clone https://codeberg.org/awwpotato/potatofox.git
 cd potatofox
 ln -sr user.js chrome ~/.mozilla/firefox/<profile> # Linux
-ln -sr user.js chrome ~/Library/Application Support/Firefox/Profiles/<profile> # MacOS 
+cp -r user.js chrome ~/Library/Application Support/Firefox/Profiles/<profile> # macOS 
 ```
 #### Using [Nyoom](https://github.com/ryanccn/nyoom)
 ```bash
