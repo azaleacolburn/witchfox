@@ -43,7 +43,7 @@
         &[uidensity=compact] #sidebar-box {
             --uc-sidebar-width: 34px !important;
         }
-        @media (-moz-bool-pref: "uc.tweak.wider-sidebar-collapse" {
+        @media (-moz-bool-pref: "uc.tweak.wider-sidebar-collapse") {
             #sidebar-box {
                 --uc-sidebar-width: 80px;
             }
