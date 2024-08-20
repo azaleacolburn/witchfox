@@ -94,4 +94,4 @@ The variables used by the theme are in `vars.css` and `userChrome.css` (colors).
 
 ## Mirrors
 
-Currently Potatofox is available on [codeberg](https://codeberg.org/awwpotato/PotatoFox) and [git.gay](https://git.gay/awwpotato/PotatoFox)
+Currently Potatofox is available on [codeberg](https://codeberg.org/awwpotato/PotatoFox) (main) and [git.gay](https://git.gay/awwpotato/PotatoFox) (backup)
