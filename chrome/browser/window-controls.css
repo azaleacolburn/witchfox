@@ -57,16 +57,16 @@
     
     /* Linux */
     @media (-moz-gtk-csd-available) {
-        .titlebar-button > .toolbarbutton-icon {
+        &[lwtheme="true"] .titlebar-button > .toolbarbutton-icon {
             border-radius: var(--toolbarbutton-border-radius) !important;
             height: 32px !important;
             width: 32px !important;
         }
-        &[uidensity="compact"] .titlebar-button > .toolbarbutton-icon {
+        &[lwtheme="true"][uidensity="compact"] .titlebar-button > .toolbarbutton-icon {
             height: 28px !important;
             width: 28px !important;
         }
-        &:not([uidensity="compact"]) .titlebar-button > .toolbarbutton-icon {
+        &[lwtheme="true"]:not([uidensity="compact"]) .titlebar-button > .toolbarbutton-icon {
             margin-block: 3px !important;
         }
 
