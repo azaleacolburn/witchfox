@@ -62,6 +62,14 @@
         }
         #sidebar-close { display: none !important; }
     }
+     
+    &[sizemode="fullscreen"][titlepreface*="="] #sidebar-box {
+        margin-top: 0 !important;
+        height: 100% !important;
+        & #sidebar {
+            padding-block: var(--uc-sidebar-margin) !important;
+        }
+    }
   
     /* sidebar collapse */
     &[titlepreface*="-"] {
@@ -196,10 +204,6 @@
                 &[positionend="true"]:hover #sidebar-header {
                     margin-right: var(--uc-sidebar-margin) !important;
                 }
-            }
-            &[sizemode="fullscreen"][titlepreface*="="] #sidebar-box {
-                margin-top: 0 !important;
-                height: 100% !important;
             }
         }
             
