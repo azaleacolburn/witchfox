@@ -9,15 +9,15 @@
 :root {
     --user-panel-gap: 8px;
     --user-radius: 6px;
-    --user-rounded-corners-shadow:
-      0 -.8px 0 0 rgb(0 0 0 / 0.02),
-      0 0.5px 1px 1px rgb(0 0 0 / 0.06),
-      0 1px 1px rgb(0 0 0 / 0.1);
-    @media (resolution > 1.8dppx) {
-        --user-rounded-corners-shadow:
-        0 0 0.5px 0.5px rgb(0 0 0 / 0.06),
-        0 0.5px 1.5px rgb(0 0 0 / 0.1);
-    }
+    --user-rounded-corners-shadow: none;
+    /*   0 -.8px 0 0 rgb(0 0 0 / 0.02), */
+    /*   0 0.5px 1px 1px rgb(0 0 0 / 0.06), */
+    /*   0 1px 1px rgb(0 0 0 / 0.1); */
+    /* @media (resolution > 1.8dppx) { */
+    /*     --user-rounded-corners-shadow: */
+    /*     0 0 0.5px 0.5px rgb(0 0 0 / 0.06), */
+    /*     0 0.5px 1.5px rgb(0 0 0 / 0.1); */
+    /* } */
 }
 
 :root[uidensity=compact] { --user-panel-gap: 6px; }
@@ -36,9 +36,11 @@ body {
  
 /* tabs */
 
-#appcontent {
-    margin: var(--user-panel-gap);
-    margin-top: 0 !important;
+html:not([sizemode="fullscreen"]) {
+    #appcontent {
+        margin: var(--user-panel-gap);
+        margin-top: 0 !important;
+    }
 }
 
 #identity-box.extensionPage {
@@ -69,10 +71,9 @@ html:not([sizemode="fullscreen"]) {
  
 /* appcontent */
  
-#browser { background-color: var(--lwt-accent-color) !important; }
+#browser, #sidebar-header, #sidebar-box { background-color: var(--lwt-accent-color) !important; }
 
 html:not([sizemode="fullscreen"])  {
-    #sidebar-header { background-color: inherit !important; }
     #sidebar-box {
         border-radius: var(--user-radius) !important;
         background-color: var(--lwt-accent-color) !important;

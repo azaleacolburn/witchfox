@@ -6,8 +6,6 @@
 #sidebar-splitter {
     border: none !important;
     width: var(--user-panel-gap) !important;
-    margin-top: 40px !important;
-    margin-bottom: 40px !important;
     margin-right: calc( -1 * var(--user-panel-gap) ) !important;
     margin-left: 0 !important;
     opacity: 0 !important;
@@ -15,7 +13,7 @@
 }
 
 /* dynamic sidebar */
-:root[titlepreface=""] {
+:root[titlepreface=""]:not([sizemode="fullscreen"]) {
     #sidebar-splitter {
         display: none !important;
     }
@@ -56,7 +54,6 @@
             width: var(--uc-sidebar-width) !important;
             max-width: var(--uc-sidebar-width) !important;
         }
-
     }
 
 
@@ -88,20 +85,20 @@
     }
 
     
-    @media (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") {
+    @media (-moz-bool-pref: "uc.tweak.sidebar-full-collapse") { 
         #sidebar-box:hover #sidebar-header,
         #sidebar-box:hover #sidebar {
             padding: 0 calc(var(--user-panel-gap)*0.5) !important;
             background-color: var(--lwt-accent-color) !important;
             transition: min-width 0s, width 0s, padding 0s !important;
-            transition-delay: 10ms !important;
+            transition-delay: 2ms !important;
         }
         #sidebar-box {
             max-width: var(--user-panel-gap) !important;
             min-width: var(--user-panel-gap) !important;
             width: var(--user-panel-gap) !important; 
-            transition: min-width 0s, width 0s, padding 0s !important;
-            transition-delay: 10ms !important;
+            transition: min-width 0s, width 0s, padding 0s, margin 0s !important;
+            transition-delay: 2ms !important;
 
             margin-right: calc(-1*var(--user-panel-gap)) !important;
             margin-left: 0 !important;
@@ -109,7 +106,7 @@
                 will-change: auto !important;
                 width: 0px;
                 transition: min-width 0s, width 0s, padding 0s !important;
-                transition-delay: 10ms !important;
+                transition-delay: 2ms !important;
            }
         }
         #sidebar-box:not(:hover) {
@@ -118,7 +115,7 @@
                 opacity: 0 !important;
                 min-width: 0px !important;
                 transition: min-width 0s, width 0s, padding 0s !important;
-                transition-delay: 10ms !important;
+                transition-delay: 2ms !important;
             }
         }
     }

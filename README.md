@@ -12,11 +12,7 @@ Extension:
 * Recommended 
     - [Firefox Color](https://addons.mozilla.org/en-US/firefox/addon/firefox-color) or [Firefox Theme](https://addons.mozilla.org/en-US/firefox/themes/) 
 
-about:config settings:
-- `toolkit.legacyUserProfileCustomizations.stylesheets` -> `true` 
-- `browser.uidensity` -> `1` (optional, will make UI more compact)
-
-Download and move the chrome folder into your profiles root directory (about:profiles > default-release > Root Directory > Open Folder)
+Download and move the chrome folder and user.js into your profiles root directory (about:profiles > default-release > Root Directory > Open Folder)
 
 ## Post Install
 
