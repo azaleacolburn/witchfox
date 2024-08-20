@@ -6,6 +6,14 @@
 
 Works on Linux, Macos, and Windows. Recommended to add spacers to navbar as to have somewhere to grab with your mouse.
 
+## Features
+
+- collapsing sidebery tabs 
+    - with option to fully collapse 
+- pop up arc-like url bar
+- general visual enhancements  
+- custom svg icons for some extensions
+
 ## Screenshots
 
 ![](./Media/Screenshot1.png)
@@ -22,9 +30,9 @@ Works on Linux, Macos, and Windows. Recommended to add spacers to navbar as to h
 
 Extension:
 
-* Required -> [Sidebery](https://addons.mozilla.org/en-US/firefox/addon/sidebery), [Userchrome Toggle](https://addons.mozilla.org/en-US/firefox/addon/userchrome-toggle/)
-* Recommended 
-    - [Firefox Color](https://addons.mozilla.org/en-US/firefox/addon/firefox-color) or [Firefox Theme](https://addons.mozilla.org/en-US/firefox/themes/) 
+* [Sidebery](https://addons.mozilla.org/en-US/firefox/addon/sidebery)
+* [Userchrome Toggle](https://addons.mozilla.org/en-US/firefox/addon/userchrome-toggle/)
+* [Firefox Color](https://addons.mozilla.org/en-US/firefox/addon/firefox-color) or [Firefox Theme](https://addons.mozilla.org/en-US/firefox/themes/) 
 
 Download and move the chrome folder and user.js into your profiles root directory (about:profiles > default-release > Root Directory > Open Folder)
 
