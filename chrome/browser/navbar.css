@@ -76,10 +76,7 @@
         height: var(--nav-height) !important;
         margin-top: calc(-1 * (var(--nav-height) + var(--uc-content-margin)));
         
-        transition: 
-            background-color linear 0s,
-            margin-top var(--uc-transition)
-            !important;
+        transition: margin-top var(--uc-transition) !important;
         will-change: margin-top !important;
         border-radius: var(--uc-radius) !important;
     }
@@ -97,7 +94,7 @@
     &:not([customizing]) {
         #nav-bar {
             width: 100% !important;
-            background-color: transparent !important;
+            background-color: var(--uc-bg-opaque) !important;
             z-index: 100 !important;
             
             toolbarspring  { flex-grow: 0 !important; }
@@ -121,8 +118,6 @@
         ) {
             #nav-bar {
                 margin-top: calc(2*var(--uc-content-margin-top)) !important;
-                background-color: var(--uc-bg-opaque) !important;
-
 
                 #nav-bar-customization-target > *:not([disabled="true"]),
                 #nav-bar-overflow-button, #PanelUI-button:not([disabled="true"]) {opacity: 1 !important;}
@@ -130,7 +125,7 @@
             }
             #navigator-toolbox {
                 height: calc(2*var(--uc-content-margin) + var(--nav-height)) !important;
-                z-index: 100 !important;
+                z-index: 99 !important;
                  
                 &::before {
                     opacity: 0 !important;
