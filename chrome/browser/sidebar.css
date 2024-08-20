@@ -78,9 +78,7 @@
         }
          
         #sidebar, #sidebar-header {
-            transition: 
-                min-width var(--uc-transition) 100ms, 
-                opacity ease 0ms 100ms !important;
+            transition: min-width var(--uc-transition);
             will-change: min-width;
         }
         

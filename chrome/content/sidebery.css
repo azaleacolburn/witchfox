@@ -26,6 +26,9 @@
         .bookmarks-tree {
             --bookmarks-indent: 0px !important;
         }
+        .Tab[data-active="true"] .close {
+            display: none !important;
+        }
     }
     
     .NavigationBar .main-items .nav-item[data-index="-1"]:not([data-active="true"]), 
