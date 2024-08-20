@@ -108,15 +108,20 @@
          
         #sidebar, #sidebar-header {
             transition:  
-                min-width var(--uc-transition) var(--uc-autohide-sidebar-delay), 
-                max-width var(--uc-transition) var(--uc-autohide-sidebar-delay),
-                width var(--uc-transition) var(--uc-autohide-sidebar-delay)
+                min-width var(--uc-transition) var(--uc-sidebar-mouseout-delay), 
+                max-width var(--uc-transition) var(--uc-sidebar-mouseout-delay),
+                width var(--uc-transition) var(--uc-sidebar-mouseout-delay) 
                 !important;
             will-change: min-width;
         }
         
         #sidebar-box:hover > #sidebar-header,
         #sidebar-box:hover > #sidebar {
+            transition:  
+                min-width var(--uc-transition), 
+                max-width var(--uc-transition),
+                width var(--uc-transition)
+                !important;
             min-width: var(--uc-sidebar-hover-width) !important;
             background-color: var(--uc-bg) !important;
         }
@@ -130,7 +135,7 @@
                 
                 & #sidebar, & #sidebar-header {
                     will-change: auto !important;
-                    transition: margin var(--uc-transition) var(--uc-autohide-sidebar-delay) !important;
+                    transition: margin var(--uc-transition) !important;
                     
                     margin-left: calc(-1 * (var(--uc-sidebar-hover-width) + var(--uc-content-margin-left))) !important;
                     min-width: var(--uc-sidebar-hover-width) !important;
