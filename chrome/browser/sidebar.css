@@ -32,7 +32,7 @@
 
     #sidebar {
         clip-path: circle(100%);
-        border-radius: var(--uc-radius) !important;
+        border-radius: var(--uc-content-radius) !important;
         @media (-moz-bool-pref: "uc.tweak.sidebar-header") {
             border-top-left-radius: 0px !important;
             border-top-right-radius: 0px !important;
@@ -130,7 +130,7 @@
                     display: unset;
                     opacity: 1 !important;
                     background-color: var(--uc-panel-hint) !important;
-                    border-radius: var(--uc-radius) !important;
+                    border-radius: var(--uc-content-radius) !important;
                     transition: all var(--uc-transition) !important;       
                 }
             }
