@@ -135,9 +135,9 @@
                     background-color: var(--uc-bg-opaque) !important;
                 }
                 
-                & #sidebar-header { margin-top: var(--uc-sidebar-margin) !important; }
+                & #sidebar-header { margin-top: var(--uc-content-margin) !important; }
                 & #sidebar { 
-                    margin-block: var(--uc-sidebar-margin) !important; 
+                    margin-block: var(--uc-content-margin) !important; 
                     @media (-moz-bool-pref: "uc.tweak.sidebar-header") {
                         margin-top: 0 !important;
                     }
@@ -155,11 +155,11 @@
                 
                 &:not([positionend="true"]):hover #sidebar,
                 &:not([positionend="true"]):hover #sidebar-header {
-                    margin-left: calc(var(--uc-content-margin) + var(--uc-sidebar-margin)) !important;
+                    margin-left: calc(var(--uc-content-margin)*2) !important;
                 } 
                 &[positionend="true"]:hover #sidebar, 
                 &[positionend="true"]:hover #sidebar-header {
-                    margin-right: calc(var(--uc-content-margin) + var(--uc-sidebar-margin)) !important;
+                    margin-right: calc(var(--uc-content-margin)*2) !important;
                 }
                 
                 &:hover::after {
@@ -209,11 +209,11 @@
                 
                 &:not([positionend="true"]):hover #sidebar,
                 &:not([positionend="true"]):hover #sidebar-header {
-                    margin-left: var(--uc-sidebar-margin) !important;
+                    margin-left: var(--uc-content-margin) !important;
                 } 
                 &[positionend="true"]:hover #sidebar, 
                 &[positionend="true"]:hover #sidebar-header {
-                    margin-right: var(--uc-sidebar-margin) !important;
+                    margin-right: var(--uc-content-margin) !important;
                 }
             }
             
@@ -228,11 +228,11 @@
 
                     &:not([positionend="true"]):hover #sidebar,
                     &:not([positionend="true"]):hover #sidebar-header {
-                        margin-left: var(--uc-sidebar-margin) !important;
+                        margin-left: var(--uc-content-margin) !important;
                     } 
                     &[positionend="true"]:hover #sidebar, 
                     &[positionend="true"]:hover #sidebar-header {
-                        margin-right: var(--uc-sidebar-margin) !important;
+                        margin-right: var(--uc-content-margin) !important;
                     }
                 }
             }
