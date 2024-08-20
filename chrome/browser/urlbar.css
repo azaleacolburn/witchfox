@@ -61,6 +61,11 @@
         left: calc(50vw - (clamp(400px,64vw,800px)/2)) !important;
         right: calc(50vw - (clamp(400px,64vw,800px)/2)) !important;
         
+        #main-window[titlepreface*="="]:not([sizemode="fullscreen"]) & {
+            left: calc((var(--nav-width)/2) - (clamp(400px,64vw,800px)/2)) !important;
+            right: calc((var(--nav-width)/2) - (clamp(400px,64vw,800px)/2)) !important;    
+        }
+        
         opacity: 0.97 !important;
         z-index: 100 !important;
         margin-left: auto !important;
@@ -70,10 +75,6 @@
         .urlbar-input {
             font-size: 16px !important;
         }    
-    }
-    &[titlepreface*="="]:not([sizemode="fullscreen"]) #urlbar[breakout="true"][breakout-extend="true"] { 
-        left: calc((var(--nav-width)/2) - (clamp(400px,64vw,800px)/2)) !important;
-        right: calc((var(--nav-width)/2) - (clamp(400px,64vw,800px)/2)) !important;    
     }
     
     #urlbar:not([breakout="true"][breakout-extend="true"]) {
