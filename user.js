@@ -30,4 +30,4 @@ user_pref("widget.gtk.ignore-bogus-leave-notify", 1);
 user_pref("browser.tabs.allow_transparent_browser", false);
 
 // uidensity -> compact
-user_pref("browser.uidensity", 1)
+user_pref("browser.uidensity", 1);
