@@ -81,7 +81,7 @@
         margin-right: auto !important;
 
         /* transition: width 0.3s ease, left 0.3s ease, margin-top 0.3s ease, margin-left 0.3s ease, margin-right 0.3s ease; */
-        #urlbar-input {
+        .urlbar-input {
             font-size: 16px !important;
         }    
     }
@@ -90,7 +90,7 @@
         & #urlbar-background { 
             background: transparent !important; 
         }
-        & #urlbar-input-container {
+        & .urlbar-input-container {
             text-align: center !important;
         /*     & > * { transition: opacity 1s ease-out; } */
             & .urlbar-input-box { transition: none !important; }
