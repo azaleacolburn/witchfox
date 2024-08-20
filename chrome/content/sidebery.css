@@ -26,7 +26,7 @@
         .bookmarks-tree {
             --bookmarks-indent: 0px !important;
         }
-        .Tab[data-active="true"] .close {
+        .Tab:not([data-active="true"]) .close {
             display: none !important;
         }
     }
