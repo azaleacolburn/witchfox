@@ -84,6 +84,7 @@ nyoom switch potatofox
 * `uc.tweak.no-window-controls` -> hide window controls
 * `uc.tweak.regular-search` -> return urlbar to original state
 * `uc.tweak.no-panel-hint` -> hide the small bars showing location of hidden panels
+* `uc.tweak.no-animations` -> disable animations added by this theme
 * `uc.tweak.translucency` -> **EXPERIMENTAL** translucency support
 * `browser.tabs.allow_transparent_browser` -> allow tab contents to have transparent bg, know to break websites with a white bg (requires `uc.tweak.translucency`)
 

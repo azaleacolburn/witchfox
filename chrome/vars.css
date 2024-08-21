@@ -7,8 +7,10 @@
 @import url("overrides.css");
 
 :root {
-    --uc-transition: 150ms ease-in-out;
-    --uc-mouseout-delay: 150ms;
+    @media not (-moz-bool-pref: "uc.tweak.no-animations") {
+        --uc-transition: 150ms ease-in-out;
+        --uc-mouseout-delay: 150ms;
+    }
     
     --uc-radius: 5px;
     --uc-button-radius: 5px;
