@@ -22,7 +22,7 @@
 }
 
 #urlbar-background {
-    border-radius: var(--uc-radius) !important;
+    border-radius: var(--uc-button-radius) !important;
 }
 
 @media not (-moz-bool-pref: "uc.tweak.regular-search") {
