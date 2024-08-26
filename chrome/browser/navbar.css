@@ -104,9 +104,9 @@ toolbarspring {
         }
         &::after {
             content: "";
-            position: fixed;
+            position: absolute;
             top: 0;
-            width: 100vw;
+            width: 100%;
             height: var(--uc-content-margin);
             left: 0;
             -moz-window-dragging: drag;
