@@ -17,25 +17,16 @@
     --uc-content-radius: 5px;
     
     --uc-panel-hint-size: clamp(min(4px, var(--uc-content-margin)), calc(var(--uc-content-margin)*0.5), 5px);
-    
-    --uc-hover-margin: 10px;
-    --uc-content-margin: 8px;
-    --uc-sidebar-margin: 4px;
-     
-    &[uidensity="compact"] {
-        --uc-hover-margin: 8px;   
-        --uc-content-margin: 6px;
-        --uc-sidebar-margin: 3px;
-    }
-    
+
+    --uc-hover-margin: 10px;   
+    --uc-content-margin: 6px;
+    --uc-sidebar-margin: 3px;
+
     /* sidebar vars */
     --uc-sidebar-hover-width: 180px;
-    
-    --uc-sidebar-width: 40px;
-    &[uidensity=compact] {
-        --uc-sidebar-width: 34px;
-    }
-    
+
+    --uc-sidebar-width: 34px;
+
     /* linux window controls */
     --gtk-window-control-single: 38px;
     --gtk-window-control-dual: 76px;
