@@ -20,16 +20,10 @@
     }
     
     @media (-moz-bool-pref: "uc.tweak.translucency") {
-        --uc-bg: light-dark(
-            color-mix(in srgb, rgb(239, 239, 242), transparent 10%), 
-            color-mix(in srgb, rgb(27, 26, 32), transparent 10%) 
-        );
+        --uc-bg: color-mix(in srgb, var(--uc-bg-opaque), transparent 10%);
     }
 
     &[lwtheme="true"] {
         --uc-bg-opaque: var(--lwt-accent-color);
-        @media (-moz-bool-pref: "uc.tweak.translucency") {
-            --uc-bg: color-mix(in srgb, var(--lwt-accent-color), transparent 10%);
-        }
     }
 }
