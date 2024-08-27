@@ -83,7 +83,7 @@
     }
   
     /* sidebar collapse */          /* full collapse */
-    &:is([titlepreface*="؜"], [titlepreface*="‌"]) {
+    &:is([titlepreface*="᠎"], [titlepreface*="‌"]) {
         #sidebar-splitter {
             display: none !important;
         }
