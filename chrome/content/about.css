@@ -20,16 +20,29 @@ url-prefix("about:home") {
         }
     }
     .customize-menu {
-        height: auto !important;
+        height: fit-content !important;
         border-radius: var(--uc-content-radius) !important;
         box-shadow: none !important;
         margin: var(--uc-content-margin) !important;
+        backdrop-filter: blur(var(--uc-blur-radius)) !important;
+        background-color: 
+            color-mix(in srgb, 
+                var(--newtab-background-color-secondary), 
+                transparent 20%
+            ) !important;
         
         & .close-button-wrapper {
             background-color: transparent !important;
         }
         & .wallpaper-list.category {
-            height: 90% !important;
+            height: 80% !important;
+            border-radius: var(--uc-content-radius) !important;
+            backdrop-filter: blur(var(--uc-blur-radius)) !important;
+            background-color: 
+                color-mix(in srgb, 
+                    var(--newtab-background-color-secondary), 
+                    transparent 10%
+                ) !important;
         }
     }
     .personalize-button {
