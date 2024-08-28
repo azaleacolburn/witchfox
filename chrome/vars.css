@@ -25,7 +25,12 @@
     --uc-sidebar-margin: 3px;
 
     /* sidebar vars */
-    --uc-sidebar-hover-width: 180px;
+    --uc-sidebar-hover-width: 170px;
+    @media (-moz-bool-pref: "uc.tweak.sidebar.short") {
+        --uc-sidebar-hover-width: 140px;
+    } @media (-moz-bool-pref: "uc.tweak.sidebar.wide") {
+        --uc-sidebar-hover-width: 200px;
+    }
 
     --uc-sidebar-width: 34px;
 
