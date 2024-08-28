@@ -161,9 +161,9 @@
                     transition: margin var(--uc-transition) !important;
                 }
                 
-                & #sidebar-header { margin-top: var(--uc-content-margin) !important; }
+                & #sidebar-header { margin-top: var(--uc-hover-margin) !important; }
                 & #sidebar { 
-                    margin-block: var(--uc-content-margin) !important; 
+                    margin-block: var(--uc-hover-margin) !important; 
                     @media (-moz-bool-pref: "uc.tweak.sidebar.header") {
                         margin-top: 0 !important;
                     }
