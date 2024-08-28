@@ -19,10 +19,11 @@
     --uc-panel-hint-size: clamp(min(4px, var(--uc-content-margin)), calc(var(--uc-content-margin)*0.5), 5px);
 
     --uc-blur-radius: 33px;
-    
-    --uc-hover-margin: 8px;   
+       
     --uc-content-margin: 6px;
     --uc-sidebar-margin: 3px;
+    --uc-hover-target-size: 8px;
+    --uc-floating-margin: 8px;
 
     /* sidebar vars */
     --uc-sidebar-hover-width: 170px;

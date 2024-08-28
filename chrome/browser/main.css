@@ -29,6 +29,10 @@ splitter.devtools-horizontal-splitter,
 }
 
 :root {
+    --uc-content-margin-top: 0px;
+    --uc-content-margin-right: 0px;
+    --uc-content-margin-bottom: 0px;
+    --uc-content-margin-left: 0px;
     &:not(
         [inFullscreen="true"], 
         [inDOMFullscreen="true"],

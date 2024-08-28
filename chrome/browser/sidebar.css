@@ -161,9 +161,9 @@
                     transition: margin var(--uc-transition) !important;
                 }
                 
-                & #sidebar-header { margin-top: var(--uc-hover-margin) !important; }
+                & #sidebar-header { margin-top: var(--uc-floating-margin) !important; }
                 & #sidebar { 
-                    margin-block: var(--uc-hover-margin) !important; 
+                    margin-block: var(--uc-floating-margin) !important; 
                     @media (-moz-bool-pref: "uc.tweak.sidebar.header") {
                         margin-top: 0 !important;
                     }
@@ -181,11 +181,11 @@
                 
                 &:not([positionend="true"]):hover #sidebar,
                 &:not([positionend="true"]):hover #sidebar-header {
-                    margin-left: calc(var(--uc-content-margin) + var(--uc-hover-margin)) !important;
+                    margin-left: calc(var(--uc-content-margin) + var(--uc-floating-margin)) !important;
                 } 
                 &[positionend="true"]:hover #sidebar, 
                 &[positionend="true"]:hover #sidebar-header {
-                    margin-right: calc(var(--uc-content-margin) + var(--uc-hover-margin)) !important;
+                    margin-right: calc(var(--uc-content-margin) + var(--uc-floating-margin)) !important;
                 }
                 
                 &::after {
@@ -194,14 +194,14 @@
                     top: 0 !important;
                     left: 0 !important;
                     height: 100% !important;
-                    width: var(--uc-hover-margin) !important;
+                    width: var(--uc-hover-target-size) !important;
                 } &[positionend="true"]::after {
                     left: unset !important;
                     right: 0 !important;
                 }
                 
                 &:hover::after {
-                    width: calc(var(--uc-hover-margin) + var(--uc-content-margin) + 1px) !important;
+                    width: calc(var(--uc-floating-margin) + var(--uc-content-margin) + 1px) !important;
                 }
             }
             
@@ -259,11 +259,11 @@
 
                     &:not([positionend="true"]):hover #sidebar,
                     &:not([positionend="true"]):hover #sidebar-header {
-                        margin-left: var(--uc-content-margin) !important;
+                        margin-left: var(--uc-floating-margin) !important;
                     } 
                     &[positionend="true"]:hover #sidebar, 
                     &[positionend="true"]:hover #sidebar-header {
-                        margin-right: var(--uc-content-margin) !important;
+                        margin-right: var(--uc-floating-margin) !important;
                     }
                 }
             }
