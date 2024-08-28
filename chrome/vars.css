@@ -8,8 +8,8 @@
 
 :root {
     @media not (-moz-bool-pref: "uc.tweak.no-animations") {
-        --uc-transition: 150ms ease-in-out;
-        --uc-mouseout-delay: 150ms;
+        --uc-transition: 200ms ease-in-out;
+        --uc-mouseout-delay: 250ms;
     }
     
     --uc-radius: 5px;
