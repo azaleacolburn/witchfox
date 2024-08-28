@@ -23,6 +23,8 @@
     --uc-content-margin: 6px;
     --uc-sidebar-margin: 3px;
     --uc-hover-target-size: 8px;
+    
+    --uc-small-floating-margin: 4px;
     --uc-floating-margin: 8px;
 
     /* sidebar vars */

@@ -102,9 +102,9 @@ splitter.devtools-horizontal-splitter {
         border: none !important;
     }
     
-    bottom: 3px !important;
-    &:not([mirror="true"]) { left: 3px !important; }
-    &[mirror="true"] { right: 3px !important; }
+    bottom: var(--uc-small-floating-margin) !important;
+    &:not([mirror="true"]) { left: var(--uc-small-floating-margin) !important; }
+    &[mirror="true"] { right: var(--uc-small-floating-margin) !important; }
 }
 
 /* menu that appears when alt is pressed */
