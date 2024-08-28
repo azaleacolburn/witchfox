@@ -36,7 +36,7 @@
     #sidebar {
         clip-path: circle(100%);
         border-radius: var(--uc-content-radius) !important;
-        @media (-moz-bool-pref: "uc.tweak.sidebar-header") {
+        @media (-moz-bool-pref: "uc.tweak.sidebar.header") {
             border-top-left-radius: 0px !important;
             border-top-right-radius: 0px !important;
         }
@@ -49,7 +49,7 @@
     }
     
     #sidebar-header {
-        @media not (-moz-bool-pref: "uc.tweak.sidebar-header") {
+        @media not (-moz-bool-pref: "uc.tweak.sidebar.header") {
             display: none !important;
         }
         border-top-left-radius: var(--uc-radius) !important;
@@ -152,7 +152,7 @@
                 & #sidebar-header { margin-top: var(--uc-content-margin) !important; }
                 & #sidebar { 
                     margin-block: var(--uc-content-margin) !important; 
-                    @media (-moz-bool-pref: "uc.tweak.sidebar-header") {
+                    @media (-moz-bool-pref: "uc.tweak.sidebar.header") {
                         margin-top: 0 !important;
                     }
                 }

@@ -69,7 +69,7 @@
         padding: var(--tabs-margin) !important;
     }
     
-    @media not (-moz-bool-pref: "uc.tweak.sidebery-top-navbar") {
+    @media not (-moz-bool-pref: "uc.tweak.sidebery.top-navbar") {
         .top-horizontal-box {
             order: 100 !important;
             margin-bottom: 0px !important;
@@ -88,7 +88,7 @@
         }
     }
     
-    @media (-moz-bool-pref: "uc.tweak.sidebery-big-pinned") {
+    @media (-moz-bool-pref: "uc.tweak.sidebery.big-pinned") {
         .PinnedTabsBar {
             display: grid !important;
             grid-template-rows: 3rem;

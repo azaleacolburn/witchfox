@@ -74,19 +74,22 @@ nyoom switch potatofox
 ![Userchrome Toggle Settings](./Media/UCToggleSettings.png)
 
 ### about:config tweaks 
-
-* `uc.tweak.borderless` -> removes margins around the webpage
-* `uc.tweak.sidebar-header` -> show sidebar header
-* `sidebar.position_start` -> whether the sidebar is on the left or right
-* `uc.tweak.sidebery-top-navbar` -> move the Sidebery navbar thingy from the bottom to the top
-* `uc.tweak.sidebery-big-pinned` -> Pinned tabs look like buttons, like Arc's pinned tabs (make sure to set Sidebery settings > tabs > pinned tabs > Show titles is off)
-* `uc.tweak.no-custom-icons` -> removes theming of some extensions icons
-* `uc.tweak.no-window-controls` -> hide window controls
-* `uc.tweak.regular-search` -> return urlbar to original state
-* `uc.tweak.no-panel-hint` -> hide the small bars showing location of hidden panels
-* `uc.tweak.no-animations` -> disable animations added by this theme
-* `uc.tweak.translucency` -> **EXPERIMENTAL** translucency support
-* `browser.tabs.allow_transparent_browser` -> allow tab contents to have transparent bg, know to break websites with a white bg (requires `uc.tweak.translucency`)
+| Setting                                | Description                                                                                                                          |
+|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
+| uc.tweak.borderless                    | removes margins around the webpage                                                                                                   |
+| uc.tweak.no-custom-icons               | Don't apply custom monochrome icons for some extensions                                                                              |
+| uc.tweak.no-window-controls            | Removes window controls                                                                                                              |
+| uc.tweak.no-panel-hint                 | hide the small bars showing location of hidden panels                                                                                |
+| uc.tweak.no-animations                 | disable animations added by this theme                                                                                               |
+| uc.tweak.regular-search                | return urlbar to original state                                                                                                      |
+| sidebar.position_start                 | Controls if the sidebar is on the left or right                                                                                      |
+| uc.tweak.sidebar.short                 | makes sidebar shorter when hovering (140px)                                                                                          |
+| uc.tweak.sidebar.wide                  | makes sidebar wider when hovering (200px)                                                                                            |
+| uc.tweak.sidebar.header                | show sidebar header                                                                                                                  |
+| uc.tweak.sidebery.big-pinned           | Pinned tabs look like buttons, like Arc's pinned tabs (make sure to set Sidebery settings > tabs > pinned tabs > Show titles is off) |
+| uc.tweak.sidebery.top-navbar           | move Sidebery's navbar to the top of the sidebar                                                                                     |
+| uc.tweak.translucency                  | EXPERIMENTAL translucency support                                                                                                    |
+| browser.tabs.allow_transparent_browser | allow tab contents to have transparent bg, know to break websites with a white bg (requires uc.tweak.translucency)                   |
 
 ### Advanced Configuration
 The variables used by the theme are in `vars.css` and `userChrome.css` (colors). If you would like to ensure there aren't git conflicts you can add a `overrides.css` file in the `chrome` file and override the variables from `vars.css` in there (using `!important;` is necessary). Keep in mind the theme defaults to using `uidensity="compact"`, so you will want to change the variables inside there.
