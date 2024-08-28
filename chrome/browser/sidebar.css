@@ -24,6 +24,18 @@
         } &:not([positionend="true"]) {
             margin-left: var(--uc-sidebar-margin);
         }
+        
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: -10;
+            top: 0;
+            bottom: 0;
+            left: calc(-1*var(--uc-sidebar-margin));
+            right: calc(-1*var(--uc-sidebar-margin));
+            width: auto;
+            height: auto;
+        }
     }
     
     @media (-moz-bool-pref: "uc.tweak.borderless") {
