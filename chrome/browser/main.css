@@ -33,8 +33,7 @@ splitter.devtools-horizontal-splitter,
     &:not(
         [inFullscreen="true"], 
         [inDOMFullscreen="true"],
-        [chromehidden*="toolbar"], 
-        [chromehidden*="menubar"]
+        [chromehidden=""]
     ) {
         @media not (-moz-bool-pref: "uc.tweak.borderless") {
             --uc-content-margin-top: var(--uc-content-margin);
@@ -84,7 +83,7 @@ splitter.devtools-horizontal-splitter,
     &:not(
         [inDOMFullscreen="true"],
         [chromehidden*="toolbar"], 
-        [chromehidden*="menubar"]
+        [chromehidden=""]
     ) {
         & #appcontent browser {
             clip-path: circle(100%);
