@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: MPL-2.0 */
 /* SPDX-FileCopyrightText: 2024 awwpotato */
 
-/* navbar collapse */
+/* navbar hidden */
 :root:not([titlepreface*="​"], [inDOMFullscreen="true"]) {
     --uc-content-margin-top: 0px !important;
 }
@@ -51,7 +51,7 @@ toolbarspring {
 }
 
 #TabsToolbar { display: none !important; }
-/* navbar collapse */
+/* navbar hidden */
 #main-window[titlepreface*="​"]:not([inDOMFullscreen="true"]) {
     &:not([sizemode="fullscreen"]) {
     @media not (-moz-bool-pref: "uc.tweak.borderless") {

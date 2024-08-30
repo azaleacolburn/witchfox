@@ -52,7 +52,8 @@ splitter.devtools-horizontal-splitter {
         margin-inline-start: var(--uc-content-margin) !important;
     }
 }
-            /* navbar collapse */
+
+/* navbar hidden */
 #main-window[titlepreface*="​"]:not([inDOMFullscreen="true"]) #screenshotsPagePanel {
     position: fixed !important;
     width: 100vw !important;

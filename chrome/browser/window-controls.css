@@ -13,7 +13,7 @@
 }
 
 @media not (-moz-bool-pref: "uc.tweak.no-window-controls") { 
-                                /* navbar collapse */
+/* navbar hidden */
 :root:not([inDOMFullscreen], [titlepreface*="​"]) {
     
     & .titlebar-buttonbox-container {

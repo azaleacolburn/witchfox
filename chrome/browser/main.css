@@ -62,14 +62,14 @@ splitter.devtools-horizontal-splitter,
                 background-color: transparent !important;
             }
             
-            /* not navbar collapse */
+            /* not navbar hidden */
             &:not([titlepreface*="​"]) {
                 & #appcontent browser {
                     border-top-left-radius: var(--uc-content-radius) !important;
                     border-top-right-radius: var(--uc-content-radius) !important;
                 }
             }
-            /* not sidebar full collapse */
+            /* not sidebar hidden */
             &:not([titlepreface*="‌"]) { 
                 &:has(#sidebar-box:not([positionend="true"])) #appcontent browser {
                     border-top-left-radius: var(--uc-content-radius) !important;
@@ -90,14 +90,14 @@ splitter.devtools-horizontal-splitter,
             clip-path: circle(100%);
             background-color: transparent !important;
         }
-        /* not navbar collapse */
+        /* not navbar hidden */
         &:not([titlepreface*="​"]) {
             & #appcontent browser {
                 border-top-left-radius: var(--uc-content-radius) !important;
                 border-top-right-radius: var(--uc-content-radius) !important;
             }
         }
-        /* not sidebar full collapse */
+        /* not sidebar hidden */
         &:not([titlepreface*="‌"]) { 
             &:has(#sidebar-box:not([positionend="true"])) #appcontent browser {
                 border-top-left-radius: var(--uc-content-radius) !important;

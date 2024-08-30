@@ -36,7 +36,7 @@
     }
     
     @media (-moz-bool-pref: "uc.tweak.borderless") {
-        /* navbar collpase */
+        /* navbar hidden */
         &[titlepreface*="​"] #sidebar-box {
             margin-top: var(--uc-sidebar-margin) !important;
         }
@@ -82,7 +82,7 @@
         #sidebar-close { display: none !important; }
     }
     
-    /* navbar collapse */
+    /* navbar hidden */
     &[sizemode="fullscreen"][titlepreface*="​"] #sidebar-box {
         margin-top: 0 !important;
         height: 100% !important;
@@ -90,8 +90,7 @@
             padding-block: var(--uc-sidebar-margin) !important;
         }
     }
-  
-              
+
     &:is(
         /* sidebar collapse, has sidebery */
         [titlepreface*="᠎"]:has(#sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"]:not([hidden])), 
@@ -140,7 +139,7 @@
             background-color: var(--uc-bg) !important;
         }
          
-        /* sidebar full collapse */
+        /* sidebar hidden */
         &[titlepreface*="‌"] { 
             #sidebar-box {
                 min-width: var(--uc-content-margin) !important;
@@ -270,7 +269,6 @@
                 }
             }
         }
-            
         
         #sidebar-box[positionend="true"]{ direction: rtl }
         #sidebar-box[positionend="true"] > *{ direction: ltr }
