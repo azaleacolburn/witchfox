@@ -1,8 +1,5 @@
-/*
- * This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at https://mozilla.org/MPL/2.0/.
- */
+/* SPDX-License-Identifier: MPL-2.0 */
+/* SPDX-FileCopyrightText: 2024 awwpotato */
 
 #main-window:not([customizing]):has(#sidebar-box:not([hidden="true"])) {
     /* adjust #appcontent margin */
@@ -94,8 +91,13 @@
         }
     }
   
-    /* sidebar collapse */          /* full collapse */
-    &:is([titlepreface*="᠎"], [titlepreface*="‌"]) {
+              
+    &:is(
+        /* sidebar collapse */
+        [titlepreface*="᠎"]:not([privatebrowsingmode="temporary"]):has(#sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"]:not([hidden])), 
+        /* sidebar hidden */
+        [titlepreface*="‌"]
+    ) {
         #sidebar-splitter {
             display: none !important;
         }

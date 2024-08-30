@@ -1,9 +1,7 @@
-/*
-* This Source Code Form is subject to the terms of the Mozilla Public
-* License, v. 2.0. If a copy of the MPL was not distributed with this
-* file, You can obtain one at https://mozilla.org/MPL/2.0/.
-*/
-          /* navbar collapse */
+/* SPDX-License-Identifier: MPL-2.0 */
+/* SPDX-FileCopyrightText: 2024 awwpotato */
+
+/* navbar collapse */
 :root:not([titlepreface*="​"], [inDOMFullscreen="true"]) {
     --uc-content-margin-top: 0px !important;
 }
@@ -52,9 +50,8 @@ toolbarspring {
     border-radius: var(--uc-button-radius)
 }
 
-/* tab bar */
 #TabsToolbar { display: none !important; }
-            /* navbar collapse */
+/* navbar collapse */
 #main-window[titlepreface*="​"]:not([inDOMFullscreen="true"]) {
     &:not([sizemode="fullscreen"]) {
     @media not (-moz-bool-pref: "uc.tweak.borderless") {
