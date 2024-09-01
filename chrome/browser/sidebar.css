@@ -207,6 +207,14 @@
             }
             
             @media not (-moz-bool-pref: "uc.tweak.borderless") {
+                &:not([sizemode="fullscreen"]) 
+                #sidebar-box:not([positionend="true"])::before {
+                    left: calc(var(--uc-content-margin)*0.5 - var(--uc-panel-hint-size)*0.5) !important;
+                }
+                &:not([sizemode="fullscreen"]) 
+                #sidebar-box[positionend="true"]::before {
+                    right: calc(var(--uc-content-margin)*0.5 - var(--uc-panel-hint-size)*0.5) !important;
+                }
                 &:not([sizemode="fullscreen"]) #sidebar-box::before {
                     content: "";
                     position: absolute;
@@ -214,7 +222,6 @@
                     top: 10%;
                     bottom: auto !important;
                     width: var(--uc-panel-hint-size) !important;
-                    left: calc(var(--uc-content-margin)*0.5 - var(--uc-panel-hint-size)*0.5) !important;
                     z-index: 199 !important;
 
                     visibility: visible;
