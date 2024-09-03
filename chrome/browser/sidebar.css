@@ -91,12 +91,8 @@
         }
     }
 
-    &:is(
-        /* sidebar collapse */
-        [titlepreface*="᠎"],
-        /* sidebar hidden */
-        [titlepreface*="‌"]
-    ) {
+    /* sidebar collapse or sidebar hidden */
+    &:is([titlepreface*="᠎"], [titlepreface*="‌"]) {
         #sidebar-splitter {
             display: none !important;
         }
