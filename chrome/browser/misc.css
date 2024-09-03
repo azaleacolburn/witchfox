@@ -77,27 +77,35 @@ splitter.devtools-horizontal-splitter {
     border-radius: var(--uc-radius) !important;
     
     position: absolute !important;
-    top: var(--uc-small-floating-margin) !important;
     left: var(--uc-small-floating-margin) !important;
     right: var(--uc-small-floating-margin) !important;
     width: auto !important;
-
+    
     .findbar-textbox {
         border-radius: var(--uc-radius) !important;
+    }
+
+    @media not (-moz-bool-pref: "uc.tweak.findbar.bottom") {
+        top: var(--uc-small-floating-margin) !important;
+    } @media (-moz-bool-pref: "uc.tweak.findbar.bottom") {
+        bottom: var(--uc-small-floating-margin) !important;
     }
 }
 
 /* link thingy when hovering over url */
 #statuspanel {
+    bottom: var(--uc-small-floating-margin) !important;
+    &:not([mirror="true"]) { 
+        left: var(--uc-small-floating-margin) !important; 
+    } &[mirror="true"] { 
+        right: var(--uc-small-floating-margin) !important; 
+    }
+    
     & #statuspanel-label {
         border-radius: var(--uc-radius) !important;
         background-color: var(--uc-bg) !important;
         border: none !important;
     }
-    
-    bottom: var(--uc-small-floating-margin) !important;
-    &:not([mirror="true"]) { left: var(--uc-small-floating-margin) !important; }
-    &[mirror="true"] { right: var(--uc-small-floating-margin) !important; }
 }
 
 /* menu that appears when alt is pressed */

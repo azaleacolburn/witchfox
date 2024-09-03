@@ -82,6 +82,7 @@ nyoom switch potatofox
 | uc.tweak.no-panel-hint                 | hide the small bars showing location of hidden panels                                                                                |
 | uc.tweak.no-animations                 | disable animations added by this theme                                                                                               |
 | uc.tweak.regular-search                | return urlbar to original state                                                                                                      |
+| uc.tweak.findbar.bottom                | moves findbar to bottom of webpage (causes it to not be visible when devtools are active on bottom)                                  |
 | sidebar.position_start                 | Controls if the sidebar is on the left or right                                                                                      |
 | uc.tweak.sidebar.short                 | makes sidebar shorter when hovering (140px)                                                                                          |
 | uc.tweak.sidebar.wide                  | makes sidebar wider when hovering (200px)                                                                                            |
