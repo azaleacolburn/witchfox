@@ -52,7 +52,11 @@ splitter.devtools-horizontal-splitter,
                 & browser {
                     border-radius: var(--uc-content-radius);
                     clip-path: circle(100%);
-                    background-color: transparent !important;
+                    @media (-moz-bool-pref: "uc.tweak.translucency") {
+                        background-color: transparent !important;
+                    } @media not (-moz-bool-pref: "uc.tweak.translucency") {
+                        background-color: white !important;
+                    }
                 }
             }
         }
@@ -88,7 +92,11 @@ splitter.devtools-horizontal-splitter,
     ) {
         & #appcontent browser {
             clip-path: circle(100%);
-            background-color: transparent !important;
+            @media (-moz-bool-pref: "uc.tweak.translucency") {
+                background-color: transparent !important;
+            } @media not (-moz-bool-pref: "uc.tweak.translucency") {
+                background-color: white !important;
+            }
         }
         /* not navbar hidden */
         &:not([titlepreface*="​"]) {

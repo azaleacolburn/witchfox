@@ -18,7 +18,8 @@
     }
     
     --uc-bg: var(--uc-bg-opaque);
+    --uc-bg-tran: color-mix(in srgb, var(--uc-bg-opaque), transparent 10%);
     @media (-moz-bool-pref: "uc.tweak.translucency") {
-        --uc-bg: color-mix(in srgb, var(--uc-bg-opaque), transparent 10%);
+        --uc-bg: var(--uc-bg-tran);
     }
 }
