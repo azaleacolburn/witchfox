@@ -57,11 +57,6 @@
         top: 20vh !important;
         left: calc(50vw - (clamp(400px,64vw,800px)/2)) !important;
         right: calc(50vw - (clamp(400px,64vw,800px)/2)) !important;
-                    /* navbar collapse */
-        #main-window[titlepreface*="​"]:not([sizemode="fullscreen"]) & {
-            left: calc((var(--nav-width)/2) - (clamp(400px,64vw,800px)/2)) !important;
-            right: calc((var(--nav-width)/2) - (clamp(400px,64vw,800px)/2)) !important;    
-        }
         
         opacity: 0.97 !important;
         z-index: 100 !important;
@@ -71,7 +66,7 @@
         /* transition: width 0.3s ease, left 0.3s ease, margin-top 0.3s ease, margin-left 0.3s ease, margin-right 0.3s ease; */
         .urlbar-input {
             font-size: 16px !important;
-        }    
+        }
     }
     
     #urlbar:not([breakout="true"][breakout-extend="true"]) {
