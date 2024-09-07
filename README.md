@@ -64,6 +64,9 @@ nyoom switch potatofox
 - Import Firefox Color [Theme](https://color.firefox.com/?theme=XQAAAAJLBAAAAAAAAABBqYhm849SCicxcUcPX38oKRicm6da8pG5gi-DrbS7fiEFLUzDsWXWyUHMSkHZ2PpRK_LvZGTF44fp7VnVXujpkKMjvOWQSIhdK22u1ZG2EgdMyNMx_0oKJ3H6SApxy3IyQ4DsJp5wXsJAe_-1mtfWgRDmsdoSCoijQWJMgbopoYEZC-RlLTcZGRDec_YbCL7rnqK6TAlv9HrKP2vKGFddbs2RHmpKmp4nTmraRv5vn93Xej36dJ4PJLs8lR2xW5gEjnC2yNLDH0ltCV_dOCQU1k6C8gqp4WDfYkereqQMlzloT6ayCj_r86A_oAdsjNzxh2Qs7OpWSWEmt1D06L1Xq2dYeaBXH9ZTiFsKY5cURy2M6x_Epyax9nYbJGEIEnsjyqDTYe4ssM-VVYSrKhHTFwcmZpvjIDgAiafTRbAL5lonNLHF9S7KkU6O9y9KVvR2ZCFf2v6tYSpyu0pLOZEFN9_9czNq4YY1eac1Ciaw-_h5RgHX3pDHDFrzk6gSI1tW-iLlTDyDu8f1rVKzRJNxgLE0yzDpy6-qm0ihyKgRX6UlVuRTm_5nV9WkMF0UeIzsABE_aBxh8cr_0f-fxA) (Optional)
 - about:addons (url) > Userchrome Toggle Extended preferences > General settings > allow multiple styles to be active together, apply changes 
 
+> [!WARNING]
+> Websites with a white background will have an incorrect background, this can be fixed by using [Dark Reader](https://addons.mozilla.org/firefox/addon/darkreader/)
+
 > [!NOTE]
 > On Linux there may be extra padding before/after the window controls, this can be fixed by changing line 36-38 in `chrome/vars.css`
 
