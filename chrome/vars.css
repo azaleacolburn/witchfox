@@ -24,7 +24,7 @@
     --uc-small-floating-margin: 4px;
     --uc-floating-margin: 8px;
     
-    @media (-moz-bool-pref: "browser.tabs.allow_transparent_browser") {
+    @media (-moz-bool-pref: "browser.tabs.allow_transparent_browser") and not (-moz-bool-pref: "uc.tweak.translucency") {
         --uc-content-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
     }
     
