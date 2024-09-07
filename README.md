@@ -89,7 +89,7 @@ nyoom switch potatofox
 | uc.tweak.sidebar.header                | show sidebar header                                                                                                                  |
 | uc.tweak.sidebery.big-pinned           | Pinned tabs look like buttons, like Arc's pinned tabs (make sure to set Sidebery settings > tabs > pinned tabs > Show titles is off) |
 | uc.tweak.sidebery.top-navbar           | move Sidebery's navbar to the top of the sidebar                                                                                     |
-| uc.tweak.translucency                  | EXPERIMENTAL translucency support (causes issues with webpages that have a white background)                                                                                                    |
+| uc.tweak.translucency                  | EXPERIMENTAL translucency support                                                                                                    |
 
 ### Advanced Configuration
 The variables used by the theme are in `vars.css` and `userChrome.css` (colors). If you would like to ensure there aren't git conflicts you can add a `overrides.css` file in the `chrome` file and override the variables from `vars.css` in there (using `!important;` is necessary). Keep in mind the theme defaults to using `uidensity="compact"`, so you will want to change the variables inside there.
