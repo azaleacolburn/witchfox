@@ -4,8 +4,7 @@
 /* make sidebar bg transparent */
 @media (-moz-bool-pref: "uc.tweak.translucency")
 and (-moz-bool-pref: "browser.tabs.allow_transparent_browser"){
-    #webextpanels-window,
-    .moz-custom-content-container:-moz-native-anonymous {
+    window#webextpanels-window {
         background-color: transparent !important;
     }
 }
@@ -128,7 +127,9 @@ and (-moz-bool-pref: "browser.tabs.allow_transparent_browser"){
             transition:  
                 min-width var(--uc-transition) var(--uc-mouseout-delay), 
                 max-width var(--uc-transition) var(--uc-mouseout-delay),
-                width var(--uc-transition) var(--uc-mouseout-delay) 
+                width var(--uc-transition) var(--uc-mouseout-delay),
+                background var(--uc-transition) var(--uc-mouseout-delay),
+                backdrop-filter var(--uc-transition) var(--uc-mouseout-delay)
                 !important;
             will-change: min-width;
         }
@@ -138,10 +139,13 @@ and (-moz-bool-pref: "browser.tabs.allow_transparent_browser"){
             transition:  
                 min-width var(--uc-transition), 
                 max-width var(--uc-transition),
-                width var(--uc-transition)
+                width var(--uc-transition),
+                background var(--uc-transition),
+                backdrop-filter var(--uc-transition)
                 !important;
             min-width: var(--uc-sidebar-hover-width) !important;
             background-color: var(--uc-bg) !important;
+            backdrop-filter: blur(var(--uc-blur-radius)) !important;
         }
          
         /* sidebar hidden */
@@ -155,11 +159,12 @@ and (-moz-bool-pref: "browser.tabs.allow_transparent_browser"){
                 & #sidebar-header {
                     will-change: auto !important;
                     transition: margin var(--uc-transition) var(--uc-mouseout-delay) !important;
+                    background-color: var(--uc-bg) !important;
+                    backdrop-filter: blur(var(--uc-blur-radius)) !important;
                     
                     margin-left: calc(-1 * (var(--uc-sidebar-hover-width) + var(--uc-content-margin-left))) !important;
                     min-width: var(--uc-sidebar-hover-width) !important;
                     max-width: var(--uc-sidebar-hover-width) !important;
-                    background-color: var(--uc-bg-opaque) !important;
                 }
                 
                 &:hover #sidebar,
