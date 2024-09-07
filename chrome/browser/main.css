@@ -10,6 +10,9 @@
 
 body {
     background-color: var(--uc-bg) !important;
+    background-image: var(--lwt-additional-images);
+    background-repeat: var(--lwt-background-tiling);
+    background-position: var(--lwt-background-alignment);
 }
 
 /* remove bg from things */
@@ -23,6 +26,7 @@ splitter.devtools-horizontal-splitter,
 #sidebar,
 #sidebar-splitter {
     background-color: transparent !important;
+    background-image: none !important;
 }
 
 :root {
