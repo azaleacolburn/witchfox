@@ -151,7 +151,8 @@ toolbarspring {
         #nav-bar,
         #PersonalToolbar {
             width: 100% !important;
-            background-color: var(--uc-bg-opaque) !important;
+            background-color: var(--uc-bg-tran) !important;
+            backdrop-filter: blur(var(--uc-blur-radius)) !important;
             z-index: 100 !important;
         }
         
