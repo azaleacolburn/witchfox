@@ -23,7 +23,11 @@
     
     --uc-small-floating-margin: 4px;
     --uc-floating-margin: 8px;
-
+    
+    @media (-moz-bool-pref: "browser.tabs.allow_transparent_browser") {
+        --uc-content-shadow: 1px 1px 20px 2px rgba(0, 0, 0, 0.5);
+    }
+    
     /* sidebar vars */
     --uc-sidebar-hover-width: 170px;
     @media (-moz-bool-pref: "uc.tweak.sidebar.short") {

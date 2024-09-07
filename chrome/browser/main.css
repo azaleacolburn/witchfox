@@ -57,6 +57,7 @@ splitter.devtools-horizontal-splitter,
                     border-radius: var(--uc-content-radius);
                     clip-path: circle(100%);
                     background-color: transparent !important;
+                    box-shadow: var(--uc-content-shadow) !important;
                 }
             }
         }
@@ -64,6 +65,7 @@ splitter.devtools-horizontal-splitter,
             & #appcontent browser {
                 clip-path: circle(100%);
                 background-color: transparent !important;
+                box-shadow: var(--uc-content-shadow) !important;
             }
             
             /* not navbar hidden */
