@@ -58,7 +58,6 @@
         left: calc(50% - (clamp(400px,64vw,800px)/2)) !important;
         right: auto !important;
         
-        opacity: 0.97 !important;
         z-index: 100 !important;
         margin-left: auto !important;
         margin-right: auto !important;
@@ -67,6 +66,21 @@
         .urlbar-input {
             font-size: 16px !important;
         }
+        #urlbar-background {
+            background-color: color-mix(in srgb, Field, transparent 10%) !important;
+            backdrop-filter: blur(var(--uc-blur-radius)) !important;
+        }
+        /* &::before {
+            content: "";
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: color-mix(in srgb, transparent, var(--uc-bg-tran) 50%);
+            backdrop-filter: blur(1px);
+            pointer-events: none !important;
+        } */
     }
     
     #urlbar:not([breakout="true"][breakout-extend="true"]) {
