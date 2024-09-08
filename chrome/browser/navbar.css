@@ -58,7 +58,20 @@ toolbarspring {
     @media not (-moz-bool-pref: "uc.tweak.borderless") {
         --uc-content-margin-top: var(--uc-content-margin) !important;
     }}
-    --nav-width: clamp(400px, 75vw, 1000px);
+    --uc-content-margin-inline: calc(var(--uc-content-margin)*2);
+    @media (-moz-bool-pref: "uc.tweak.borderless") {
+        --uc-content-margin-inline: 0px;
+    }
+    --nav-width: 
+        clamp(
+            min(calc(
+                100vw 
+                - var(--uc-floating-margin)*2 
+                - var(--uc-content-margin-inline)
+            ), 600px ), 
+            75vw, 
+            1000px
+        );
     --nav-height: 38px;
     --personal-height: 24.5px;
     &[uidensity=compact] {
