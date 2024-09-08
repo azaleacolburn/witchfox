@@ -73,7 +73,8 @@ splitter.devtools-horizontal-splitter {
 .browserContainer > findbar {
     background-image: none !important;
     border: none !important;
-    background-color: var(--uc-bg) !important;
+    background-color: var(--uc-bg-tran) !important;
+    backdrop-filter: blur(var(--uc-blur-radius)) !important;
     border-radius: var(--uc-radius) !important;
     
     position: absolute !important;
