@@ -164,9 +164,21 @@ toolbarspring {
         #nav-bar,
         #PersonalToolbar {
             width: 100% !important;
+            background-color: transparent !important;
+            z-index: 100 !important;
+        }
+        
+        #nav-bar::before,
+        #PersonalToolbar::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             background-color: var(--uc-bg-tran) !important;
             backdrop-filter: blur(var(--uc-blur-radius)) !important;
-            z-index: 100 !important;
+            z-index: -1 !important;
         }
         
         toolbarspring  { flex-grow: 0 !important; }
