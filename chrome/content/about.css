@@ -24,7 +24,10 @@ url-prefix("about:home") {
         backdrop-filter: blur(var(--uc-blur-radius)) !important;
         background-color: 
             color-mix(in srgb, 
-                var(--newtab-background-color-secondary), 
+                var(
+                    --lwt-sidebar-background-color, 
+                    var(--newtab-background-color-secondary)
+                ), 
                 transparent 20%
             ) !important;
         
@@ -32,14 +35,25 @@ url-prefix("about:home") {
             background-color: transparent !important;
         }
         & .wallpaper-list.category {
-            height: 80% !important;
+            height: 100% !important;
+            width: 100% !important;
+            top: 0 !important;
+            left: 0 !important;
+            margin: auto !important;
             border-radius: var(--uc-content-radius) !important;
             backdrop-filter: blur(var(--uc-blur-radius)) !important;
             background-color: 
                 color-mix(in srgb, 
-                    var(--newtab-background-color-secondary), 
-                    transparent 10%
+                    var(
+                        --lwt-sidebar-background-color, 
+                        var(--newtab-background-color-secondary)
+                    ), 
+                    transparent 30%
                 ) !important;
+        }
+        /*  back button on wallpaper page */
+        & .wallpaper-list.category button.arrow-button {
+            margin: 16px !important;
         }
     }
     .personalize-button {
