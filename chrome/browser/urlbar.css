@@ -72,11 +72,6 @@
             pointer-events: none !important;
         } */
     }
-/*     &[titlepreface*="​"]:not([inDOMFullscreen="true"]) #urlbar[breakout-extend] {
-        left: 100 !important;
-    } */
-
-
     
     #urlbar:not([breakout-extend]) {
         & #urlbar-background { background-color: transparent !important; }
