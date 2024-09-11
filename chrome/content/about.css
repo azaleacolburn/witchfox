@@ -56,6 +56,29 @@ url-prefix("about:home") {
             margin: 16px !important;
         }
     }
+    .top-sites .tile,
+    .search-wrapper .search-handoff-button, 
+    .search-wrapper input,
+    .card-outer,
+    .compact-cards .card-outer .card-context,
+    .weatherButtonContextMenuWrapper,
+    .weatherInfoLink,
+    .context-menu,
+    .weatherButtonContextMenuWrapper::after,
+    .personalize-button:hover {
+        backdrop-filter: blur(var(--uc-blur-radius)) !important;
+        background-color: 
+            color-mix(in srgb, 
+                var(
+                    --lwt-sidebar-background-color, 
+                    var(--newtab-background-color-secondary)
+                ), 
+                transparent 20%
+            ) !important;
+    }
+    & .compact-cards .card-outer .card-context {
+        clip-path: none !important;
+    }
     .personalize-button {
         border-radius: var(--uc-radius) !important;
         transition: opacity var(--uc-transition) !important;
