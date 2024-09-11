@@ -1,6 +1,18 @@
 /* SPDX-License-Identifier: MPL-2.0 */
 /* SPDX-FileCopyrightText: 2024 awwpotato */
 
+#navigator-toolbox .unified-extensions-item .toolbarbutton-badge {
+    border-radius: var(--uc-button-radius) !important;
+    background-color: var(--toolbarbutton-icon-fill) !important;
+    box-shadow: none !important;
+    color: var(--uc-bg-opaque) !important;
+    margin-inline-end: 0 !important;
+    top: 0 !important;
+    right: 0 !important;
+    position: absolute !important;
+    font-weight:  !important;
+}
+
 @media not (-moz-bool-pref: "uc.tweak.no-custom-icons") {
     /* userChrome toggle -> sidebar icon */ 
     :is(.webextension-browser-action, .eom-addon-button):is(
@@ -12,32 +24,14 @@
 
     /* uBlock Origin -> custom svg icon */
     :is(.webextension-browser-action, .eom-addon-button
-    )[data-extensionid="uBlock0@raymondhill.net"] {
-        & .toolbarbutton-icon {
-            list-style-image: url("../icons/ublock.svg");
-        }
-        & .toolbarbutton-badge {
-            opacity: 0 !important;
-        } 
+    )[data-extensionid="uBlock0@raymondhill.net"] .toolbarbutton-icon {
+        list-style-image: url("../icons/ublock.svg");
     }
 
     /* Bitwarden -> custom svg icon */
     :is(.webextension-browser-action, .eom-addon-button
-    )[data-extensionid="{446900e4-71c2-419f-a6a7-df9c091e268b}"] {
-        & .toolbarbutton-icon {
-            list-style-image: url("../icons/bitwarden.svg");
-        }
-        & .toolbarbutton-badge {
-            color: transparent !important;
-            background-color: var(--toolbarbutton-icon-fill) !important;
-            border-radius: 20px !important;
-            padding: 0 !important;
-            min-width: 2px !important;
-            width: 8px !important;
-            height: 8px !important;
-            margin-inline-end: -3.5px !important;
-            box-shadow: none !important;
-        }
+    )[data-extensionid="{446900e4-71c2-419f-a6a7-df9c091e268b}"] .toolbarbutton-icon {
+        list-style-image: url("../icons/bitwarden.svg");
     }
 
     /* Privacy Badger -> it's own monochrome icon */
@@ -54,20 +48,7 @@
 
     /* Proton Pass -> custom notification badge */
     :is(.webextension-browser-action, .eom-addon-button
-    )[data-extensionid="78272b6fa58f4a1abaac99321d503a20@proton.me"] {
-        & .toolbarbutton-icon {
-            list-style-image: url("../icons/proton-pass.svg");
-        }
-        & .toolbarbutton-badge {
-            color: transparent !important;
-            background-color: var(--toolbarbutton-icon-fill) !important;
-            border-radius: 20px !important;
-            padding: 0 !important;
-            min-width: 2px !important;
-            width: 8px !important;
-            height: 8px !important;
-            margin-inline-end: -3.5px !important;
-            box-shadow: none !important;
-        }
+    )[data-extensionid="78272b6fa58f4a1abaac99321d503a20@proton.me"] .toolbarbutton-icon {
+        list-style-image: url("../icons/proton-pass.svg");
     }
 }
