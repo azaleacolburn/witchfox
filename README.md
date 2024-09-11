@@ -1,10 +1,10 @@
-# PotatoFox
+# potatofox
 
 ![Firefox with Custom CSS applied](Media/Screenshot0.png)
 
 ## Compatibility
 
-Tested on Linux and MacOS, hasn't been tested on Windows recently. 
+Tested on Linux, macOS and Windows
 
 ## Features
 
@@ -15,6 +15,7 @@ Tested on Linux and MacOS, hasn't been tested on Windows recently.
 - general visual enhancements  
 - custom SVG icons for some extensions
 - support for vertical tabs on the left or right
+- tons for blur and translucency
 
 ## Screenshots
 
@@ -67,10 +68,10 @@ nyoom switch potatofox
 > [!WARNING]
 > Websites with a white background will have an incorrect background, this can be fixed by using [Dark Reader](https://addons.mozilla.org/firefox/addon/darkreader/)
 
-> [!NOTE]
+> [!TIP]
 > On Linux there may be extra padding before/after the window controls, this can be fixed by changing line 36-38 in `chrome/vars.css`
 
-> [!NOTE]
+> [!TIP]
 > If fingerprinting is a concern for you, I recommend enabling `uc.tweak.no-custom-icons` and removing `svg.context-properties.content.enabled` from `user.js`
 
 ### Recommended Userchrome Toggle Extended settings
@@ -97,7 +98,7 @@ nyoom switch potatofox
 ### Advanced Configuration
 The variables used by the theme are in `vars.css` and `userChrome.css` (colors). If you would like to ensure there aren't git conflicts you can add a `overrides.css` file in the `chrome` file and override the variables from `vars.css` in there (using `!important;` is necessary). Keep in mind the theme defaults to using `uidensity="compact"`, so you will want to change the variables inside there.
  
-## Credits
+## Inspo
 
 [KiKaraage](https://github.com/KiKaraage/ArcWTF) - ArcWTF
 
@@ -109,4 +110,4 @@ The variables used by the theme are in `vars.css` and `userChrome.css` (colors).
 
 ## Mirrors
 
-Currently Potatofox is available on [codeberg](https://codeberg.org/awwpotato/PotatoFox) (main) and [git.gay](https://git.gay/awwpotato/PotatoFox) (backup)
+Currently potatofox is available on [codeberg](https://codeberg.org/awwpotato/PotatoFox) (main) and [git.gay](https://git.gay/awwpotato/PotatoFox) (backup)
