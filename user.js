@@ -17,6 +17,9 @@ user_pref("browser.urlbar.unitConversion.enabled", true);
 user_pref("browser.urlbar.trimHttps", true);
 user_pref("browser.urlbar.trimURLs", true);
 
+// show profile management in hamburger menu
+user_pref("browser.profiles.enabled", true);
+
 // gtk rounded corners
 user_pref("widget.gtk.rounded-bottom-corners.enabled", true);
 
