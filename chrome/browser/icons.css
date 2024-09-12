@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: MPL-2.0 */
 /* SPDX-FileCopyrightText: 2024 awwpotato */
 
-#navigator-toolbox .unified-extensions-item .toolbarbutton-badge {
+.unified-extensions-item .toolbarbutton-badge {
     border-radius: var(--uc-button-radius) !important;
     background-color: var(--toolbarbutton-icon-fill) !important;
     box-shadow: none !important;
