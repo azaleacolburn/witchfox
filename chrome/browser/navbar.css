@@ -68,7 +68,7 @@ toolbarspring {
                 100vw 
                 - var(--uc-floating-margin)*2 
                 - var(--uc-content-margin-inline)
-            ), 600px ), 
+            ), 700px ), 
             75vw, 
             1000px
         );
