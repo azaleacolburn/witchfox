@@ -1,4 +1,4 @@
-# PotatoFox
+# potatoFox
 
 <div float="right"><img src="Media/Screenshot0.png" width="600" alt="Firefox with Custom CSS applied"></div>
 
@@ -41,7 +41,7 @@ Open the [releases tab](https://codeberg.org/awwpotato/PotatoFox/releases) and d
 
 #### Using git
 
-```base
+```bash
 git clone https://codeberg.org/awwpotato/potatofox.git
 cd potatofox
 ln -sr user.js chrome ~/.mozilla/firefox/<profile> # Linux
@@ -117,4 +117,4 @@ The variables used by the theme are in `vars.css` and `userChrome.css` (colors).
 
 ## Mirrors
 
-Currently Potatofox is available on [codeberg](https://codeberg.org/awwpotato/PotatoFox) (main) and [git.gay](https://git.gay/awwpotato/PotatoFox) (backup)
+Currently potatofox is available on [codeberg](https://codeberg.org/awwpotato/PotatoFox) (main) and [git.gay](https://git.gay/awwpotato/PotatoFox) (backup)
