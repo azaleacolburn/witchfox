@@ -1,4 +1,4 @@
-# potatoFox
+# potatofox
 
 <div float="right"><img src="Media/Screenshot0.png" width="600" alt="Firefox with Custom CSS applied"></div>
 
@@ -20,11 +20,11 @@ Tested on Linux, macOS and Windows
 ## Screenshots
 
 <div align="center">
-    <img src="./Media/Screenshot1.png" width="400" alt="Potatofox theme with sidebar collapsed">
-    <img src="./Media/Screenshot2.png" width="400" alt="Potatofox theme with navbar and sidebar collapsed">
-    <img src="./Media/Screenshot3.png" width="400" alt="Potatofox theme with navbar and sidebar collapsed while the urlbar is floating">
-    <img src="./Media/Screenshot4.png" width="400" alt="Potatofox theme with navbar and sidebar fully collapsed">
-    <img src="./Media/Screenshot5.png" width="400" alt="borderless Potatofox theme with navbar and sidebar collapsed">
+    <img src="./Media/Screenshot1.png" width="400" alt="potatofox theme with sidebar collapsed">
+    <img src="./Media/Screenshot2.png" width="400" alt="potatofox theme with navbar and sidebar collapsed">
+    <img src="./Media/Screenshot3.png" width="400" alt="potatofox theme with navbar and sidebar collapsed while the urlbar is floating">
+    <img src="./Media/Screenshot4.png" width="400" alt="potatofox theme with navbar and sidebar fully collapsed">
+    <img src="./Media/Screenshot5.png" width="400" alt="borderless potatofox theme with navbar and sidebar collapsed">
 </div>
 
 ## Install Instructions
