@@ -1,6 +1,7 @@
 # potatofox
 
-<div float="right"><img src="Media/Screenshot0.png" width="600" alt="Firefox with Custom CSS applied"></div>
+<div style="display: flex;">
+<div style="flex: 1;">
 
 ## Compatibility
 
@@ -17,14 +18,21 @@ Tested on Linux, macOS and Windows
 - support for vertical tabs on the left or right
 - tons for blur and translucency
 
+</div>
+
+<div style="flex: 1;">
+<img src="Media/Screenshot0.png" width="100%" alt="Firefox with Custom CSS applied">
+</div>
+</div>
+
 ## Screenshots
 
 <div align="center">
-    <img src="./Media/Screenshot1.png" width="400" alt="potatofox theme with sidebar collapsed">
-    <img src="./Media/Screenshot2.png" width="400" alt="potatofox theme with navbar and sidebar collapsed">
-    <img src="./Media/Screenshot3.png" width="400" alt="potatofox theme with navbar and sidebar collapsed while the urlbar is floating">
-    <img src="./Media/Screenshot4.png" width="400" alt="potatofox theme with navbar and sidebar fully collapsed">
-    <img src="./Media/Screenshot5.png" width="400" alt="borderless potatofox theme with navbar and sidebar collapsed">
+<img src="./Media/Screenshot1.png" width="400" alt="potatofox theme with sidebar collapsed">
+<img src="./Media/Screenshot2.png" width="400" alt="potatofox theme with navbar and sidebar collapsed">
+<img src="./Media/Screenshot3.png" width="400" alt="potatofox theme with navbar and sidebar collapsed while the urlbar is floating">
+<img src="./Media/Screenshot4.png" width="400" alt="potatofox theme with navbar and sidebar fully collapsed">
+<img src="./Media/Screenshot5.png" width="400" alt="borderless potatofox theme with navbar and sidebar collapsed">
 </div>
 
 ## Install Instructions
@@ -79,7 +87,7 @@ nyoom switch potatofox
 ### Recommended Userchrome Toggle Extended settings
 
 <div align="center">
-    <img src="./Media/UCToggleSettings.png" width="600" alt="Userchrome Toggle Settings">
+<img src="./Media/UCToggleSettings.png" width="600" alt="Userchrome Toggle Settings">
 </div>
 
 ### about:config tweaks
