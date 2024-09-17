@@ -26,11 +26,11 @@ A Firefox and Sidebery CSS theme, tested on Linux, macOS and Windows.
 ## Screenshots
 
 <div align="center">
-<img src="./Media/Screenshot1.png" width="50%" alt="potatofox theme with sidebar collapsed">
-<img src="./Media/Screenshot2.png" width="50%" alt="potatofox theme with navbar hidden and sidebar collapsed">
-<img src="./Media/Screenshot3.png" width="50%" alt="potatofox theme with navbar and sidebar hidden while the urlbar is floating">
-<img src="./Media/Screenshot4.png" width="50%" alt="potatofox theme with navbar and sidebar hidden">
-<img src="./Media/Screenshot5.png" width="50%" alt="borderless potatofox theme with navbar and sidebar hidden">
+<img src="./Media/Screenshot1.png" width="40%" alt="potatofox theme with sidebar collapsed">
+<img src="./Media/Screenshot2.png" width="40%" alt="potatofox theme with navbar hidden and sidebar collapsed">
+<img src="./Media/Screenshot3.png" width="30%" alt="potatofox theme with navbar and sidebar hidden while the urlbar is floating">
+<img src="./Media/Screenshot4.png" width="30%" alt="potatofox theme with navbar and sidebar hidden">
+<img src="./Media/Screenshot5.png" width="30%" alt="borderless potatofox theme with navbar and sidebar hidden">
 </div>
 
 ## Install Instructions
