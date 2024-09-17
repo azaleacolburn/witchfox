@@ -1,11 +1,9 @@
-# potatofox
+# Potatofox
 
 <div style="display: flex;">
 <div style="flex: 1;">
 
-## Compatibility
-
-Tested on Linux, macOS and Windows
+A Firefox and Sidebery CSS theme, tested on Linux, macOS and Windows.
 
 ## Features
 
@@ -21,18 +19,18 @@ Tested on Linux, macOS and Windows
 </div>
 
 <div style="flex: 1;">
-<img src="Media/Screenshot0.png" width="100%" alt="Firefox with Custom CSS applied">
+<img src="./Media/Screenshot0.png" width="100%" alt="Firefox with Custom CSS applied">
 </div>
 </div>
 
 ## Screenshots
 
 <div align="center">
-<img src="./Media/Screenshot1.png" width="400" alt="potatofox theme with sidebar collapsed">
-<img src="./Media/Screenshot2.png" width="400" alt="potatofox theme with navbar and sidebar collapsed">
-<img src="./Media/Screenshot3.png" width="400" alt="potatofox theme with navbar and sidebar collapsed while the urlbar is floating">
-<img src="./Media/Screenshot4.png" width="400" alt="potatofox theme with navbar and sidebar fully collapsed">
-<img src="./Media/Screenshot5.png" width="400" alt="borderless potatofox theme with navbar and sidebar collapsed">
+<img src="./Media/Screenshot1.png" width="50%" alt="potatofox theme with sidebar collapsed">
+<img src="./Media/Screenshot2.png" width="50%" alt="potatofox theme with navbar hidden and sidebar collapsed">
+<img src="./Media/Screenshot3.png" width="50%" alt="potatofox theme with navbar and sidebar hidden while the urlbar is floating">
+<img src="./Media/Screenshot4.png" width="50%" alt="potatofox theme with navbar and sidebar hidden">
+<img src="./Media/Screenshot5.png" width="50%" alt="borderless potatofox theme with navbar and sidebar hidden">
 </div>
 
 ## Install Instructions
