@@ -161,7 +161,9 @@
                     will-change: auto !important;
                     transition: margin var(--uc-transition) var(--uc-mouseout-delay) !important;
                     background-color: var(--uc-bg-tran) !important;
-                    backdrop-filter: blur(var(--uc-blur-radius)) !important;
+                    @media not (-moz-bool-pref: "uc.tweak.no-blur") {
+                        backdrop-filter: blur(var(--uc-blur-radius)) !important;
+                    }
                     
                     margin-left: calc(-1 * (var(--uc-sidebar-hover-width) + var(--uc-content-margin-left))) !important;
                     min-width: var(--uc-sidebar-hover-width) !important;
