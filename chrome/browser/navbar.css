@@ -195,7 +195,8 @@ toolbarspring {
             left: 0;
             width: 100%;
             height: calc(var(--personal-height) + var(--uc-floating-margin));
-            background: pink !important;
+            background: transparent !important;
+            z-index: -1 !important;
         }
         
         toolbarspring  { flex-grow: 0 !important; }
