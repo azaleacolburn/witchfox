@@ -170,6 +170,7 @@ toolbarspring {
         }
         #PersonalToolbar {
             position: relative !important;
+            overflow: unset !important;
         }
         
         @media not (-moz-bool-pref: "uc.tweak.no-blur") {
@@ -186,6 +187,15 @@ toolbarspring {
                 border-radius: var(--uc-radius) !important;
                 z-index: -1 !important;
             }
+        }
+        #PersonalToolbar::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: calc(var(--personal-height) + var(--uc-floating-margin));
+            background: pink !important;
         }
         
         toolbarspring  { flex-grow: 0 !important; }
