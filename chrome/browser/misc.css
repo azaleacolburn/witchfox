@@ -73,9 +73,11 @@ splitter.devtools-horizontal-splitter {
 .browserContainer > findbar {
     background-image: none !important;
     border: none !important;
-    background-color: var(--uc-bg-tran) !important;
-    backdrop-filter: blur(var(--uc-blur-radius)) !important;
     border-radius: var(--uc-radius) !important;
+    background-color: var(--uc-bg-tran) !important;
+    @media not (-moz-bool-pref: "uc.tweak.no-blur") {
+        backdrop-filter: blur(var(--uc-blur-radius)) !important;
+    }
     
     position: absolute !important;
     left: var(--uc-small-floating-margin) !important;
@@ -105,8 +107,10 @@ splitter.devtools-horizontal-splitter {
     & #statuspanel-label {
         border-radius: var(--uc-radius) !important;
         background-color: var(--uc-bg-tran) !important;
-        backdrop-filter: blur(var(--uc-blur-radius)) !important;
         border: none !important;
+        @media not (-moz-bool-pref: "uc.tweak.no-blur") {
+            backdrop-filter: blur(var(--uc-blur-radius)) !important;
+        }
     }
 }
 

@@ -144,7 +144,9 @@
                 !important;
             min-width: var(--uc-sidebar-hover-width) !important;
             background-color: var(--uc-bg-tran) !important;
-            backdrop-filter: blur(var(--uc-blur-radius)) !important;
+            @media not (-moz-bool-pref: "uc.tweak.no-blur") {
+                backdrop-filter: blur(var(--uc-blur-radius)) !important;
+            }   
         }
          
         /* sidebar hidden */

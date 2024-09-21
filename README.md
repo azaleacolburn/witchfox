@@ -105,7 +105,8 @@ nyoom switch potatofox
 | uc.tweak.sidebar.header      | show sidebar header                                                                                                                  |
 | uc.tweak.sidebery.big-pinned | Pinned tabs look like buttons, like Arc's pinned tabs (make sure to set Sidebery settings > tabs > pinned tabs > Show titles is off) |
 | uc.tweak.sidebery.top-navbar | move Sidebery's navbar to the top of the sidebar                                                                                     |
-| uc.tweak.translucency        | EXPERIMENTAL translucency support                                                                                                    |
+| uc.tweak.no-blur             | remove from background of sidebery, navbar, urlbar, etc                                                                              |
+| uc.tweak.translucency        | EXPERIMENTAL translucent window background                                                                                           |
 
 ### Advanced Configuration
 

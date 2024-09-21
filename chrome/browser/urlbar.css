@@ -57,8 +57,11 @@
             font-size: 16px !important;
         }
         #urlbar-background {
-            background-color: color-mix(in srgb, Field, transparent 10%) !important;
-            backdrop-filter: blur(var(--uc-blur-radius)) !important;
+            background-color: Field !important;
+            @media not (-moz-bool-pref: "uc.tweak.no-blur") {
+                background-color: color-mix(in srgb, Field, transparent 10%) !important;
+                backdrop-filter: blur(var(--uc-blur-radius)) !important;
+            }
         }
         /* &::before {
             content: "";
