@@ -10,10 +10,12 @@ url-prefix("about:home") {
     @media (-moz-bool-pref: "browser.tabs.allow_transparent_browser") 
     and (-moz-bool-pref: "uc.tweak.translucency") {
         body {
-            background-color: transparent !important;
-        }
-        .customize-menu .close-button-wrapper {
-            background-color: transparent !important;
+            background-color: 
+                color-mix(
+                    in srgb, 
+                    transparent, 
+                    var(--newtab-background-color) 50%
+                ) !important;
         }
     }
     .customize-menu {
