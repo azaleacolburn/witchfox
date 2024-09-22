@@ -15,7 +15,7 @@
     
     --uc-panel-hint-size: clamp(min(4px, var(--uc-content-margin)), calc(var(--uc-content-margin)*0.5), 5px);
 
-    --uc-blur-radius: 15px;
+    --uc-blur-radius: 9px;
        
     --uc-content-margin: 6px;
     --uc-sidebar-margin: 3px;
