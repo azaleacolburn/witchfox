@@ -18,29 +18,31 @@
     fill: var(--toolbarbutton-icon-fill) !important;
 }
 
-#urlbar-background {
-    border-radius: var(--uc-button-radius) !important;
+#urlbar {
+    z-index: 9999 !important;
+    margin: auto !important;
 }
 
-@media not (-moz-bool-pref: "uc.tweak.regular-search") {
+#urlbar-background {
+    border-radius: var(--uc-button-radius) !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+#urlbar[breakout-extend] #urlbar-background {
+    background-color: Field !important;
+    @media not (-moz-bool-pref: "uc.tweak.no-blur") {
+        background-color: color-mix(in srgb, Field, transparent 10%) !important;
+        backdrop-filter: blur(var(--uc-blur-radius)) !important;
+    }
+}
+
+@media not (-moz-bool-pref: "uc.tweak.urlbar.not-floating") {
 #main-window:not([customizing]) {
-    
-    /* url-bar animation */
-    
     #urlbar-container {
         flex: 1;
         max-width: 1000px;
-        margin: auto !important;
-    }
-    
-    #urlbar-background {
-        border: none !important;
-        box-shadow: none !important;
-    }
-    
-    #urlbar {
-        z-index: 9999 !important;
-        opacity: 100 !important;
         margin: auto !important;
     }
     
@@ -56,28 +58,9 @@
         .urlbar-input {
             font-size: 16px !important;
         }
-        #urlbar-background {
-            background-color: Field !important;
-            @media not (-moz-bool-pref: "uc.tweak.no-blur") {
-                background-color: color-mix(in srgb, Field, transparent 10%) !important;
-                backdrop-filter: blur(var(--uc-blur-radius)) !important;
-            }
-        }
-        /* &::before {
-            content: "";
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 100vw;
-            height: 100vh;
-            background-color: color-mix(in srgb, transparent, var(--uc-bg-tran) 50%);
-            backdrop-filter: blur(1px);
-            pointer-events: none !important;
-        } */
     }
     
     #urlbar:not([breakout-extend]) {
-        & #urlbar-background { background-color: transparent !important; }
         & .urlbar-input-container {
             text-align: center !important;
             & .urlbar-input-box { transition: none !important; }
