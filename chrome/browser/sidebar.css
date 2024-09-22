@@ -159,7 +159,10 @@
                 & #sidebar, 
                 & #sidebar-header {
                     will-change: auto !important;
-                    transition: margin var(--uc-transition) var(--uc-mouseout-delay) !important;
+                    transition: 
+                        margin-left var(--uc-transition) var(--uc-mouseout-delay), 
+                        margin-right var(--uc-transition) var(--uc-mouseout-delay) 
+                        !important;
                     background-color: var(--uc-bg-tran) !important;
                     @media not (-moz-bool-pref: "uc.tweak.no-blur") {
                         backdrop-filter: blur(var(--uc-blur-radius)) !important;
@@ -172,7 +175,10 @@
                 
                 &:hover #sidebar,
                 &:hover #sidebar-header {
-                    transition: margin var(--uc-transition) !important;
+                    transition: 
+                        margin-left var(--uc-transition),
+                        margin-right var(--uc-transition)
+                        !important;
                 }
                 
                 & #sidebar-header { margin-top: var(--uc-floating-margin) !important; }
