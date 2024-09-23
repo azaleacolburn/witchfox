@@ -26,7 +26,8 @@ splitter.devtools-horizontal-splitter {
 }
 
 .browserContainer.responsive-mode {
-    background-color: transparent !important;
+    background-color: var(--uc-content-bg) !important;
+    border-radius: var(--uc-content-radius) !important;
 }
 
 .browserContainer.responsive-mode > .browserStack > browser {
