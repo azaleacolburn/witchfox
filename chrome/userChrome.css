@@ -13,6 +13,7 @@
   @media (-moz-platform: linux) {
     --uc-bg-opaque: ActiveCaption;
   }
+
   --uc-content-bg: transparent;
   &[lwtheme="true"] {
     --uc-bg-opaque: var(--lwt-accent-color);
