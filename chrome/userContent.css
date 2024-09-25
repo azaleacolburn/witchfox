@@ -7,14 +7,14 @@
 
 /* pdf viewer */
 [mozdisallowselectionprint] > body {
-    & #mainContainer {
-        & .toolbar {
-            padding: 4px !important;
-            padding-bottom: none !important;
-            & #toolbarContainer {
-                border-radius: var(--uc-radius) !important;
-                box-shadow: none !important;
-            }
-        }
+  & #mainContainer {
+    & .toolbar {
+      padding: 4px !important;
+      padding-bottom: none !important;
+      & #toolbarContainer {
+        border-radius: var(--uc-radius) !important;
+        box-shadow: none !important;
+      }
     }
+  }
 }

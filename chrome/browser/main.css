@@ -9,10 +9,10 @@
 @import url("window-controls.css");
 
 body {
-    background-color: var(--uc-bg) !important;
-    background-image: var(--lwt-additional-images);
-    background-repeat: var(--lwt-background-tiling);
-    background-position: var(--lwt-background-alignment);
+  background-color: var(--uc-bg) !important;
+  background-image: var(--lwt-additional-images);
+  background-repeat: var(--lwt-background-tiling);
+  background-position: var(--lwt-background-alignment);
 }
 
 /* remove bg from things */
@@ -25,98 +25,98 @@ splitter.devtools-horizontal-splitter,
 #sidebar-box,
 #sidebar,
 #sidebar-splitter {
-    background-color: transparent !important;
-    background-image: none !important;
+  background-color: transparent !important;
+  background-image: none !important;
 }
 
 :root {
-    --uc-content-margin-top: 0px;
-    --uc-content-margin-right: 0px;
-    --uc-content-margin-bottom: 0px;
-    --uc-content-margin-left: 0px;
-    &:not(
-        [inFullscreen="true"], 
-        [inDOMFullscreen="true"],
-        [chromehidden*="toolbar"], 
-        [chromehidden*="menubar"]
-    ) {
-        @media not (-moz-bool-pref: "uc.tweak.borderless") {
-            --uc-content-margin-top: var(--uc-content-margin);
-            --uc-content-margin-right: var(--uc-content-margin);
-            --uc-content-margin-bottom: var(--uc-content-margin);
-            --uc-content-margin-left: var(--uc-content-margin);
+  --uc-content-margin-top: 0px;
+  --uc-content-margin-right: 0px;
+  --uc-content-margin-bottom: 0px;
+  --uc-content-margin-left: 0px;
+  &:not(
+    [inFullscreen="true"], 
+    [inDOMFullscreen="true"],
+    [chromehidden*="toolbar"], 
+    [chromehidden*="menubar"]
+  ) {
+    @media not (-moz-bool-pref: "uc.tweak.borderless") {
+      --uc-content-margin-top: var(--uc-content-margin);
+      --uc-content-margin-right: var(--uc-content-margin);
+      --uc-content-margin-bottom: var(--uc-content-margin);
+      --uc-content-margin-left: var(--uc-content-margin);
 
-            & #appcontent {
-                margin:
-                    var(--uc-content-margin-top)
-                    var(--uc-content-margin-right)
-                    var(--uc-content-margin-bottom)
-                    var(--uc-content-margin-left)
-                    !important;
-                & browser {
-                    border-radius: var(--uc-content-radius);
-                    clip-path: circle(100%);
-                    background-color: var(--uc-content-bg) !important;
-                    box-shadow: var(--uc-content-shadow) !important;
-                }
-            }
+      & #appcontent {
+        margin:
+          var(--uc-content-margin-top)
+          var(--uc-content-margin-right)
+          var(--uc-content-margin-bottom)
+          var(--uc-content-margin-left)
+          !important;
+        & browser {
+          border-radius: var(--uc-content-radius);
+          clip-path: circle(100%);
+          background-color: var(--uc-content-bg) !important;
+          box-shadow: var(--uc-content-shadow) !important;
         }
-        @media (-moz-bool-pref: "uc.tweak.borderless") {
-            & #appcontent browser {
-                clip-path: circle(100%);
-                background-color: var(--uc-content-bg) !important;
-                box-shadow: var(--uc-content-shadow) !important;
-            }
-            
-            /* not navbar hidden */
-            &:not([titlepreface*="​"]) {
-                & #appcontent browser {
-                    border-top-left-radius: var(--uc-content-radius) !important;
-                    border-top-right-radius: var(--uc-content-radius) !important;
-                }
-            }
-            /* not sidebar hidden */
-            &:not([titlepreface*="‌"]) { 
-                &:has(#sidebar-box:not([positionend="true"])) #appcontent browser {
-                    border-top-left-radius: var(--uc-content-radius) !important;
-                    border-bottom-left-radius: var(--uc-content-radius) !important;
-                } &:has(#sidebar-box[positionend="true"]) #appcontent browser {
-                    border-top-right-radius: var(--uc-content-radius) !important;
-                    border-bottom-right-radius: var(--uc-content-radius) !important;
-                } 
-            }
-        }
+      }
     }
-    &:not(
-        [inDOMFullscreen="true"],
-        [chromehidden*="toolbar"], 
-        [chromehidden*="menubar"] 
-    ) {
+    @media (-moz-bool-pref: "uc.tweak.borderless") {
+      & #appcontent browser {
+        clip-path: circle(100%);
+        background-color: var(--uc-content-bg) !important;
+        box-shadow: var(--uc-content-shadow) !important;
+      }
+
+      /* not navbar hidden */
+      &:not([titlepreface*="​"]) {
         & #appcontent browser {
-            clip-path: circle(100%);
-            background-color: var(--uc-content-bg) !important;
+          border-top-left-radius: var(--uc-content-radius) !important;
+          border-top-right-radius: var(--uc-content-radius) !important;
         }
-        /* not navbar hidden */
-        &:not([titlepreface*="​"]) {
-            & #appcontent browser {
-                border-top-left-radius: var(--uc-content-radius) !important;
-                border-top-right-radius: var(--uc-content-radius) !important;
-            }
-        }
-        /* not sidebar hidden */
-        &:not([titlepreface*="‌"]) { 
-            &:has(#sidebar-box:not([positionend="true"])) #appcontent browser {
-                border-top-left-radius: var(--uc-content-radius) !important;
-                border-bottom-left-radius: var(--uc-content-radius) !important;
-            } &:has(#sidebar-box[positionend="true"]) #appcontent browser {
-                border-top-right-radius: var(--uc-content-radius) !important;
-                border-bottom-right-radius: var(--uc-content-radius) !important;
-            } 
-        }
+      }
+      /* not sidebar hidden */
+      &:not([titlepreface*="‌"]) { 
+        &:has(#sidebar-box:not([positionend="true"])) #appcontent browser {
+          border-top-left-radius: var(--uc-content-radius) !important;
+          border-bottom-left-radius: var(--uc-content-radius) !important;
+        } &:has(#sidebar-box[positionend="true"]) #appcontent browser {
+          border-top-right-radius: var(--uc-content-radius) !important;
+          border-bottom-right-radius: var(--uc-content-radius) !important;
+        } 
+      }
     }
+  }
+  &:not(
+    [inDOMFullscreen="true"],
+    [chromehidden*="toolbar"], 
+    [chromehidden*="menubar"] 
+  ) {
+    & #appcontent browser {
+      clip-path: circle(100%);
+      background-color: var(--uc-content-bg) !important;
+    }
+    /* not navbar hidden */
+    &:not([titlepreface*="​"]) {
+      & #appcontent browser {
+        border-top-left-radius: var(--uc-content-radius) !important;
+        border-top-right-radius: var(--uc-content-radius) !important;
+      }
+    }
+    /* not sidebar hidden */
+    &:not([titlepreface*="‌"]) { 
+      &:has(#sidebar-box:not([positionend="true"])) #appcontent browser {
+        border-top-left-radius: var(--uc-content-radius) !important;
+        border-bottom-left-radius: var(--uc-content-radius) !important;
+      } &:has(#sidebar-box[positionend="true"]) #appcontent browser {
+        border-top-right-radius: var(--uc-content-radius) !important;
+        border-bottom-right-radius: var(--uc-content-radius) !important;
+      } 
+    }
+  }
 
-    @media (-moz-bool-pref: "uc.tweak.translucency")
-    and (-moz-platform: macos ) {
-        -moz-appearance: menupopup !important;
-    } 
+  @media (-moz-bool-pref: "uc.tweak.translucency")
+  and (-moz-platform: macos ) {
+    -moz-appearance: menupopup !important;
+  } 
 }
