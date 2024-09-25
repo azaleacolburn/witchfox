@@ -7,3 +7,9 @@ steps:
     image: woodpeckerci/woodpecker-cli:v2.4.1-alpine
     commands:
       - woodpecker-cli lint chrome/
+
+  prettier:
+    image: docker.io/woodpeckerci/plugin-prettier:0.2.0
+    depends_on: []
+    settings:
+      version: 3.2.5
