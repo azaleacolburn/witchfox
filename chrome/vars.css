@@ -13,7 +13,11 @@
   --uc-button-radius: 5px;
   --uc-content-radius: 5px;
 
-  --uc-panel-hint-size: clamp(min(4px, var(--uc-content-margin)), calc(var(--uc-content-margin)*0.5), 5px);
+  --uc-panel-hint-size: clamp(
+    min(4px, var(--uc-content-margin)),
+    calc(var(--uc-content-margin) * 0.5),
+    5px
+  );
 
   --uc-blur-radius: 9px;
 
@@ -32,7 +36,8 @@
   --uc-sidebar-hover-width: 170px;
   @media (-moz-bool-pref: "uc.tweak.sidebar.short") {
     --uc-sidebar-hover-width: 140px;
-  } @media (-moz-bool-pref: "uc.tweak.sidebar.wide") {
+  }
+  @media (-moz-bool-pref: "uc.tweak.sidebar.wide") {
     --uc-sidebar-hover-width: 200px;
   }
 
@@ -47,7 +52,7 @@
     --gtk-window-control-single: 35px;
     --gtk-window-control-dual: 73px;
     --gtk-window-control-tri: 114px;
-    &[uidensity=compact] {
+    &[uidensity="compact"] {
       --gtk-window-control-single: 31px;
       --gtk-window-control-dual: 65px;
       --gtk-window-control-tri: 99px;

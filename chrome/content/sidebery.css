@@ -1,8 +1,11 @@
 /* SPDX-License-Identifier: MPL-2.0 */
 /* SPDX-FileCopyrightText: 2024 awwpotato */
 
-@-moz-document regexp("^moz-extension://.*?/sidebar/sidebar.html") {
-  :root, .root, #root {
+@-moz-document regexp("^moz-extension://.*?/sidebar/sidebar.html")
+{
+  :root,
+  .root,
+  #root {
     --general-border-radius: var(--uc-button-radius) !important;
     --tabs-margin: 1.5px !important;
     --tabs-pinned-height: 30px !important;
@@ -19,7 +22,7 @@
 
   @media (max-width: 40px) {
     .TabsPanel {
-      --tabs-indent: 0px !important; 
+      --tabs-indent: 0px !important;
     }
     .bookmarks-tree {
       --bookmarks-indent: 0px !important;
@@ -29,11 +32,13 @@
     }
   }
 
-  .NavigationBar .main-items .nav-item[data-index="-1"]:not([data-active="true"]), 
+  .NavigationBar
+    .main-items
+    .nav-item[data-index="-1"]:not([data-active="true"]),
   .NavigationBar:not(:has(.nav-item:not([data-index="-1"]))) .static-btns {
     display: none !important;
   }
-  @media (max-width: 66px ) {
+  @media (max-width: 66px) {
     .NavigationBar .static-btns {
       display: none !important;
     }
@@ -42,7 +47,7 @@
   .NavigationBar .main-items .nav-item[data-index="-1"] {
     opacity: 1 !important;
     z-index: 1 !important;
-    transform: scale(1,1) !important;
+    transform: scale(1, 1) !important;
   }
 
   .central-box {
@@ -59,7 +64,7 @@
 
   .NavigationBar {
     border-radius: 6px !important;
-    margin: 0.3px !important
+    margin: 0.3px !important;
   }
 
   #nav_bar {
@@ -78,7 +83,6 @@
       margin-top: -1000px !important;
       top: auto !important;
       bottom: 36px !important;
-
     }
     .NavigationBar.-top .hidden-panels-popup-layer::before {
       display: none !important;
@@ -110,25 +114,29 @@
   .Tab .child-count {
     display: none !important;
   }
-  .Tab[data-audible="true"] .t-box .title, .Tab[data-muted="true"] .t-box .title, .Tab[data-paused="true"] .t-box .title {
+  .Tab[data-audible="true"] .t-box .title,
+  .Tab[data-muted="true"] .t-box .title,
+  .Tab[data-paused="true"] .t-box .title {
     transform: translateX(0px) !important;
   }
 
   /* replace new tab panel and new tab button with plus */
-  .NavigationBar #add_tp.nav-item .icon, .new-tab-btn > svg {
+  .NavigationBar #add_tp.nav-item .icon,
+  .new-tab-btn > svg {
     fill: transparent;
     background-color: var(--nav-btn-fg);
     mask: url("chrome://global/skin/icons/plus.svg") !important;
   }
 
-  .nav-item .audio, .nav-item .bookmarks-badge-icon {
+  .nav-item .audio,
+  .nav-item .bookmarks-badge-icon {
     background-color: var(--frame-bg) !important;
   }
 
   /* new tab button */
   .TabsPanel .new-tab-btns {
     height: calc(var(--tabs-height) + var(--tabs-margin)) !important;
-    width: calc(100% - var(--tabs-margin)*2) !important;
+    width: calc(100% - var(--tabs-margin) * 2) !important;
     padding: 0px !important;
     padding-bottom: var(--tabs-margin) !important;
     margin: 0 var(--tabs-margin);
@@ -150,8 +158,12 @@
       &::after {
         content: "New Tab";
         position: relative;
-        margin-left: calc(var(--tabs-inner-gap) + var(--tabs-inner-gap) + 2px + 16px) !important;
-        width: calc(100% - (var(--tabs-inner-gap) + var(--tabs-inner-gap) + 2px + 16px)) !important;
+        margin-left: calc(
+          var(--tabs-inner-gap) + var(--tabs-inner-gap) + 2px + 16px
+        ) !important;
+        width: calc(
+          100% - (var(--tabs-inner-gap) + var(--tabs-inner-gap) + 2px + 16px)
+        ) !important;
 
         font: var(--tabs-font);
         color: var(--tabs-normal-fg);
@@ -161,13 +173,13 @@
         text-align: start;
         overflow: hidden;
         transition: transform var(--d-fast);
-        mask: linear-gradient(-90deg,transparent,#000 8px,#000);
+        mask: linear-gradient(-90deg, transparent, #000 8px, #000);
         margin-right: 2px !important;
       }
     }
 
     & svg {
-      margin: 0 var(--tabs-inner-gap)0 calc(var(--tabs-inner-gap) + 2px);
+      margin: 0 var(--tabs-inner-gap) 0 calc(var(--tabs-inner-gap) + 2px);
     }
   }
 }

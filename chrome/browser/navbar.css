@@ -6,19 +6,20 @@
   --uc-content-margin-top: 0px !important;
 }
 
-
 @media not (-moz-platform: macos) {
-  :root[sizemode="fullscreen"]:not([inDOMFullscreen="true"]) 
-  #navigator-toolbox {
+  :root[sizemode="fullscreen"]:not([inDOMFullscreen="true"])
+    #navigator-toolbox {
     margin-top: 0px !important;
   }
-} @media (-moz-platform: macos) {
+}
+@media (-moz-platform: macos) {
   #navigator-toolbox[style*="transform: translateY"] {
     background-color: var(--uc-bg) !important;
   }
 }
 
-#nav-bar, #navigator-toolbox {
+#nav-bar,
+#navigator-toolbox {
   border: none !important;
   box-shadow: none !important;
 }
@@ -32,7 +33,7 @@
   margin-inline: var(--uc-sidebar-margin) !important;
   --toolbarbutton-border-radius: var(--uc-button-radius) !important;
   --urlbar-icon-border-radius: var(--uc-button-radius) !important;
-} 
+}
 
 #main-window[lwtheme="true"] .urlbar-input-container image {
   fill: var(--toolbarbutton-icon-fill) !important;
@@ -42,52 +43,54 @@
 #PanelUI-menu-button {
   padding: 0 var(--toolbarbutton-outer-padding) !important;
 }
-#nav-bar-customization-target > :is(toolbarbutton, toolbaritem):first-child, 
-#nav-bar-customization-target > toolbarpaletteitem:first-child > :is(toolbarbutton, toolbaritem) {
+#nav-bar-customization-target > :is(toolbarbutton, toolbaritem):first-child,
+#nav-bar-customization-target
+  > toolbarpaletteitem:first-child
+  > :is(toolbarbutton, toolbaritem) {
   padding-inline-start: 0px !important;
 }
 
 toolbarspring {
-  border-radius: var(--uc-button-radius)
+  border-radius: var(--uc-button-radius);
 }
 
-#TabsToolbar { display: none !important; }
+#TabsToolbar {
+  display: none !important;
+}
 /* navbar hidden */
 #main-window[titlepreface*="​"]:not([inDOMFullscreen="true"]) {
   &:not([sizemode="fullscreen"]) {
-  @media not (-moz-bool-pref: "uc.tweak.borderless") {
-    --uc-content-margin-top: var(--uc-content-margin) !important;
-  }}
-  --uc-content-margin-inline: calc(var(--uc-content-margin)*2);
+    @media not (-moz-bool-pref: "uc.tweak.borderless") {
+      --uc-content-margin-top: var(--uc-content-margin) !important;
+    }
+  }
+  --uc-content-margin-inline: calc(var(--uc-content-margin) * 2);
   @media (-moz-bool-pref: "uc.tweak.borderless") {
     --uc-content-margin-inline: 0px;
   }
-  --nav-width: 
-    clamp(
-      min(
-        calc(
-          100vw 
-          - var(--uc-floating-margin)*2 
-          - var(--uc-content-margin-inline)
-        ), 700px 
-      ), 
-      75vw, 
-      1000px
-    );
+  --nav-width: clamp(
+    min(
+      calc(
+        100vw - var(--uc-floating-margin) * 2 - var(--uc-content-margin-inline)
+      ),
+      700px
+    ),
+    75vw,
+    1000px
+  );
   --nav-height: 38px;
   --personal-height: 24.5px;
-  &[uidensity=compact] {
+  &[uidensity="compact"] {
     --nav-height: 34.5px;
   }
 
-  --uc-navbar-hover-margin-top: 
-    calc(
-      var(--uc-floating-margin) 
-      + 
-      var(--uc-content-margin-top)
-    );
+  --uc-navbar-hover-margin-top: calc(
+    var(--uc-floating-margin) + var(--uc-content-margin-top)
+  );
 
-  #urlbar-container { width: unset !important; }
+  #urlbar-container {
+    width: unset !important;
+  }
 
   #navigator-toolbox {
     position: absolute !important;
@@ -95,7 +98,7 @@ toolbarspring {
 
     width: var(--nav-width) !important;
     height: var(--uc-hover-target-size) !important;
-    left: calc(50vw - var(--nav-width)*0.5) !important;
+    left: calc(50vw - var(--nav-width) * 0.5) !important;
     right: auto !important;
 
     border-radius: var(--uc-radius) !important;
@@ -103,34 +106,40 @@ toolbarspring {
   }
 
   @media not (-moz-bool-pref: "uc.tweak.borderless") {
-  &:not([customizing]):not([sizemode="fullscreen"]) #navigator-toolbox {
-    &::before {
-      content: "";
-      position: absolute;
-      top: calc(var(--uc-content-margin)*0.5 - var(--uc-panel-hint-size)*0.5) !important;
-      width: 100%;
-      height: var(--uc-panel-hint-size) !important;
-      background-color: var(--uc-panel-hint) !important;
-      border-radius: var(--uc-radius) !important;
-      transition: opacity var(--uc-transition) var(--uc-mouseout-delay) !important; 
+    &:not([customizing]):not([sizemode="fullscreen"]) #navigator-toolbox {
+      &::before {
+        content: "";
+        position: absolute;
+        top: calc(
+          var(--uc-content-margin) * 0.5 - var(--uc-panel-hint-size) * 0.5
+        ) !important;
+        width: 100%;
+        height: var(--uc-panel-hint-size) !important;
+        background-color: var(--uc-panel-hint) !important;
+        border-radius: var(--uc-radius) !important;
+        transition: opacity var(--uc-transition) var(--uc-mouseout-delay) !important;
+      }
+      &::after {
+        content: "";
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: var(--uc-content-margin-top);
+        left: 0;
+        -moz-window-dragging: drag;
+        pointer-events: none !important;
+      }
     }
-    &::after {
-      content: "";
-      position: fixed;
-      top: 0;
-      width: 100vw;
-      height: var(--uc-content-margin-top);
-      left: 0;
-      -moz-window-dragging: drag;
-      pointer-events: none !important;
-    }
-  }}
+  }
 
   #nav-bar {
     min-height: unset !important;
     max-height: unset !important;
     height: var(--nav-height) !important;
-    margin-top: calc(-1 * (var(--nav-height) + var(--personal-height) + var(--uc-floating-margin) + var(--uc-content-margin)));
+    margin-top: calc(
+      -1 * (var(--nav-height) + var(--personal-height) +
+            var(--uc-floating-margin) + var(--uc-content-margin))
+    );
 
     transition: margin-top var(--uc-transition) var(--uc-mouseout-delay) !important;
     will-change: margin-top !important;
@@ -148,7 +157,7 @@ toolbarspring {
     & #customization-content-container {
       margin-top: var(--nav-height) !important;
     }
-    & #nav-bar, 
+    & #nav-bar,
     & #PersonalToolbar {
       background-color: var(--uc-bg) !important;
     }
@@ -201,35 +210,45 @@ toolbarspring {
       z-index: -1 !important;
     }
 
-    toolbarspring  { flex-grow: 0 !important; }
+    toolbarspring {
+      flex-grow: 0 !important;
+    }
 
-    &:has( 
-      #navigator-toolbox:hover,
-      #nav-bar-customization-target:hover,
-      #PanelUI-button:hover,
-      #urlbar:focus-within,
-      #urlbar[breakout][breakout-extend],
-      #nav-bar-overflow-button[open],
-      #nav-bar-overflow-button:hover,
-      #nav-bar-customization-target toolbarbutton[open="true"],
-      .urlbar-input-container > *[role="button"][open="true"],
-      #identity-box > *[role="button"][open="true"],
-      #PanelUI-menu-button[open="true"]
-    ) {
+    &:has(
+        #navigator-toolbox:hover,
+        #nav-bar-customization-target:hover,
+        #PanelUI-button:hover,
+        #urlbar:focus-within,
+        #urlbar[breakout][breakout-extend],
+        #nav-bar-overflow-button[open],
+        #nav-bar-overflow-button:hover,
+        #nav-bar-customization-target toolbarbutton[open="true"],
+        .urlbar-input-container > *[role="button"][open="true"],
+        #identity-box > *[role="button"][open="true"],
+        #PanelUI-menu-button[open="true"]
+      ) {
       #nav-bar {
         margin-top: var(--uc-navbar-hover-margin-top) !important;
         transition: margin-top var(--uc-transition) !important;
 
         #nav-bar-customization-target > *:not([disabled="true"]),
-        #nav-bar-overflow-button, #PanelUI-button:not([disabled="true"]) {opacity: 1 !important;}
-        #nav-bar-customization-target > *[disabled="true"], #PanelUI-button[disabled="true"] {opacity: 0.5 !important;}
+        #nav-bar-overflow-button,
+        #PanelUI-button:not([disabled="true"]) {
+          opacity: 1 !important;
+        }
+        #nav-bar-customization-target > *[disabled="true"],
+        #PanelUI-button[disabled="true"] {
+          opacity: 0.5 !important;
+        }
       }
       #navigator-toolbox {
-        height: calc(2*var(--uc-content-margin) + var(--nav-height)) !important;
+        height: calc(
+          2 * var(--uc-content-margin) + var(--nav-height)
+        ) !important;
         z-index: 99 !important;
 
         &::before {
-          transition: opacity var(--uc-transition) !important; 
+          transition: opacity var(--uc-transition) !important;
           opacity: 0 !important;
         }
       }

@@ -6,7 +6,11 @@
 
 :root {
   @media not (-moz-bool-pref: "uc.tweak.no-panel-hint") {
-    --uc-panel-hint: color-mix( in srgb, var(--toolbarbutton-icon-fill), transparent 75%);
+    --uc-panel-hint: color-mix(
+      in srgb,
+      var(--toolbarbutton-icon-fill),
+      transparent 75%
+    );
   }
 
   --uc-bg-opaque: light-dark(rgb(239, 239, 242), rgb(27, 26, 32));
@@ -24,10 +28,15 @@
 
   --uc-bg: var(--uc-bg-opaque);
   --uc-bg-tran: var(--uc-bg-opaque);
-  --uc-bg-translucency: color-mix(in srgb, var(--uc-bg-opaque), transparent 10%);
+  --uc-bg-translucency: color-mix(
+    in srgb,
+    var(--uc-bg-opaque),
+    transparent 10%
+  );
   @media not (-moz-bool-pref: "uc.tweak.no-blur") {
     --uc-bg-tran: var(--uc-bg-translucency);
-  } @media (-moz-bool-pref: "uc.tweak.translucency") {
+  }
+  @media (-moz-bool-pref: "uc.tweak.translucency") {
     --uc-bg: var(--uc-bg-translucency);
   }
 }

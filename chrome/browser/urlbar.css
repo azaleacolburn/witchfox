@@ -1,11 +1,14 @@
 /* SPDX-License-Identifier: MPL-2.0 */
 /* SPDX-FileCopyrightText: 2024 awwpotato */
 
-#identity-box[pageproxystate="valid"]:is(.notSecureText, .chromeUI, .extensionPage) > 
-.identity-box-button {
-
-  &:not(:hover){
-    background-color: transparent !important;        
+#identity-box[pageproxystate="valid"]:is(
+    .notSecureText,
+    .chromeUI,
+    .extensionPage
+  )
+  > .identity-box-button {
+  &:not(:hover) {
+    background-color: transparent !important;
   }
   & image {
     list-style-image: url("../icons/firefox.svg") !important;
@@ -48,9 +51,9 @@
 
     #urlbar[breakout-extend] {
       position: fixed !important;
-      width: clamp(400px,64vw,800px) !important;
-      left: calc(50vw - (clamp(400px,64vw,800px)/2)) !important;
-      right: calc(50vw - (clamp(400px,64vw,800px)/2)) !important;
+      width: clamp(400px, 64vw, 800px) !important;
+      left: calc(50vw - (clamp(400px, 64vw, 800px) / 2)) !important;
+      right: calc(50vw - (clamp(400px, 64vw, 800px) / 2)) !important;
 
       top: 20vh !important;
       bottom: auto !important;
@@ -63,7 +66,10 @@
     #urlbar:not([breakout-extend]) {
       & .urlbar-input-container {
         text-align: center !important;
-        & .urlbar-input-box { transition: none !important; }
+        & .urlbar-input-box {
+          transition: none !important;
+        }
       }
     }
-  }}
+  }
+}
