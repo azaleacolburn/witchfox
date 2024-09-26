@@ -93,6 +93,7 @@ nyoom switch potatofox
 | Setting                      | Description                                                                                                                          |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | uc.tweak.borderless          | removes margins around the webpage                                                                                                   |
+| uc.tweak.borderless.no-round | don't round corners of browser contents when in borderless mode
 | uc.tweak.no-custom-icons     | Don't apply custom monochrome icons for some extensions                                                                              |
 | uc.tweak.no-window-controls  | Removes window controls                                                                                                              |
 | uc.tweak.no-panel-hint       | hide the small bars showing location of hidden panels                                                                                |
