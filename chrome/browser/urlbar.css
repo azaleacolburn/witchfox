@@ -34,9 +34,13 @@
 }
 
 #urlbar[breakout-extend] #urlbar-background {
-  background-color: Field !important;
+  --urlbar-bg: Field;
+  @media (-moz-platform: windows) {
+    --urlbar-bg: var(--toolbar-field-background-color);
+  }
+  background-color: var(--urlbar-bg) !important;
   @media not (-moz-bool-pref: "uc.tweak.no-blur") {
-    background-color: color-mix(in srgb, Field, transparent 10%) !important;
+    background-color: color-mix(in srgb, var(--urlbar-bg), transparent 10%) !important;
     backdrop-filter: blur(var(--uc-blur-radius)) !important;
   }
 }
@@ -58,13 +62,15 @@
       top: 20vh !important;
       bottom: auto !important;
 
-      .urlbar-input {
+      .urlbar-input,
+      #urlbar-input {
         font-size: 16px !important;
       }
     }
 
     #urlbar:not([breakout-extend]) {
-      & .urlbar-input-container {
+      & .urlbar-input-container,
+      & #urlbar-input-container {
         text-align: center !important;
         & .urlbar-input-box {
           transition: none !important;
