@@ -15,6 +15,10 @@ body {
   background-position: var(--lwt-background-alignment);
 }
 
+@media (-moz-bool-pref: "uc.tweak.translucency") {
+  #main-window { background: transparent !important; }
+}
+
 /* remove bg from things */
 #nav-bar,
 #navigator-toolbox,
@@ -116,6 +120,6 @@ splitter.devtools-horizontal-splitter,
   }}
 
   @media (-moz-bool-pref: "uc.tweak.translucency") and (-moz-platform: macos) {
-    -moz-appearance: menupopup !important;
+    -moz-appearance: -moz-window-titlebar !important;
   }
 }

@@ -34,9 +34,9 @@
 }
 
 #urlbar[breakout-extend] #urlbar-background {
-  --urlbar-bg: Field;
-  @media (-moz-platform: windows) {
-    --urlbar-bg: var(--toolbar-field-background-color);
+  --urlbar-bg: var(--toolbar-field-background-color);
+  @media (-moz-platform: linux) {
+    --urlbar-bg: Field;
   }
   background-color: var(--urlbar-bg) !important;
   @media not (-moz-bool-pref: "uc.tweak.no-blur") {

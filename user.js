@@ -33,3 +33,6 @@ user_pref("browser.tabs.allow_transparent_browser", true);
 
 // uidensity -> compact
 user_pref("browser.uidensity", 1);
+
+// macos transparent
+user_pref("widget.macos.titlebar-blend-mode.behind-window", true);
