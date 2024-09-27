@@ -130,4 +130,4 @@ Currently potatofox is available on [codeberg](https://codeberg.org/awwpotato/Po
 ## License
 
 The source code of this project is subject to the terms of the [MPLv2.0](https://www.mozilla.org/en-US/MPL/2.0/) license.
-All documentation and images included as part of this README are licensed under [CC BY-SA](https://creativecommons.org/licenses/by/4.0/).
+All documentation and images included as part of this README are licensed under [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/).
