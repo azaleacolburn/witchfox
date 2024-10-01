@@ -18,7 +18,7 @@
     calc(var(--uc-content-margin) * 0.5),
     5px
   );
-
+  
   --uc-blur-radius: 9px;
 
   --uc-content-margin: 6px;
@@ -43,11 +43,11 @@
 
   --uc-sidebar-width: 34px;
 
-  /* linux window controls */
+  /* linux window controls width */
   --gtk-window-control-single: 38px;
   --gtk-window-control-dual: 76px;
   --gtk-window-control-tri: 114px;
-  /* linux window controls w/ firefox color extension enabled*/
+  /* linux window controls width w/ firefox color extension enabled*/
   &[lwtheme="true"] {
     --gtk-window-control-single: 35px;
     --gtk-window-control-dual: 73px;
