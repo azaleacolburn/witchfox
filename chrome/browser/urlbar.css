@@ -47,6 +47,17 @@
 
 @media not (-moz-bool-pref: "uc.tweak.urlbar.not-floating") {
   #main-window:not([customizing]) {
+    --uc-urlbar-width: clamp(
+      min(
+        calc(
+          100vw - var(--uc-floating-margin) * 2 - var(--uc-content-margin-inline)
+        ),
+        500px
+      ),
+      64vw,
+      800px
+    );
+    
     #urlbar-container {
       flex: 1;
       max-width: 1000px;
@@ -55,9 +66,9 @@
 
     #urlbar[breakout-extend] {
       position: fixed !important;
-      width: clamp(400px, 64vw, 800px) !important;
-      left: calc(50vw - (clamp(400px, 64vw, 800px) / 2)) !important;
-      right: calc(50vw - (clamp(400px, 64vw, 800px) / 2)) !important;
+      width: var(--uc-urlbar-width) !important;
+      right: 0px !important;
+      left: 0px !important;
 
       top: 20vh !important;
       bottom: auto !important;

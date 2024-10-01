@@ -64,10 +64,6 @@ toolbarspring {
       --uc-content-margin-top: var(--uc-content-margin) !important;
     }
   }
-  --uc-content-margin-inline: calc(var(--uc-content-margin) * 2);
-  @media (-moz-bool-pref: "uc.tweak.borderless") {
-    --uc-content-margin-inline: 0px;
-  }
   --nav-width: clamp(
     min(
       calc(
