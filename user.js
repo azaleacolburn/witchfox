@@ -36,3 +36,6 @@ user_pref("browser.uidensity", 1);
 
 // macos transparent
 user_pref("widget.macos.titlebar-blend-mode.behind-window", true);
+
+// don't warn on about:config open
+user_pref("browser.aboutConfig.showWarning", false);
