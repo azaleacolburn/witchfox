@@ -96,9 +96,9 @@ splitter.devtools-horizontal-splitter,
     ) {
     & #appcontent browser {
       background-color: var(--uc-content-bg) !important;
+      clip-path: circle(100%);
     }
   @media not (-moz-bool-pref: "uc.tweak.borderless.no-round") {
-    & #appcontent browser { clip-path: circle(100%); }
     /* not navbar hidden */
     &:not([titlepreface*="​"]) {
       & #appcontent browser {
