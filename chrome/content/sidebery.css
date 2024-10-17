@@ -104,7 +104,7 @@
       width: 100% !important;
       height: 100% !important;
       &:not([data-active="true"]) .body {
-        background-color: color-mix(in oklab, var(--tabs-activated-bg) 25%) !important;
+        background-color: color-mix(in oklab, var(--tabs-activated-bg) 25%, transparent) !important;
       }
     }
   }

@@ -8,7 +8,8 @@
   @media not (-moz-bool-pref: "uc.tweak.no-panel-hint") {
     --uc-panel-hint: color-mix(
       in oklab,
-      var(--toolbarbutton-icon-fill) 25%
+      var(--toolbarbutton-icon-fill) 25%,
+      transparent
     );
   }
 
@@ -29,7 +30,8 @@
   --uc-bg-tran: var(--uc-bg-opaque);
   --uc-bg-translucency: color-mix(
     in oklab,
-    var(--uc-bg-opaque) 90%
+    var(--uc-bg-opaque) 90%,
+    transparent
   );
   @media not (-moz-bool-pref: "uc.tweak.no-blur") {
     --uc-bg-tran: var(--uc-bg-translucency);
