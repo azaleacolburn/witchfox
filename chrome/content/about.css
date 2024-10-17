@@ -24,9 +24,10 @@ url-prefix("about:home") {
     background-color: color-mix(
       in oklab,
       var(
-        --lwt-sidebar-background-color,
-        var(--newtab-background-color-secondary)
-      ) 80%,
+          --lwt-sidebar-background-color,
+          var(--newtab-background-color-secondary)
+        )
+        80%,
       transparent
     ) !important;
 
@@ -44,9 +45,10 @@ url-prefix("about:home") {
       background-color: color-mix(
         in oklab,
         var(
-          --lwt-sidebar-background-color,
-          var(--newtab-background-color-secondary)
-        ) 70%,
+            --lwt-sidebar-background-color,
+            var(--newtab-background-color-secondary)
+          )
+          70%,
         transparent
       ) !important;
     }
@@ -69,9 +71,10 @@ url-prefix("about:home") {
     background-color: color-mix(
       in oklab,
       var(
-        --lwt-sidebar-background-color,
-        var(--newtab-background-color-secondary)
-      ) 80%,
+          --lwt-sidebar-background-color,
+          var(--newtab-background-color-secondary)
+        )
+        80%,
       transparent
     ) !important;
   }

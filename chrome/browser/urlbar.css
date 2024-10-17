@@ -40,7 +40,11 @@
   }
   background-color: var(--urlbar-bg) !important;
   @media not (-moz-bool-pref: "uc.tweak.no-blur") {
-    background-color: color-mix(in srgb, var(--urlbar-bg), transparent 10%) !important;
+    background-color: color-mix(
+      in oklab,
+      var(--urlbar-bg) 90%,
+      transparent
+    ) !important;
     backdrop-filter: blur(var(--uc-blur-radius)) !important;
   }
 }
@@ -50,14 +54,15 @@
     --uc-urlbar-width: clamp(
       min(
         calc(
-          100vw - var(--uc-floating-margin) * 2 - var(--uc-content-margin-inline)
+          100vw - var(--uc-floating-margin) * 2 -
+            var(--uc-content-margin-inline)
         ),
         500px
       ),
       64vw,
       800px
     );
-    
+
     #urlbar-container {
       flex: 1;
       max-width: 1000px;

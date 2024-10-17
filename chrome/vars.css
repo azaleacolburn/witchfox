@@ -18,7 +18,7 @@
     calc(var(--uc-content-margin) * 0.5),
     5px
   );
-  
+
   --uc-blur-radius: 9px;
 
   --uc-content-margin: 6px;
