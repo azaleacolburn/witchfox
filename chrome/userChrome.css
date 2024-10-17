@@ -7,9 +7,8 @@
 :root {
   @media not (-moz-bool-pref: "uc.tweak.no-panel-hint") {
     --uc-panel-hint: color-mix(
-      in srgb,
-      var(--toolbarbutton-icon-fill),
-      transparent 75%
+      in oklab,
+      var(--toolbarbutton-icon-fill) 25%
     );
   }
 
@@ -29,9 +28,8 @@
   --uc-bg: var(--uc-bg-opaque);
   --uc-bg-tran: var(--uc-bg-opaque);
   --uc-bg-translucency: color-mix(
-    in srgb,
-    var(--uc-bg-opaque),
-    transparent 10%
+    in oklab,
+    var(--uc-bg-opaque) 90%
   );
   @media not (-moz-bool-pref: "uc.tweak.no-blur") {
     --uc-bg-tran: var(--uc-bg-translucency);
