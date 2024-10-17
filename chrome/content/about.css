@@ -22,12 +22,11 @@ url-prefix("about:home") {
     margin: var(--uc-content-margin) !important;
     backdrop-filter: blur(var(--uc-blur-radius)) !important;
     background-color: color-mix(
-      in srgb,
+      in oklab,
       var(
         --lwt-sidebar-background-color,
         var(--newtab-background-color-secondary)
-      ),
-      transparent 20%
+      ) 80%
     ) !important;
 
     & .close-button-wrapper {
@@ -42,12 +41,11 @@ url-prefix("about:home") {
       border-radius: var(--uc-content-radius) !important;
       backdrop-filter: blur(var(--uc-blur-radius)) !important;
       background-color: color-mix(
-        in srgb,
+        in oklab,
         var(
           --lwt-sidebar-background-color,
           var(--newtab-background-color-secondary)
-        ),
-        transparent 30%
+        ) 70%
       ) !important;
     }
     /*  back button on wallpaper page */
@@ -67,12 +65,11 @@ url-prefix("about:home") {
   .personalize-button:hover {
     backdrop-filter: blur(var(--uc-blur-radius)) !important;
     background-color: color-mix(
-      in srgb,
+      in oklab,
       var(
         --lwt-sidebar-background-color,
         var(--newtab-background-color-secondary)
-      ),
-      transparent 20%
+      ) 80%
     ) !important;
   }
   & .compact-cards .card-outer .card-context {
@@ -104,9 +101,8 @@ url-prefix("about:addons") {
       /* --in-content-table-header-background: 
 color-mix(in srgb, var(--in-content-primary-button-background), transparent 80%) !important;  */
       --in-content-box-background: color-mix(
-        in srgb,
-        var(--background-color-box),
-        transparent 80%
+        in oklab,
+        var(--background-color-box) 20%
       ) !important;
     }
     .card {
@@ -120,9 +116,8 @@ color-mix(in srgb, var(--in-content-primary-button-background), transparent 80%)
     #about-config-search {
       backdrop-filter: blur(33px) !important;
       background-color: color-mix(
-        in srgb,
-        var(--background-color-box),
-        transparent 20%
+        in oklab,
+        var(--background-color-box) 80%
       ) !important;
     }
   }
@@ -132,9 +127,8 @@ color-mix(in srgb, var(--in-content-primary-button-background), transparent 80%)
   @media (-moz-bool-pref: "browser.tabs.allow_transparent_browser") and (-moz-bool-pref: "uc.tweak.translucency") {
     :root {
       --in-content-box-background: color-mix(
-        in srgb,
-        var(--background-color-box),
-        transparent 60%
+        in oklab,
+        var(--background-color-box) 40%
       ) !important;
     }
     .main-heading {
@@ -149,9 +143,8 @@ url-prefix("about:support") {
     #searchInput {
       backdrop-filter: blur(33px) !important;
       background-color: color-mix(
-        in srgb,
-        var(--background-color-box),
-        transparent 10%
+        in oklab,
+        var(--background-color-box) 90%
       ) !important;
     }
   }
