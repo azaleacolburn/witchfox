@@ -74,7 +74,7 @@ nyoom switch potatofox
 - about:addons (url) > Userchrome Toggle Extended preferences > General settings > allow multiple styles to be active together, apply changes
 
 > [!WARNING]
-> Some websites with a white background will have an incorrect background, this can be fixed by using [Dark Reader](https://addons.mozilla.org/firefox/addon/darkreader/)
+> Some websites with a white background will have an incorrect background, this can be fixed by using [Dark Reader](https://addons.mozilla.org/firefox/addon/darkreader/) or by removing `browser.tabs.allow_transparent_browser` from `user.js`
 
 > [!TIP]
 > On Linux there may be extra padding before/after the window controls, this can be fixed by changing line 36-38 in `chrome/vars.css`
