@@ -75,7 +75,7 @@
   @media not (-moz-bool-pref: "uc.tweak.sidebery.top-navbar") {
     .top-horizontal-box {
       order: 100 !important;
-      margin-bottom: 0px !important;
+      margin-bottom: var(--tabs-margin) !important;
     }
 
     .NavigationBar.-top .hidden-panels-popup {
@@ -87,6 +87,10 @@
     .NavigationBar.-top .hidden-panels-popup-layer::before {
       display: none !important;
       background-color: transparent !important;
+    }
+  } @media (-moz-bool-pref: "uc.tweak.sidebery.top-navbar") {
+    .top-horizontal-box {
+      margin-top: var(--tabs-margin) !important;
     }
   }
 

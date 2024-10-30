@@ -19,9 +19,8 @@
 
   #sidebar-box {
     min-width: var(--uc-sidebar-width) !important;
-    margin-bottom: var(--uc-content-margin-bottom) !important;
-    @media (-moz-bool-pref: "uc.tweak.borderless") {
-      margin-bottom: var(--uc-sidebar-margin) !important;
+    @media not (-moz-bool-pref: "uc.tweak.borderless") {
+      margin-bottom: var(--uc-content-margin-bottom) !important;
     }
     margin-top: var(--uc-content-margin-top) !important;
     &[positionend="true"] {
