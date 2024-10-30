@@ -1,11 +1,12 @@
 /* SPDX-License-Identifier: MPL-2.0 */
 /* SPDX-FileCopyrightText: 2024 awwpotato */
 
-.unified-extensions-item .toolbarbutton-badge {
-  border-radius: var(--uc-button-radius) !important;
+:root[lwtheme="true"] .unified-extensions-item .toolbarbutton-badge {
   background-color: var(--toolbarbutton-icon-fill) !important;
-  box-shadow: none !important;
   color: var(--uc-bg-opaque) !important;
+} .unified-extensions-item .toolbarbutton-badge {
+  border-radius: var(--uc-button-radius) !important;
+  box-shadow: none !important;
   margin-inline-end: 0 !important;
   top: 0 !important;
   right: 0 !important;
