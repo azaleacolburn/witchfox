@@ -167,7 +167,7 @@
 
     #sidebar-box:hover > #sidebar-header,
     #sidebar-box:hover > #sidebar {
-      background-color: var(--uc-bg-tran) !important;
+      background-color: var(--uc-bg-opaque) !important;
       @media not (-moz-bool-pref: "uc.tweak.no-blur") {
         backdrop-filter: blur(var(--uc-blur-radius)) !important;
       }
