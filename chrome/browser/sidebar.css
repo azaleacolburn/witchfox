@@ -9,7 +9,7 @@
 }
 
 #main-window:not([customizing]):has(#sidebar-box:not([hidden="true"])) {
-  /* adjust #appcontent margin */
+  /* adjust content margin */
   &:has(#sidebar-box:not([positionend="true"])) {
     --uc-content-margin-left: 0px !important;
   }
