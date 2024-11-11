@@ -85,12 +85,16 @@ splitter.devtools-horizontal-splitter {
   }
 
   position: absolute !important;
-  left: var(--uc-small-floating-margin) !important;
+  left: auto !important;
   right: var(--uc-small-floating-margin) !important;
-  width: auto !important;
+  width: min(850px, 100% - 2*var(--uc-small-floating-margin)) !important;
 
   .findbar-textbox {
     border-radius: var(--uc-radius) !important;
+  }
+  
+  .findbar-container {
+    width: fit-content !important;
   }
 
   @media not (-moz-bool-pref: "uc.tweak.findbar.bottom") {
