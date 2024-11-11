@@ -20,7 +20,7 @@
   --uc-sidebar-floating-bg: var(--uc-bg-tran);
   @media (-moz-platform: linux) {
     --uc-sidebar-floating-bg: var(--uc-bg-opaque);
-    &[gtktiledwindow="true"] {
+    &[sizemode="maximized"] {
       --uc-sidebar-floating-bg: var(--uc-bg-tran);
     }
   }
