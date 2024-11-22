@@ -52,13 +52,6 @@
     }
   }
 
-  @media (-moz-bool-pref: "uc.tweak.borderless") {
-    /* navbar hidden */
-    &[titlepreface*="​"] #sidebar-box {
-      margin-top: var(--uc-sidebar-margin) !important;
-    }
-  }
-
   #sidebar {
     clip-path: circle(100%);
     border-radius: var(--uc-content-radius) !important;
