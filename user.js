@@ -39,3 +39,6 @@ user_pref("widget.macos.titlebar-blend-mode.behind-window", true);
 
 // don't warn on about:config open
 user_pref("browser.aboutConfig.showWarning", false);
+
+user_pref("sidebar.revamp", false);
+user_pref("sidebar.verticalTabs", false);
