@@ -34,7 +34,7 @@
 }
 
 #urlbar[breakout-extend] #urlbar-background {
-  --urlbar-bg: var(--toolbar-field-background-color);
+  --urlbar-bg: var(--toolbar-field-focus-background-color);
   @media (-moz-platform: linux) {
     --urlbar-bg: Field;
   }
