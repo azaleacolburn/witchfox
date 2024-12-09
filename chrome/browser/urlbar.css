@@ -23,7 +23,6 @@
 
 #urlbar {
   z-index: 9999 !important;
-  margin: auto !important;
 }
 
 #urlbar-background {
@@ -63,10 +62,14 @@
       800px
     );
 
+    #urlbar,
+    #urlbar-container {
+      margin: auto !important;
+    }
+
     #urlbar-container {
       flex: 1;
       max-width: 1000px;
-      margin: auto !important;
     }
 
     #urlbar[breakout-extend] {
