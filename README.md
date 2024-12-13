@@ -1,4 +1,5 @@
 # Potatofox
+[![Please don't upload to GitHub](https://nogithub.codeberg.page/badge.svg)](https://nogithub.codeberg.page)
 
 <div style="display: flex;">
 <div style="flex: 1;">
