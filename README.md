@@ -19,18 +19,18 @@ A Firefox and Sidebery CSS theme, tested on Linux, macOS and Windows.
 </div>
 
 <div style="flex: 1;">
-<img src="./Media/Screenshot0.png" width="100%" alt="Firefox with Custom CSS applied">
+<img src="./media/screenshot0.png" width="100%" alt="Firefox with Custom CSS applied">
 </div>
 </div>
 
 ## Screenshots
 
 <div align="center">
-<img src="./Media/Screenshot1.png" width="49%" alt="potatofox theme with sidebar collapsed">
-<img src="./Media/Screenshot2.png" width="49%" alt="potatofox theme with navbar hidden and sidebar collapsed">
-<img src="./Media/Screenshot3.png" width="32%" alt="potatofox theme with navbar and sidebar hidden while the urlbar is floating">
-<img src="./Media/Screenshot4.png" width="32%" alt="potatofox theme with navbar and sidebar hidden">
-<img src="./Media/Screenshot5.png" width="32%" alt="borderless potatofox theme with navbar and sidebar hidden">
+<img src="./media/screenshot1.png" width="49%" alt="potatofox theme with sidebar collapsed">
+<img src="./media/screenshot2.png" width="49%" alt="potatofox theme with navbar hidden and sidebar collapsed">
+<img src="./media/screenshot3.png" width="32%" alt="potatofox theme with navbar and sidebar hidden while the urlbar is floating">
+<img src="./media/screenshot4.png" width="32%" alt="potatofox theme with navbar and sidebar hidden">
+<img src="./media/screenshot5.png" width="32%" alt="borderless potatofox theme with navbar and sidebar hidden">
 </div>
 
 ## Install Instructions
@@ -85,7 +85,7 @@ nyoom switch potatofox
 ### Recommended Userchrome Toggle Extended settings
 
 <div align="center">
-<img src="./Media/UCToggleSettings.png" width="600" alt="Userchrome Toggle Settings">
+<img src="./media/uc_toggle_settings.png" width="600" alt="Userchrome Toggle Settings">
 </div>
 
 ### about:config tweaks
