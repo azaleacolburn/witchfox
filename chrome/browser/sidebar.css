@@ -17,15 +17,6 @@
     --uc-content-margin-right: 0px !important;
   }
 
-  --uc-sidebar-floating-bg: var(--uc-bg-tran);
-  @media (-moz-platform: linux) {
-    --uc-sidebar-floating-bg: var(--uc-bg-opaque);
-    &[sizemode="maximized"] {
-      --uc-sidebar-floating-bg: var(--uc-bg-tran);
-    }
-  }
-
-
   #sidebar-box {
     min-width: var(--uc-sidebar-width) !important;
     @media not (-moz-bool-pref: "uc.tweak.borderless") {
@@ -169,7 +160,7 @@
 
     #sidebar-box:hover > #sidebar-header,
     #sidebar-box:hover > #sidebar {
-      background-color: var(--uc-sidebar-floating-bg) !important;
+      background-color: var(--uc-bg-tran) !important;
       @media not (-moz-bool-pref: "uc.tweak.no-blur") {
         backdrop-filter: blur(var(--uc-blur-radius)) !important;
       }
@@ -188,7 +179,7 @@
           transition:
             margin-left var(--uc-transition) var(--uc-mouseout-delay),
             margin-right var(--uc-transition) var(--uc-mouseout-delay) !important;
-          background-color: var(--uc-sidebar-floating-bg) !important;
+          background-color: var(--uc-bg-tran) !important;
           @media not (-moz-bool-pref: "uc.tweak.no-blur") {
             backdrop-filter: blur(var(--uc-blur-radius)) !important;
           }
