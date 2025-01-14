@@ -4,13 +4,18 @@
 :root:has(.pdfViewer) {
   #viewerContainer {
     inset: 0 !important;
+
+    #viewer .page:first-of-type {
+      margin-top: 40px !important;
+    }
   }
 
   #toolbarContainer {
     position: sticky !important;
     width: auto !important;
-    border-top-left-radius: var(--uc-radius);
-    border-top-right-radius: var(--uc-radius);
+    margin-top: var(--uc-small-floating-margin) !important;
+    margin-inline: var(--uc-small-floating-margin) !important;
+    border-radius: var(--uc-radius);
     box-shadow: none !important;
     border: none !important;
     background: color-mix(
