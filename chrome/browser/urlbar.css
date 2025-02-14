@@ -33,9 +33,10 @@
 }
 
 #urlbar[breakout-extend] #urlbar-background {
+  --field: Field;
   --urlbar-bg: var(--toolbar-field-focus-background-color);
   @media (-moz-platform: linux) {
-    --urlbar-bg: Field;
+    --urlbar-bg: var(--toolbar-field-focus-background-color, var(--field));
   }
   background-color: var(--urlbar-bg) !important;
   @media not (-moz-bool-pref: "uc.tweak.no-blur") {
