@@ -24,6 +24,7 @@ body {
 /* remove bg from things */
 #nav-bar,
 #navigator-toolbox,
+#browser,
 tabbox#tabbrowser-tabbox,
 splitter.devtools-horizontal-splitter,
 .devtools-side-splitter,
