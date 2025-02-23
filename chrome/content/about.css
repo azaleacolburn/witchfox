@@ -8,11 +8,7 @@ url-prefix("about:privatebrowsing"),
 url-prefix("about:home") {
   @media (-moz-bool-pref: "browser.tabs.allow_transparent_browser") and (-moz-bool-pref: "uc.tweak.translucency") {
     body {
-      background-color: color-mix(
-        in oklab,
-        var(--newtab-background-color) 50%,
-        transparent
-      ) !important;
+      background-color: transparent !important;
     }
   }
   .customize-menu {
