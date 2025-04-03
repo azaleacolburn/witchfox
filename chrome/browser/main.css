@@ -15,7 +15,7 @@ body {
   background-position: var(--lwt-background-alignment);
 }
 
-@media (-moz-bool-pref: "uc.tweak.translucency") {
+@media -moz-pref( "uc.tweak.translucency") {
   #main-window {
     background: transparent !important;
   }
@@ -47,7 +47,7 @@ splitter.devtools-horizontal-splitter,
       [chromehidden*="toolbar"],
       [chromehidden*="menubar"]
     ) {
-    @media not (-moz-bool-pref: "uc.tweak.borderless") {
+    @media not -moz-pref( "uc.tweak.borderless") {
       --uc-content-margin-top: var(--uc-content-margin);
       --uc-content-margin-right: var(--uc-content-margin);
       --uc-content-margin-bottom: var(--uc-content-margin);
@@ -66,7 +66,7 @@ splitter.devtools-horizontal-splitter,
     }
   }
 
-  @media (-moz-bool-pref: "uc.tweak.translucency") and (-moz-platform: macos) {
+  @media -moz-pref( "uc.tweak.translucency") and (-moz-platform: macos) {
     -moz-appearance: -moz-window-titlebar !important;
   }
 }

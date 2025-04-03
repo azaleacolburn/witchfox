@@ -2,7 +2,7 @@
 /* SPDX-FileCopyrightText: 2024 awwpotato */
 
 /* make sidebar bg transparent */
-@media (-moz-bool-pref: "browser.tabs.allow_transparent_browser") {
+@media -moz-pref( "browser.tabs.allow_transparent_browser") {
   window#webextpanels-window {
     background-color: transparent !important;
   }
@@ -19,7 +19,7 @@
 
   #sidebar-box {
     min-width: var(--uc-sidebar-width) !important;
-    @media not (-moz-bool-pref: "uc.tweak.borderless") {
+    @media not -moz-pref( "uc.tweak.borderless") {
       margin-bottom: var(--uc-content-margin-bottom) !important;
     }
     margin-top: var(--uc-content-margin-top) !important;
@@ -46,7 +46,7 @@
   #sidebar {
     clip-path: circle(100%);
     border-radius: var(--uc-content-radius) !important;
-    @media (-moz-bool-pref: "uc.tweak.sidebar.header") {
+    @media -moz-pref( "uc.tweak.sidebar.header") {
       border-top-left-radius: 0px !important;
       border-top-right-radius: 0px !important;
     }
@@ -59,7 +59,7 @@
   }
 
   #sidebar-header {
-    @media not (-moz-bool-pref: "uc.tweak.sidebar.header") {
+    @media not -moz-pref( "uc.tweak.sidebar.header") {
       display: none !important;
     }
     border-top-left-radius: var(--uc-radius) !important;
@@ -161,7 +161,7 @@
     #sidebar-box:hover > #sidebar-header,
     #sidebar-box:hover > #sidebar {
       background-color: var(--uc-bg-tran) !important;
-      @media not (-moz-bool-pref: "uc.tweak.no-blur") {
+      @media not -moz-pref( "uc.tweak.no-blur") {
         backdrop-filter: blur(var(--uc-blur-radius)) !important;
       }
     }
@@ -180,7 +180,7 @@
             margin-left var(--uc-transition) var(--uc-mouseout-delay),
             margin-right var(--uc-transition) var(--uc-mouseout-delay) !important;
           background-color: var(--uc-bg-tran) !important;
-          @media not (-moz-bool-pref: "uc.tweak.no-blur") {
+          @media not -moz-pref( "uc.tweak.no-blur") {
             backdrop-filter: blur(var(--uc-blur-radius)) !important;
           }
 
@@ -203,7 +203,7 @@
         }
         & #sidebar {
           margin-block: var(--uc-floating-margin) !important;
-          @media (-moz-bool-pref: "uc.tweak.sidebar.header") {
+          @media -moz-pref( "uc.tweak.sidebar.header") {
             margin-top: 0 !important;
           }
         }
@@ -254,7 +254,7 @@
         }
       }
 
-      @media not (-moz-bool-pref: "uc.tweak.borderless") {
+      @media not -moz-pref( "uc.tweak.borderless") {
         &:not([sizemode="fullscreen"])
           #sidebar-box:not([positionend="true"])::before {
           left: calc(
@@ -309,7 +309,7 @@
         }
       }
 
-      @media (-moz-bool-pref: "uc.tweak.borderless") {
+      @media -moz-pref( "uc.tweak.borderless") {
         #sidebar-box {
           background-color: transparent !important;
           &[positionend="true"] {
