@@ -148,7 +148,7 @@
 
     #sidebar-box:hover > #sidebar-header,
     #sidebar-box:hover > #sidebar-header > #sidebar-switcher-target,
-    #sidebar-box:hover > #sidebar {
+    #sidebar-box:hover > .sidebar-browser-stack > #sidebar {
       transition:
         min-width var(--uc-transition),
         max-width var(--uc-transition),
@@ -159,7 +159,7 @@
     }
 
     #sidebar-box:hover > #sidebar-header,
-    #sidebar-box:hover > #sidebar {
+    #sidebar-box:hover > .sidebar-browser-stack > #sidebar {
       background-color: var(--uc-bg-tran) !important;
       @media not -moz-pref( "uc.tweak.no-blur") {
         backdrop-filter: blur(var(--uc-blur-radius)) !important;
