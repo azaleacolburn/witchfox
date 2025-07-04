@@ -10,6 +10,14 @@
     };
 
     systems.url = "github:nix-systems/default";
+
+    nur = {
+      url = "github:nix-community/nur";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        flake-parts.follows = "flake-parts";
+      };
+    };
   };
 
   outputs =
@@ -51,7 +59,7 @@
 
       flake.homeModules = rec {
         default = potatofox;
-        potatofox = import ./homeModule.nix;
+        potatofox = import ./homeModule.nix inputs;
       };
     };
 }
