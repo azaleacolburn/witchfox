@@ -22,16 +22,17 @@ in
   });
 
   config.home.file = lib.mkMerge (
-    map (
+    builtins.concatMap (
       name:
-      lib.mkIf config.programs.${name}.potatofox.enable (
-        map (n: {
+      map (
+        n:
+        lib.mkIf config.programs.${name}.potatofox.enable {
           ".${if name == "librewolf" then name else ".mozzila/${name}"}/${n}/chrome" = {
             source = ./chrome;
             recursive = true;
           };
-        }) config.programs.${name}.potatofox.profiles
-      )
+        }
+      ) config.programs.${name}.potatofox.profiles
     ) browsers
   );
 }
