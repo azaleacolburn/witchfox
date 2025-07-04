@@ -57,7 +57,7 @@ in
       };
   });
 
-  config.home.file = lib.mkMerge (
+  config = lib.mkMerge (
     builtins.concatMap (
       name:
       let
@@ -66,7 +66,7 @@ in
       lib.mapAttrsToList (
         n: pcfg:
         lib.mkIf cfg.enable {
-          ".${if name == "librewolf" then "librewolf" else "mozzila/${name}"}/${n}/chrome" = {
+          home.file.".${if name == "librewolf" then "librewolf" else "mozzila/${name}"}/${n}/chrome" = {
             source = ./chrome;
             recursive = true;
           };
