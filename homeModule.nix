@@ -30,7 +30,7 @@ in
             source = ./chrome;
             recursive = true;
           };
-        }) config.options.programs.${name}.potatofox.profiles
+        }) config.programs.${name}.potatofox.profiles
       )
     ) browsers
   );
