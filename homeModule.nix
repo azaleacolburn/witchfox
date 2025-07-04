@@ -63,9 +63,8 @@ in
       let
         cfg = config.programs.${name}.potatofox;
       in
-      lib.mapAttrsToList (
-        n: pcfg:
-        lib.mkIf cfg.enable {
+      lib.mkIf cfg.enable (
+        lib.mapAttrsToList (n: pcfg: {
           home.file.".${if name == "librewolf" then "librewolf" else "mozzila/${name}"}/${n}/chrome" = {
             source = ./chrome;
             recursive = true;
@@ -132,8 +131,8 @@ in
                   };
             };
           };
-        }
-      ) cfg.profiles
+        }) cfg.profiles
+      )
     ) browsers
   );
 }
