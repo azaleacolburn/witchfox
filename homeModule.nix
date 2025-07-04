@@ -63,7 +63,7 @@ in
       let
         cfg = config.programs.${name}.potatofox;
       in
-      lib.mkIf cfg.enable (
+      lib.optionals cfg.enable (
         lib.mapAttrsToList (n: pcfg: {
           home.file.".${if name == "librewolf" then "librewolf" else "mozzila/${name}"}/${n}/chrome" = {
             source = ./chrome;
