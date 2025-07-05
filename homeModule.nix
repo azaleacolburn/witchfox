@@ -97,7 +97,7 @@ in
               let
                 inherit (pkgs.stdenv.hostPlatform) system;
               in
-              with inputs.nur.legacyPackages.${system}.repos.rycee;
+              with inputs.nur.legacyPackages.${system}.repos.rycee.firefox-addons;
               lib.mkIf pcfg.extensions.enable [
                 sidebery
                 userchrome-toggle-extended
