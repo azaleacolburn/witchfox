@@ -28,20 +28,22 @@ in
         profiles = lib.mkOption {
           type = lib.types.attrsOf (
             lib.types.submodule {
-              chrome.enable = mkDisableOption "installing the chrome directory";
-              prefs.enable = mkDisableOption "enabling user.js prefs";
-              tweaks = lib.mkOption {
-                description = "tweaks with the `uc.tweak.` sufix removed";
-                type = with lib.types; attrsOf (pkgs.formats.json { }).type;
-                default = { };
-                example = {
-                  translucency = true;
-                  no-window-controls = true;
+              options = {
+                chrome.enable = mkDisableOption "installing the chrome directory";
+                prefs.enable = mkDisableOption "enabling user.js prefs";
+                tweaks = lib.mkOption {
+                  description = "tweaks with the `uc.tweak.` sufix removed";
+                  type = with lib.types; attrsOf (pkgs.formats.json { }).type;
+                  default = { };
+                  example = {
+                    translucency = true;
+                    no-window-controls = true;
+                  };
                 };
-              };
-              extensions = {
-                enable = lib.mkEnableOption "installing userchrome-toggle-extended and sidebery";
-                userchrome-toggle.configure = lib.mkEnableOption "applying userchrome-toggle-extended settings";
+                extensions = {
+                  enable = lib.mkEnableOption "installing userchrome-toggle-extended and sidebery";
+                  userchrome-toggle.configure = lib.mkEnableOption "applying userchrome-toggle-extended settings";
+                };
               };
             }
           );
