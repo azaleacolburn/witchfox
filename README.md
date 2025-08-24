@@ -4,7 +4,11 @@
 <div style="display: flex;">
 <div style="flex: 1;">
 
-A Firefox and Sidebery CSS theme, tested on Linux, macOS and Windows.
+A Firefox and Sidebery CSS theme.
+
+> [!NOTE]
+> Only Linux is supported, macOS and Windows should work but may have
+> issues.
 
 ## Features
 
