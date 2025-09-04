@@ -1,5 +1,5 @@
 {
-  description = "potatofox";
+  description = "witchfox";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -59,8 +59,8 @@
         };
 
       flake.homeModules = rec {
-        default = potatofox;
-        potatofox = import ./homeModule.nix inputs;
+        default = witchfox;
+        witchfox = import ./homeModule.nix inputs;
       };
     };
 }

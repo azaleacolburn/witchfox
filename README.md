@@ -1,10 +1,9 @@
-# Potatofox
-[![Please don't upload to GitHub](https://nogithub.codeberg.page/badge.svg)](https://nogithub.codeberg.page)
+# witchfox
 
 <div style="display: flex;">
 <div style="flex: 1;">
 
-A Firefox and Sidebery CSS theme.
+A Firefox and Sidebery CSS theme. A fork of [potatofox](https://codeberg.org/awwpotato/potatofox) with permission from the author.
 
 > [!NOTE]
 > Only Linux is supported, macOS and Windows should work but may have
@@ -53,8 +52,8 @@ Open the [releases tab](https://codeberg.org/awwpotato/PotatoFox/releases) and d
 #### Using git
 
 ```bash
-git clone https://codeberg.org/awwpotato/potatofox.git
-cd potatofox
+git clone https://codeberg.org/awwpotato/witchfox.git
+cd witchfox
 ln -sr user.js chrome ~/.mozilla/firefox/<profile> # Linux
 cp -r user.js chrome ~/Library/Application Support/Firefox/Profiles/<profile> # macOS
 ```
@@ -63,8 +62,8 @@ cp -r user.js chrome ~/Library/Application Support/Firefox/Profiles/<profile> # 
 
 ```bash
 nyoom profile <profile-dir>
-nyoom add codeberg:awwpotato/potatofox
-nyoom switch potatofox
+nyoom add codeberg:awwpotato/witchfox
+nyoom switch witchfox
 ```
 
 > [!NOTE]
@@ -127,10 +126,6 @@ The variables used by the theme are in `vars.css` and `userChrome.css` (colors).
 [artsyfriedchicken](https://github.com/artsyfriedchicken/EdgyArc-fr) - EdgyArc-fr
 
 [Naezer](https://github.com/Naezr/ShyFox) - ShyFox
-
-## Mirrors
-
-Currently potatofox is available on [codeberg](https://codeberg.org/awwpotato/PotatoFox) (main) and [git.gay](https://git.gay/awwpotato/PotatoFox) (backup)
 
 ## License
 

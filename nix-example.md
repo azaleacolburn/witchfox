@@ -2,10 +2,9 @@
 ```nix
 {
   inputs = {
-    # other stuff
     
-    potatofox = {
-      url = "git+https://codeberg.org/awwpotato/PotatoFox";
+    witchfox = {
+      url = "github:azaleacolburn/witchfox";
       flake = false;
     };
   };
@@ -14,7 +13,7 @@
 
 ## firefox.nix:
 ```nix
-{ potatofox, ... }:
+{ witchfox, ... }:
 let
   profile = "default";
 in
@@ -41,7 +40,7 @@ in
   };
   
   home.file.".mozilla/firefox/${profile}/chrome" = {
-    source = "${potatofox}/chrome";
+    source = "${witchfox}/chrome";
     recursive = true;
   };
 }

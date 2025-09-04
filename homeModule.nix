@@ -13,7 +13,7 @@ let
 in
 {
   options.programs = lib.genAttrs browsers (_name: {
-    potatofox =
+    witchfox =
       let
         mkDisableOption =
           d:
@@ -24,7 +24,7 @@ in
           };
       in
       {
-        enable = lib.mkEnableOption "potatofox";
+        enable = lib.mkEnableOption "witchfox";
         profiles = lib.mkOption {
           type = lib.types.attrsOf (
             lib.types.submodule {
@@ -63,7 +63,7 @@ in
     lib.forEach browsers (
       name:
       let
-        cfg = config.programs.${name}.potatofox;
+        cfg = config.programs.${name}.witchfox;
       in
       lib.mkIf cfg.enable {
         home.file = lib.mapAttrs' (
